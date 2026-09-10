@@ -1,0 +1,10 @@
+window.KRUSHI_SUPABASE_URL = 'https://your-project.supabase.co';
+window.KRUSHI_SUPABASE_ANON_KEY = 'your_public_anon_key';
+window.KRUSHI_FIREBASE_API_KEY = 'your_firebase_api_key';
+window.KRUSHI_FIREBASE_AUTH_DOMAIN = 'your-project.firebaseapp.com';
+window.KRUSHI_FIREBASE_PROJECT_ID = 'your-project-id';
+window.KRUSHI_FIREBASE_STORAGE_BUCKET = 'your-project.firebasestorage.app';
+window.KRUSHI_FIREBASE_MESSAGING_SENDER_ID = '1234567890';
+window.KRUSHI_FIREBASE_APP_ID = '1:1234567890:web:abcdef123456';
+window.KRUSHI_FIREBASE_BASE = 'https://identitytoolkit.googleapis.com/v1';
+window.KRUSHI_QUEUE_SERVER_URL = window.location.port === '5500' ? 'http://localhost:8000' : window.location.origin;

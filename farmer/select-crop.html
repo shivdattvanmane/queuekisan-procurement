@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>QueueKisan — Select Crop</title>
+  <meta name="description" content="Choose your crop for procurement booking on QueueKisan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="select-crop.css?v=3">
+  <link rel="stylesheet" href="i18n/i18n.css">
+</head>
+<body>
+  <div class="app-container">
+
+    <!-- ========== TOP BAR ========== -->
+    <header class="sc-topbar">
+      <button class="sc-back-btn" id="backBtn" aria-label="Go back">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      </button>
+      <div class="sc-topbar-title">
+        <h1 data-i18n="crop.selectCrop">Select Crop</h1>
+        <p data-i18n="crop.step1of4">Step 1 of 4 — Choose what you're selling</p>
+      </div>
+    </header>
+
+    <!-- ========== PROGRESS BAR ========== -->
+    <div class="sc-progress-bar">
+      <div class="sc-progress-track">
+        <div class="sc-progress-fill" style="width: 25%;"></div>
+      </div>
+      <div class="sc-progress-steps">
+        <span class="sc-step active" data-i18n="step.crop">Crop</span>
+        <span class="sc-step" data-i18n="step.centre">Centre</span>
+        <span class="sc-step" data-i18n="step.slot">Slot</span>
+        <span class="sc-step" data-i18n="step.confirm">Confirm</span>
+      </div>
+    </div>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="sc-main">
+
+      <!-- Search -->
+      <div class="sc-search-wrap">
+        <svg class="sc-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input
+          type="search"
+          class="sc-search-input"
+          id="cropSearch"
+          placeholder="Search crops..."
+          data-i18n="crop.searchCrops"
+          data-i18n-attr="placeholder"
+          autocomplete="off"
+        >
+      </div>
+
+      <!-- Category Filter -->
+      <div class="sc-category-row" id="categoryRow">
+        <button class="sc-cat-chip active" data-category="all" data-i18n="crop.allCrops">All Crops</button>
+        <button class="sc-cat-chip" data-category="grains" data-i18n="crop.grains">🌾 Grains</button>
+        <button class="sc-cat-chip" data-category="pulses" data-i18n="crop.pulses">🫘 Pulses</button>
+        <button class="sc-cat-chip" data-category="oilseeds" data-i18n="crop.oilseeds">🌻 Oilseeds</button>
+        <button class="sc-cat-chip" data-category="vegetables" data-i18n="crop.vegetables">🥬 Vegetables</button>
+        <button class="sc-cat-chip" data-category="fruits" data-i18n="crop.fruits">🍎 Fruits</button>
+        <button class="sc-cat-chip" data-category="spices" data-i18n="crop.spices">🌶️ Spices</button>
+      </div>
+
+      <!-- Crop Grid -->
+      <div class="sc-crop-grid" id="cropGrid">
+        <div class="skeleton-card" style="height: 90px; border-radius: 16px;"></div>
+        <div class="skeleton-card" style="height: 90px; border-radius: 16px;"></div>
+        <div class="skeleton-card" style="height: 90px; border-radius: 16px;"></div>
+        <div class="skeleton-card" style="height: 90px; border-radius: 16px;"></div>
+        <div class="skeleton-card" style="height: 90px; border-radius: 16px;"></div>
+        <div class="skeleton-card" style="height: 90px; border-radius: 16px;"></div>
+      </div>
+
+      <!-- Empty State -->
+      <div class="sc-empty" id="emptyState" style="display:none;">
+        <div class="sc-empty-icon">🔍</div>
+        <p data-i18n="crop.noCropsFound">No crops found for your search.</p>
+      </div>
+
+    </main>
+
+    <!-- ========== OTHER CROP MODAL ========== -->
+    <div class="sc-modal-overlay" id="otherCropModal" style="display:none;">
+      <div class="sc-modal-card">
+        <div class="sc-modal-header">
+          <h2 data-i18n="crop.enterYourCrop">Enter Your Crop</h2>
+          <button class="sc-modal-close" id="modalCloseBtn" aria-label="Close modal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+        <div class="sc-modal-body">
+          <input
+            type="text"
+            class="sc-modal-input"
+            id="customCropInput"
+            placeholder="e.g. Onion, Tomato, Soybean"
+            data-i18n="crop.cropPlaceholder"
+            data-i18n-attr="placeholder"
+            maxlength="50"
+            autocomplete="off"
+          >
+        </div>
+        <div class="sc-modal-footer">
+          <button class="sc-modal-continue-btn" id="modalContinueBtn" data-i18n="crop.continue">Continue</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== BOTTOM ACTION BAR ========== -->
+    <div class="sc-bottom-bar" id="bottomBar">
+      <div class="sc-selected-info" id="selectedInfo">
+        <span class="sc-selected-label" data-i18n="crop.noCropSelected">No crop selected</span>
+      </div>
+      <button class="sc-continue-btn disabled" id="continueBtn" disabled>
+        <span class="btn-text" data-i18n="crop.continue">Continue to Centre</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </button>
+    </div>
+
+  </div>
+  <script src="i18n/en.js"></script>
+  <script src="i18n/mr.js"></script>
+  <script src="i18n/hi.js"></script>
+  <script src="i18n/translator.js"></script>
+  <script src="js/appConfig.js"></script>
+  <script src="js/krushiApi.js"></script>
+  <script src="select-crop.js?v=4"></script>
+</body>
+</html>

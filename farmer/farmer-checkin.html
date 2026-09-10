@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>QueueKisan — Farmer Check-in</title>
+  <meta name="description" content="Present your token and QR code for farmer check-in at the procurement centre.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="farmer-checkin.css">
+  <link rel="stylesheet" href="i18n/i18n.css">
+</head>
+<body class="fc-body">
+  <div class="app-container fc-container">
+    <header class="fc-topbar">
+      <button class="fc-back-btn" id="backBtn" aria-label="Go back">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      </button>
+      <div class="fc-topbar-title">
+        <h1 data-i18n="checkin.farmerCheckin">Farmer Check-in</h1>
+      </div>
+    </header>
+
+    <main class="fc-main">
+      <section class="fc-intro" id="checkinIntro">
+        <div class="fc-intro-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/></svg>
+        </div>
+        <h2 data-i18n="home.showAtCentre">Show your token at the counter</h2>
+        <p data-i18n="token.keepItSafe">Keep this screen open while the officer verifies your booking.</p>
+      </section>
+
+      <section class="fc-token-card" aria-label="Your procurement token">
+        <span class="fc-label" data-i18n="token.yourToken">Your Token</span>
+        <strong class="fc-token" id="fcToken">—</strong>
+        <div class="fc-centre">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span id="fcCentre">—</span>
+        </div>
+      </section>
+
+      <section class="fc-qr-card" aria-label="Booking QR code">
+        <div class="fc-qr-heading">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM18 18h3v3h-3zM17 17h1"/></svg>
+          <h2 data-i18n="checkin.scanQrCode">Present QR Code</h2>
+        </div>
+        <div class="fc-qr-wrapper">
+          <canvas id="fcQrCanvas" width="200" height="200"></canvas>
+        </div>
+        <p data-i18n="token.scanQr">Let the officer scan this QR code.</p>
+      </section>
+
+      <section class="fc-details-card" aria-label="Booking details">
+        <div class="fc-detail-row">
+          <span data-i18n="profile.farmerProfile">Farmer</span>
+          <strong id="fcFarmer">—</strong>
+        </div>
+        <div class="fc-detail-row">
+          <span data-i18n="crop.selectCrop">Crop</span>
+          <strong id="fcCrop">—</strong>
+        </div>
+        <div class="fc-detail-row">
+          <span data-i18n="centre.selectCentre">Centre</span>
+          <strong id="fcCentreDetail">—</strong>
+        </div>
+        <div class="fc-detail-row">
+          <span data-i18n="confirm.timeSlot">Booking</span>
+          <strong><span id="fcDate">—</span>, <span id="fcSlot">—</span></strong>
+        </div>
+        <div class="fc-status-row" id="fcStatusRow">
+          <span class="fc-status-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+          </span>
+          <span>Check-in status: <strong id="fcStatus">Ready for check-in</strong></span>
+        </div>
+      </section>
+
+      <button class="btn btn-primary w-full fc-checkin-btn" id="checkinBtn">
+        <span class="btn-text" data-i18n="checkin.checkIn">Complete Check-in</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><polyline points="12 5 19 12 12 19"/></svg>
+      </button>
+
+      <section class="fc-success" id="successState" hidden>
+        <div class="fc-success-icon">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h2 data-i18n="checkin.success">Check-in Completed</h2>
+        <p data-i18n="checkin.success">Your booking is verified. Please wait for the procurement process to begin.</p>
+        <button class="btn btn-primary fc-process-btn" id="viewProcessBtn" data-i18n="procure.procurementProcess">View Procurement Process</button>
+      </section>
+    </main>
+
+    <!-- ========== BOTTOM NAVIGATION ========== -->
+    <nav class="bottom-nav" id="bottomNav">
+      <a href="index.html" class="bnav-item" aria-label="Home">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span data-i18n="nav.home">Home</span>
+      </a>
+      <a href="history.html" class="bnav-item" aria-label="History">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span data-i18n="nav.history">History</span>
+      </a>
+      <a href="token-generated.html" class="bnav-item bnav-scan active" aria-label="Scan QR">
+        <div class="scan-fab">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><rect x="7" y="7" width="3" height="3"/><rect x="14" y="7" width="3" height="3"/><rect x="7" y="14" width="3" height="3"/><rect x="14" y="14" width="3" height="3"/></svg>
+        </div>
+        <span data-i18n="nav.scan">Scan</span>
+      </a>
+      <a href="notifications.html" class="bnav-item" aria-label="Alerts">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        <span data-i18n="nav.alerts">Alerts</span>
+      </a>
+      <a href="profile.html" class="bnav-item" aria-label="Profile">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span data-i18n="nav.profile">Profile</span>
+      </a>
+    </nav>
+  </div>
+  <script src="i18n/en.js"></script>
+  <script src="i18n/mr.js"></script>
+  <script src="i18n/hi.js"></script>
+  <script src="i18n/translator.js"></script>
+  <script src="js/appConfig.js"></script>
+  <script src="js/krushiApi.js"></script>
+  <script src="js/qrCode.js"></script>
+  <script src="farmer-checkin.js"></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>QueueKisan — Register</title>
+  <meta name="description" content="Join QueueKisan — register as a farmer and start managing your crop procurement digitally.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="auth.css">
+  <link rel="stylesheet" href="i18n/i18n.css">
+</head>
+<body>
+  <div class="app-container auth-page">
+
+    <!-- Language Selector -->
+    <div class="lang-selector-container">
+      <button class="lang-selector-btn" id="langSelectorBtn" aria-label="Change language">
+        <span class="lang-selector-icon">🌐</span>
+        <span class="lang-selector-text" id="langSelectorText">English</span>
+      </button>
+      <div class="lang-selector-menu" id="langSelectorMenu" style="display:none;">
+        <button class="lang-option" data-lang="en">English</button>
+        <button class="lang-option" data-lang="mr">मराठी</button>
+        <button class="lang-option" data-lang="hi">हिंदी</button>
+      </div>
+    </div>
+
+    <!-- Compact Branding for Register (scrollable form needs space) -->
+    <div class="auth-brand-area auth-brand-compact">
+      <div class="brand-leaf leaf-1"></div>
+      <div class="brand-leaf leaf-2"></div>
+
+      <div class="brand-content">
+        <div class="brand-logo-circle brand-logo-sm">
+          <span>🌾</span>
+        </div>
+        <h1 class="brand-name">QueueKisan</h1>
+      </div>
+    </div>
+
+    <!-- Register Form -->
+    <div class="auth-form-area">
+      <div class="auth-card">
+        <div class="auth-card-header">
+          <h2 data-i18n="auth.createAccount">Join QueueKisan</h2>
+          <p data-i18n="auth.registerSubtitle">Register as a farmer — it only takes a minute</p>
+        </div>
+
+        <!-- Step Indicator -->
+        <div class="step-indicator">
+          <div class="step active" id="step1Dot"><span>1</span></div>
+          <div class="step-line"></div>
+          <div class="step" id="step2Dot"><span>2</span></div>
+        </div>
+
+        <form id="registerForm" class="auth-form" novalidate>
+
+          <!-- ===== STEP 1: Personal Details ===== -->
+          <div class="form-step" id="registerStep1">
+            <p class="step-title" data-i18n="auth.personalDetails">Personal Details</p>
+
+            <!-- Full Name -->
+            <div class="form-group">
+              <label for="regName" data-i18n="auth.fullName">Full Name</label>
+              <div class="input-wrapper">
+                <span class="input-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                </span>
+                <input
+                  type="text"
+                  id="regName"
+                  name="fullName"
+                  placeholder="e.g. Ramesh Patil"
+                  data-i18n="auth.fullNameHint"
+                  data-i18n-attr="placeholder"
+                  autocomplete="name"
+                  required
+                >
+              </div>
+              <span class="field-error" id="regNameError"></span>
+            </div>
+
+            <!-- Mobile Number -->
+            <div class="form-group">
+              <label for="regMobile" data-i18n="auth.mobileNumber">Mobile Number</label>
+              <div class="input-wrapper">
+                <span class="input-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                </span>
+                <input
+                  type="tel"
+                  id="regMobile"
+                  name="mobile"
+                  placeholder="10-digit mobile number"
+                  data-i18n="auth.mobileHint"
+                  data-i18n-attr="placeholder"
+                  maxlength="10"
+                  pattern="[0-9]{10}"
+                  inputmode="numeric"
+                  autocomplete="tel"
+                  required
+                >
+              </div>
+              <span class="field-error" id="regMobileError"></span>
+            </div>
+
+            <!-- Email Address (for notifications) -->
+            <div class="form-group">
+              <label for="regEmail">Email Address (for Token Notifications)</label>
+              <div class="input-wrapper">
+                <span class="input-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </span>
+                <input
+                  type="email"
+                  id="regEmail"
+                  name="email"
+                  placeholder="e.g. yourname@gmail.com"
+                  autocomplete="email"
+                >
+              </div>
+              <span class="field-error" id="regEmailError"></span>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+              <label for="regPassword" data-i18n="auth.createPassword">Create Password</label>
+              <div class="input-wrapper">
+                <span class="input-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                </span>
+                <input
+                  type="password"
+                  id="regPassword"
+                  name="password"
+                  placeholder="At least 6 characters"
+                  data-i18n="auth.passwordHint"
+                  data-i18n-attr="placeholder"
+                  minlength="6"
+                  autocomplete="new-password"
+                  required
+                >
+                <button type="button" class="toggle-password" aria-label="Show password" onclick="togglePasswordVisibility('regPassword', this)">
+                  <svg class="eye-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  <svg class="eye-closed" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
+                </button>
+              </div>
+              <span class="field-error" id="regPasswordError"></span>
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="form-group">
+              <label for="regConfirmPassword" data-i18n="auth.confirmPassword">Confirm Password</label>
+              <div class="input-wrapper">
+                <span class="input-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </span>
+                <input
+                  type="password"
+                  id="regConfirmPassword"
+                  name="confirmPassword"
+                  placeholder="Re-enter your password"
+                  data-i18n="auth.confirmPasswordHint"
+                  data-i18n-attr="placeholder"
+                  minlength="6"
+                  autocomplete="new-password"
+                  required
+                >
+                <button type="button" class="toggle-password" aria-label="Show password" onclick="togglePasswordVisibility('regConfirmPassword', this)">
+                  <svg class="eye-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  <svg class="eye-closed" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
+                </button>
+              </div>
+              <span class="field-error" id="regConfirmPasswordError"></span>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-lg w-full" id="nextStepBtn" onclick="goToStep2()">
+              <span class="btn-text" data-i18n="common.continue">Continue</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left:6px"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+
+          <!-- ===== STEP 2: Farm Details ===== -->
+          <div class="form-step" id="registerStep2" style="display:none;">
+            <p class="step-title" data-i18n="auth.farmDetails">Farm & Location</p>
+
+            <!-- Farmer ID -->
+            <div class="form-group">
+              <label for="regFarmerId" data-i18n="auth.farmerId">Farmer ID / Aadhaar Number</label>
+              <div class="input-wrapper">
+                <span class="input-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+                </span>
+                <input
+                  type="text"
+                  id="regFarmerId"
+                  name="farmerId"
+                  placeholder="Enter your Farmer ID or Aadhaar"
+                  data-i18n="auth.farmerIdHint"
+                  data-i18n-attr="placeholder"
+                  autocomplete="off"
+                  required
+                >
+              </div>
+              <span class="field-error" id="regFarmerIdError"></span>
+            </div>
+
+            <!-- Village / Location -->
+            <div class="form-group">
+              <label for="regVillage" data-i18n="auth.village">Village / Location</label>
+              <div class="input-wrapper">
+                <span class="input-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </span>
+                <input
+                  type="text"
+                  id="regVillage"
+                  name="village"
+                  placeholder="e.g. Shirur, Pune"
+                  data-i18n="auth.villageHint"
+                  data-i18n-attr="placeholder"
+                  autocomplete="address-level2"
+                  required
+                >
+              </div>
+              <span class="field-error" id="regVillageError"></span>
+            </div>
+
+            <!-- Preferred Language -->
+            <div class="form-group">
+              <label for="regLanguage" data-i18n="auth.preferredLanguage">Preferred Language</label>
+              <div class="input-wrapper select-wrapper">
+                <span class="input-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                </span>
+                <select id="regLanguage" name="language" required>
+                  <option value="" disabled selected data-i18n="auth.selectLanguage">Select Language</option>
+                  <option value="en">English</option>
+                  <option value="hi">हिन्दी (Hindi)</option>
+                  <option value="mr">मराठी (Marathi)</option>
+                </select>
+              </div>
+              <span class="field-error" id="regLanguageError"></span>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="step-buttons">
+              <button type="button" class="btn btn-outline" onclick="goToStep1()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                <span data-i18n="common.back">Back</span>
+              </button>
+              <button type="submit" class="btn btn-primary btn-lg" id="registerBtn" style="flex:1">
+                <span class="btn-text" data-i18n="auth.register">Register</span>
+                <span class="btn-loader" style="display:none;">
+                  <span class="spinner"></span>
+                </span>
+              </button>
+            </div>
+          </div>
+
+        </form>
+
+        <!-- Divider -->
+        <div class="auth-divider">
+          <span data-i18n="common.or">or</span>
+        </div>
+
+        <!-- Login CTA -->
+        <div class="auth-switch">
+          <p data-i18n="auth.haveAccount">Already have an account?</p>
+          <a href="login.html" class="btn btn-outline w-full" data-i18n="auth.loginHere">Login</a>
+        </div>
+      </div>
+
+      <p class="auth-footer" data-i18n="auth.tagline">
+        🌿 QueueKisan — Empowering Farmers Digitally
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Translation Files -->
+  <script src="i18n/en.js"></script>
+  <script src="i18n/mr.js"></script>
+  <script src="i18n/hi.js"></script>
+  <script src="i18n/translator.js"></script>
+  <script src="js/appConfig.js"></script>
+  <script src="js/krushiApi.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+/* KrushiDarpan - Profile Styles */
+
+.profile-body {
+  background: linear-gradient(180deg, #E0F0E0 0, var(--cream-bg) 220px);
+}
+
+.profile-topbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  background: var(--white);
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.profile-back-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-text);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.profile-topbar h1 {
+  color: var(--dark-text);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.profile-main {
+  display: flex;
+  justify-content: center;
+  padding: 28px 20px 48px;
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 380px;
+  padding: 28px 20px;
+  text-align: center;
+  background: var(--white);
+  border: 1px solid var(--border-gray);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(16, 64, 32, 0.08);
+}
+
+.profile-avatar {
+  width: 76px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  background: var(--pale-green);
+  border-radius: 50%;
+  font-size: 40px;
+}
+
+.profile-card h2 {
+  color: var(--krushi-deep-green);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.profile-card > p {
+  margin-top: 4px;
+  color: var(--muted-gray);
+  font-size: 13px;
+}
+
+.profile-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-gray);
+}
+
+.profile-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.profile-details span {
+  color: var(--muted-gray);
+  font-size: 11px;
+}
+
+.profile-details strong {
+  color: var(--dark-text);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.profile-payment-form {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border-gray);
+  text-align: left;
+}
+
+.profile-payment-form h3 {
+  color: var(--krushi-deep-green);
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.profile-payment-form label {
+  display: grid;
+  gap: 5px;
+}
+
+.profile-payment-form label span,
+.profile-payment-note {
+  color: var(--muted-gray);
+  font-size: 12px;
+}
+
+.profile-payment-form input {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid var(--border-gray);
+  border-radius: 10px;
+  color: var(--dark-text);
+  background: var(--white);
+  font: inherit;
+}
+
+.profile-payment-form input:focus {
+  outline: none;
+  border-color: var(--krushi-green);
+}
+
+.profile-save-btn {
+  padding: 12px 16px;
+  background: var(--krushi-green);
+  color: var(--white);
+}
+
+.profile-logout-btn {
+  margin-top: 18px;
+  padding: 12px 16px;
+  background: var(--krushi-deep-green);
+  color: var(--white);
+}

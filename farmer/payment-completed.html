@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>QueueKisan - Payment Completed</title>
+  <meta name="description" content="Your procurement payment has been completed successfully.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="payment-completed.css">
+  <link rel="stylesheet" href="i18n/i18n.css">
+</head>
+<body class="pay-complete-body">
+  <div class="app-container pay-complete-container">
+    <header class="pay-complete-topbar">
+      <button class="pay-complete-back" id="backBtn" aria-label="Go back">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      </button>
+      <h1 data-i18n="payment.paymentCompleted">Payment Completed</h1>
+    </header>
+
+    <main class="pay-complete-main">
+      <section class="pay-complete-heading">
+        <div class="pay-complete-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h2 data-i18n="payment.paymentCompleted">Payment Completed</h2>
+        <p data-i18n="payment.paymentSuccessful">Your procurement payment has been successfully credited.</p>
+      </section>
+
+      <section class="pay-complete-card" aria-label="Completed payment details">
+        <div class="pay-complete-status">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Payment status: <strong data-i18n="status.completed">Completed</strong></span>
+        </div>
+        <span class="pay-complete-amount-label" data-i18n="payment.totalAmount">Procurement Amount</span>
+        <strong class="pay-complete-amount" id="paidAmount">—</strong>
+        <div class="pay-complete-details">
+          <div><span data-i18n="payment.transactionId">Payment / Reference ID</span><strong id="paidReference">—</strong></div>
+          <div><span data-i18n="confirm.date">Payment date</span><strong id="paidDate">—</strong></div>
+          <div><span data-i18n="confirm.crop">Crop</span><strong id="paidCrop">—</strong></div>
+          <div><span data-i18n="confirm.procurementCentre">Procurement centre</span><strong id="paidCentre">—</strong></div>
+        </div>
+      </section>
+
+      <a class="btn btn-primary pay-history-btn" href="history.html">
+        <span data-i18n="history.history">View History</span>
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><polyline points="3 4 3 10 9 10"/><path d="M12 7v5l3 2"/></svg>
+      </a>
+    </main>
+
+    <!-- ========== BOTTOM NAVIGATION ========== -->
+    <nav class="bottom-nav" id="bottomNav">
+      <a href="index.html" class="bnav-item" aria-label="Home">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span data-i18n="nav.home">Home</span>
+      </a>
+      <a href="history.html" class="bnav-item" aria-label="History">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span data-i18n="nav.history">History</span>
+      </a>
+      <a href="token-generated.html" class="bnav-item bnav-scan" aria-label="Scan QR">
+        <div class="scan-fab">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><rect x="7" y="7" width="3" height="3"/><rect x="14" y="7" width="3" height="3"/><rect x="7" y="14" width="3" height="3"/><rect x="14" y="14" width="3" height="3"/></svg>
+        </div>
+        <span data-i18n="nav.scan">Scan</span>
+      </a>
+      <a href="notifications.html" class="bnav-item" aria-label="Alerts">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        <span data-i18n="nav.alerts">Alerts</span>
+      </a>
+      <a href="profile.html" class="bnav-item" aria-label="Profile">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span data-i18n="nav.profile">Profile</span>
+      </a>
+    </nav>
+  </div>
+  <script src="i18n/en.js"></script>
+  <script src="i18n/mr.js"></script>
+  <script src="i18n/hi.js"></script>
+  <script src="i18n/translator.js"></script>
+  <script src="js/appConfig.js"></script>
+  <script src="js/krushiApi.js"></script>
+  <script src="payment-completed.js"></script>
+</body>
+</html>

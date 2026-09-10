@@ -1,0 +1,207 @@
+/* =========================================
+   KrushiDarpan — Notifications Styles
+   ========================================= */
+
+/* Topbar */
+.nf-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background-color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid var(--border-gray);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.nf-back-btn, .nf-clear-btn {
+  background: none;
+  border: none;
+  color: var(--dark-text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.nf-clear-btn {
+  color: var(--muted-gray);
+}
+
+.nf-topbar-title h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark-text);
+}
+
+/* Main Content */
+.nf-main {
+  padding: 16px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Info Banner */
+.nf-info-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: linear-gradient(135deg, var(--pale-green) 0%, #E8F5E9 100%);
+  border: 1px solid rgba(32, 122, 64, 0.15);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.nf-info-icon {
+  color: var(--krushi-green);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.nf-info-banner p {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--krushi-deep-green);
+  line-height: 1.4;
+}
+
+/* Filters */
+.nf-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.nf-filter-chip {
+  background-color: var(--white);
+  border: 1px solid var(--border-gray);
+  color: var(--muted-gray);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-family: var(--font-inter);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nf-filter-chip.active {
+  background-color: var(--krushi-deep-green);
+  border-color: var(--krushi-deep-green);
+  color: var(--white);
+}
+
+.nf-badge {
+  background-color: #D64545;
+  color: var(--white);
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  line-height: 1;
+}
+
+/* Notifications List */
+.nf-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nf-card {
+  background-color: var(--white);
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  gap: 14px;
+  border: 1.5px solid transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.nf-card.unread {
+  background-color: #FAFCFA;
+  border-color: var(--pale-green);
+}
+
+.nf-card.unread::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--krushi-green);
+  border-radius: 50%;
+}
+
+.nf-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-type-generated { background-color: #E0F4E0; color: var(--krushi-green); }
+.icon-type-update { background-color: #F0F4F8; color: #4A5568; }
+.icon-type-approaching { background-color: #FFF3DC; color: #B8860B; }
+.icon-type-called { background-color: var(--krushi-green); color: var(--white); }
+
+.nf-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-right: 12px;
+}
+
+.nf-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--dark-text);
+  margin-bottom: 4px;
+}
+
+.nf-message {
+  font-size: 13px;
+  color: var(--muted-gray);
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.nf-message strong {
+  color: var(--dark-text);
+}
+
+.nf-time {
+  font-size: 11px;
+  font-weight: 600;
+  color: #A0AEC0;
+}
+
+/* Empty State */
+.nf-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--muted-gray);
+}
+
+.nf-empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.nf-empty p {
+  font-size: 14px;
+  line-height: 1.5;
+}

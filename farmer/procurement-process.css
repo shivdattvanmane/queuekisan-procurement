@@ -1,0 +1,261 @@
+/* KrushiDarpan - Procurement Process Styles */
+
+.pp-body {
+  background: linear-gradient(180deg, #E0F0E0 0, var(--cream-bg) 230px);
+}
+
+.pp-topbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  background: var(--white);
+  border-bottom: 1px solid var(--border-gray);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.pp-back-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-text);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.pp-topbar h1 {
+  color: var(--dark-text);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.pp-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 20px 48px;
+}
+
+.pp-heading {
+  width: 100%;
+  text-align: center;
+}
+
+.pp-heading-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  color: var(--krushi-green);
+  background: var(--white);
+  border: 2px solid var(--pale-green);
+  border-radius: 50%;
+}
+
+.pp-heading h2 {
+  color: var(--krushi-deep-green);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.pp-heading p {
+  margin-top: 5px;
+  color: var(--muted-gray);
+  font-size: 13px;
+}
+
+.pp-timeline-card,
+.pp-info-card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--white);
+  border: 1px solid var(--border-gray);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(16, 64, 32, 0.08);
+}
+
+.pp-timeline-card {
+  padding: 20px 18px;
+}
+
+.pp-timeline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pp-stage {
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.pp-stage:not(.last-stage)::after {
+  content: '';
+  position: absolute;
+  top: 38px;
+  bottom: -1px;
+  left: 16px;
+  width: 2px;
+  background: var(--border-gray);
+}
+
+.pp-stage.completed:not(.last-stage)::after {
+  background: var(--krushi-green);
+}
+
+.pp-stage-icon {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 1;
+  border: 2px solid var(--border-gray);
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--muted-gray);
+}
+
+.pp-stage-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.pp-stage-copy strong {
+  color: var(--dark-text);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.pp-stage-copy small {
+  color: var(--muted-gray);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.pp-stage.completed .pp-stage-icon {
+  border-color: var(--krushi-green);
+  background: var(--krushi-green);
+  color: var(--white);
+}
+
+.pp-stage.completed .pp-stage-copy strong {
+  color: var(--krushi-deep-green);
+}
+
+.pp-stage.processing {
+  margin: 4px -8px;
+  padding: 8px;
+  border: 1px solid rgba(217, 164, 65, 0.45);
+  border-radius: 12px;
+  background: #FFF8E9;
+}
+
+.pp-stage.processing:not(.last-stage)::after {
+  top: 46px;
+  bottom: -5px;
+}
+
+.pp-stage.processing .pp-stage-icon {
+  border-color: var(--harvest-accent);
+  color: #8A641C;
+  background: #FFF1C9;
+}
+
+.pp-stage.processing .pp-stage-copy strong,
+.pp-stage.processing .pp-stage-copy small {
+  color: #8A641C;
+}
+
+.pp-stage.upcoming .pp-stage-icon {
+  background: #F4FAF4;
+  color: var(--krushi-green);
+}
+
+.pp-info-card {
+  padding: 18px;
+}
+
+.pp-info-card h2 {
+  margin-bottom: 12px;
+  color: var(--krushi-deep-green);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.pp-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.pp-info-grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.pp-info-grid span {
+  color: var(--muted-gray);
+  font-size: 11px;
+}
+
+.pp-info-grid strong {
+  color: var(--dark-text);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.pp-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 14px;
+  color: #8A641C;
+  font-size: 13px;
+}
+
+.pp-status svg {
+  color: var(--harvest-accent);
+}
+
+.pp-status strong {
+  font-weight: 800;
+}
+
+.pp-complete-btn {
+  max-width: 380px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 18px;
+  background: var(--krushi-green);
+  font-size: 14px;
+}
+
+.pp-complete-btn:active {
+  background: var(--krushi-deep-green);
+}
+
+@media (max-width: 350px) {
+  .pp-stage-copy strong {
+    font-size: 13px;
+  }
+}

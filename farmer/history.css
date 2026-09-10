@@ -1,0 +1,252 @@
+/* KrushiDarpan - History Styles */
+
+.history-body {
+  background: linear-gradient(180deg, #E0F0E0 0, var(--cream-bg) 240px);
+}
+
+.history-topbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  background: var(--white);
+  border-bottom: 1px solid var(--border-gray);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.history-back-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-text);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.history-topbar h1 {
+  color: var(--dark-text);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.history-main {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 24px 20px 48px;
+}
+
+.history-heading h2 {
+  color: var(--krushi-deep-green);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.history-heading p {
+  margin-top: 5px;
+  color: var(--muted-gray);
+  font-size: 13px;
+}
+
+.history-section {
+  width: 100%;
+}
+
+.history-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 11px;
+}
+
+.history-section-heading h2 {
+  color: var(--krushi-deep-green);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.history-section-icon {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.booking-icon {
+  color: var(--krushi-green);
+  background: var(--pale-green);
+}
+
+.procurement-icon {
+  color: #8A641C;
+  background: #FFF1C9;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.history-record {
+  padding: 16px;
+  background: var(--white);
+  border: 1px solid var(--border-gray);
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(16, 64, 32, 0.06);
+}
+
+.history-record-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.history-record-title {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.history-record-title strong {
+  color: var(--dark-text);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.history-record-title span {
+  color: var(--muted-gray);
+  font-size: 12px;
+}
+
+.history-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+  padding: 5px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.status-upcoming {
+  color: #8A641C;
+  background: #FFF1C9;
+}
+
+.status-completed {
+  color: var(--krushi-green);
+  background: var(--pale-green);
+}
+
+.status-cancelled,
+.status-no-show {
+  color: #9B3B3B;
+  background: #FBE8E8;
+}
+
+.history-record-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding-top: 13px;
+}
+
+.history-record-grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.history-record-grid span,
+.history-payment-label {
+  color: var(--muted-gray);
+  font-size: 11px;
+}
+
+.history-record-grid strong {
+  color: var(--dark-text);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.history-payment-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 13px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border-gray);
+}
+
+.history-payment-status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--krushi-green);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.history-payment-status svg {
+  flex-shrink: 0;
+}
+
+.history-amount {
+  color: var(--krushi-deep-green);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.history-empty {
+  padding: 26px 16px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px dashed #BFD7C2;
+  border-radius: 14px;
+}
+
+.history-empty-icon {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 9px;
+  color: var(--krushi-green);
+  background: var(--pale-green);
+  border-radius: 50%;
+}
+
+.history-empty strong {
+  color: var(--krushi-deep-green);
+  font-size: 14px;
+}
+
+.history-empty p {
+  margin-top: 4px;
+  color: var(--muted-gray);
+  font-size: 12px;
+}
+
+@media (max-width: 350px) {
+  .history-record-top {
+    flex-direction: column;
+  }
+
+  .history-status {
+    align-self: flex-start;
+  }
+}

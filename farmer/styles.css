@@ -1,0 +1,261 @@
+/* =========================================
+   KrushiDarpan — Global Design Tokens & Reset
+   Shared across all pages (login, register, home, etc.)
+   ========================================= */
+
+:root {
+  --krushi-green: #207A40;
+  --krushi-deep-green: #104020;
+  --leaf-green: #3A9A55;
+  --pale-green: #E0F0E0;
+  --harvest-accent: #D9A441;
+  --cream-bg: #F7F7F0;
+  --white: #FFFFFF;
+  --dark-text: #1A1A1A;
+  --muted-gray: #6B6B6B;
+  --border-gray: #E2E5E2;
+
+  --font-inter: 'Inter', sans-serif;
+}
+
+/* ---- Reset ---- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-inter);
+  background-color: var(--border-gray);
+  color: var(--dark-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---- Mobile-First Application Shell ---- */
+.app-container {
+  max-width: 430px;
+  margin: 0 auto;
+  background-color: var(--cream-bg);
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.08);
+  overflow-x: hidden;
+}
+
+/* ---- Shared Utilities ---- */
+.w-full {
+  width: 100%;
+}
+
+.btn {
+  border: none;
+  font-family: var(--font-inter);
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: opacity 0.2s, background-color 0.2s;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid var(--border-gray);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+/* ---- Scrollbar Styling ---- */
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* =========================================
+   Universal Shimmer Skeletons & Loaders
+   ========================================= */
+
+@keyframes shimmerAnimation {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #EBEFEB 25%, #F4F7F4 50%, #EBEFEB 75%) !important;
+  background-size: 200% 100% !important;
+  animation: shimmerAnimation 1.6s infinite ease-in-out !important;
+  border-radius: 6px;
+  color: transparent !important;
+  border-color: transparent !important;
+  pointer-events: none !important;
+  user-select: none !important;
+  box-shadow: none !important;
+}
+
+.skeleton * {
+  visibility: hidden !important;
+}
+
+.skeleton-text {
+  height: 14px;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.skeleton-title {
+  height: 22px;
+  width: 60%;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.skeleton-circle {
+  border-radius: 50% !important;
+}
+
+.skeleton-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 18px;
+  border: 1px solid var(--border-gray);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Spinner Loader */
+.app-loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 12px;
+  color: var(--muted-gray);
+}
+
+.app-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid rgba(32, 122, 64, 0.15);
+  border-top-color: var(--krushi-green);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================
+   Universal Bottom Navigation Bar
+   ========================================= */
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 430px;
+  background: var(--white);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 8px 12px 18px;
+  border-top: 1px solid var(--border-gray);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.06);
+  z-index: 100;
+}
+
+.bnav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: var(--muted-gray);
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 500;
+  transition: color 0.2s, transform 0.15s;
+  padding: 4px 6px;
+  position: relative;
+}
+
+.bnav-item:active {
+  transform: scale(0.95);
+}
+
+.bnav-item.active {
+  color: var(--krushi-green);
+  font-weight: 700;
+}
+
+.bnav-item.active::before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  width: 24px;
+  height: 3px;
+  border-radius: 0 0 3px 3px;
+  background: var(--krushi-green);
+}
+
+.bnav-scan {
+  margin-top: -18px;
+}
+
+.scan-fab {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--krushi-green) 0%, var(--leaf-green) 100%);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(32, 122, 64, 0.35);
+  border: 3.5px solid var(--white);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.scan-fab:active {
+  transform: scale(0.92);
+  box-shadow: 0 2px 8px rgba(32, 122, 64, 0.4);
+}
+
+/* Bottom spacing helper so page content never gets covered by bottom navigation */
+.has-bottom-nav {
+  padding-bottom: 88px !important;
+}
+
+main.has-bottom-nav,
+.home-main,
+.history-main,
+.lq-main,
+.nf-main,
+.profile-main,
+.tg-main,
+.fc-main,
+.pp-main,
+.tc-main {
+  padding-bottom: 92px !important;
+}
+

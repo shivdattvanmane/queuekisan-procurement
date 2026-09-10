@@ -1,0 +1,189 @@
+/* KrushiDarpan - Payment Completed Styles */
+
+.pay-complete-body {
+  background: linear-gradient(180deg, #E0F0E0 0, var(--cream-bg) 250px);
+}
+
+.pay-complete-topbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  background: var(--white);
+  border-bottom: 1px solid var(--border-gray);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.pay-complete-back {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-text);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.pay-complete-topbar h1 {
+  color: var(--dark-text);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.pay-complete-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 28px 20px 48px;
+}
+
+.pay-complete-heading {
+  width: 100%;
+  text-align: center;
+}
+
+.pay-complete-icon {
+  width: 76px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+  color: var(--white);
+  background: var(--krushi-green);
+  border: 5px solid #D4EBD7;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(32, 122, 64, 0.22);
+}
+
+.pay-complete-heading h2 {
+  color: var(--krushi-deep-green);
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.pay-complete-heading p {
+  margin-top: 7px;
+  color: var(--muted-gray);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.pay-complete-card {
+  width: 100%;
+  max-width: 380px;
+  padding: 20px;
+  background: var(--white);
+  border: 1px solid var(--border-gray);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(16, 64, 32, 0.08);
+}
+
+.pay-complete-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 11px 12px;
+  color: var(--krushi-green);
+  background: var(--pale-green);
+  border: 1px solid #C8E4CC;
+  border-radius: 11px;
+  font-size: 13px;
+}
+
+.pay-complete-status svg {
+  flex-shrink: 0;
+}
+
+.pay-complete-status strong {
+  font-weight: 800;
+}
+
+.pay-complete-amount-label {
+  display: block;
+  margin-top: 20px;
+  color: var(--muted-gray);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pay-complete-amount {
+  display: block;
+  margin-top: 4px;
+  color: var(--krushi-deep-green);
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.pay-complete-details {
+  margin-top: 18px;
+  border-top: 1px solid var(--border-gray);
+}
+
+.pay-complete-details div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.pay-complete-details div:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.pay-complete-details span {
+  color: var(--muted-gray);
+  font-size: 12px;
+}
+
+.pay-complete-details strong {
+  color: var(--dark-text);
+  font-size: 13px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.pay-history-btn {
+  width: 100%;
+  max-width: 380px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 18px;
+  color: var(--white);
+  background: var(--krushi-green);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.pay-history-btn:active {
+  background: var(--krushi-deep-green);
+}
+
+@media (max-width: 350px) {
+  .pay-complete-card {
+    padding: 16px;
+  }
+
+  .pay-complete-details div {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .pay-complete-details strong {
+    text-align: left;
+  }
+}

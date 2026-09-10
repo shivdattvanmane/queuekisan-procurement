@@ -1,0 +1,438 @@
+/* =========================================
+   KrushiDarpan — Book Slot Styles
+   ========================================= */
+
+/* Reuse topbar, progress bar, bottom bar from select-centre.css / select-crop.css
+   Since styles.css is only variables now, we will duplicate the common structure classes
+   for standalone functionality or we can just import them. For this block-by-block,
+   we'll define them here to ensure everything works perfectly. */
+
+.sc-topbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background-color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.sc-back-btn {
+  background: none;
+  border: none;
+  color: var(--dark-text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.sc-topbar-title h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark-text);
+}
+
+.sc-topbar-title p {
+  font-size: 12px;
+  color: var(--muted-gray);
+  margin-top: 2px;
+}
+
+/* ---- Progress Bar ---- */
+.sc-progress-bar {
+  background-color: var(--white);
+  padding: 0 20px 16px;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.sc-progress-track {
+  height: 4px;
+  background-color: var(--pale-green);
+  border-radius: 2px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.sc-progress-fill {
+  height: 100%;
+  background-color: var(--krushi-green);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.sc-progress-steps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sc-step {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted-gray);
+}
+
+.sc-step.completed {
+  color: var(--leaf-green);
+}
+
+.sc-step.active {
+  color: var(--krushi-green);
+}
+
+/* ---- Main Content ---- */
+.sc-main {
+  padding: 16px 20px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ---- Summary Card ---- */
+.bs-summary-card {
+  background-color: var(--krushi-deep-green);
+  color: var(--white);
+  border-radius: 16px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 4px 16px rgba(16, 64, 32, 0.15);
+}
+
+.bs-summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bs-summary-label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.bs-summary-val {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.bs-summary-val svg {
+  color: var(--leaf-green);
+}
+
+.bs-summary-divider {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ---- Sections ---- */
+.bs-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bs-section-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dark-text);
+}
+
+/* ---- Date Selection ---- */
+.bs-date-scroll {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: -8px;
+  scrollbar-width: none;
+}
+
+.bs-date-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.bs-date-card {
+  background-color: var(--white);
+  border: 1.5px solid var(--border-gray);
+  border-radius: 14px;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 72px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.bs-date-card.selected {
+  background-color: var(--krushi-deep-green);
+  border-color: var(--krushi-deep-green);
+  color: var(--white);
+  box-shadow: 0 4px 12px rgba(16, 64, 32, 0.2);
+}
+
+.bs-date-day {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted-gray);
+}
+
+.bs-date-card.selected .bs-date-day {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.bs-date-num {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 2px 0;
+}
+
+.bs-date-month {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* ---- Smart Suggestion ---- */
+.bs-smart-suggestion {
+  background: linear-gradient(135deg, var(--pale-green) 0%, #E8F5E9 100%);
+  border: 1.5px solid rgba(32, 122, 64, 0.2);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.bs-smart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.bs-smart-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--krushi-deep-green);
+}
+
+.bs-smart-title h4 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.bs-smart-badge {
+  background-color: var(--krushi-green);
+  color: var(--white);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.bs-smart-body p {
+  font-size: 13px;
+  color: var(--dark-text);
+  margin-bottom: 8px;
+}
+
+.bs-smart-reasons {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.bs-smart-reasons li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--krushi-green);
+}
+
+.bs-smart-btn {
+  background-color: var(--white);
+  border-color: var(--krushi-green);
+  color: var(--krushi-green);
+  padding: 10px;
+  font-size: 14px;
+}
+
+.bs-smart-btn:hover {
+  background-color: var(--krushi-green);
+  color: var(--white);
+}
+
+/* ---- Time Slots ---- */
+.bs-slot-group {
+  margin-bottom: 16px;
+}
+
+.bs-slot-group-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted-gray);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-transform: uppercase;
+}
+
+.bs-slots-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.bs-slot-card {
+  background-color: var(--white);
+  border: 1.5px solid var(--border-gray);
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.bs-slot-card:hover:not(.disabled) {
+  border-color: rgba(32, 122, 64, 0.4);
+  background-color: #FAFCFA;
+}
+
+.bs-slot-card.selected {
+  background-color: var(--krushi-green);
+  border-color: var(--krushi-green);
+  color: var(--white);
+  box-shadow: 0 4px 12px rgba(32, 122, 64, 0.2);
+}
+
+.bs-slot-time {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.bs-slot-avail {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--krushi-green);
+  background-color: var(--pale-green);
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.bs-slot-card.selected .bs-slot-avail {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+}
+
+/* Disabled/Full Slot */
+.bs-slot-card.disabled {
+  opacity: 0.6;
+  background-color: var(--border-gray);
+  border-color: var(--border-gray);
+  cursor: not-allowed;
+}
+
+.bs-slot-card.disabled .bs-slot-time {
+  color: var(--muted-gray);
+}
+
+.bs-slot-card.disabled .bs-slot-avail {
+  color: var(--muted-gray);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* ---- Bottom Action Bar ---- */
+.sc-bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 430px;
+  background-color: var(--white);
+  padding: 16px 20px 24px;
+  border-top: 1px solid var(--border-gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}
+
+.sc-selected-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sc-selected-label {
+  font-size: 11px;
+  color: var(--muted-gray);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.sc-selected-val {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--krushi-deep-green);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 160px;
+}
+
+.sc-continue-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--krushi-green);
+  color: var(--white);
+  border: none;
+  padding: 14px 22px;
+  border-radius: 14px;
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(32, 122, 64, 0.25);
+}
+
+.sc-continue-btn:hover:not(.disabled) {
+  background-color: var(--krushi-deep-green);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(32, 122, 64, 0.35);
+}
+
+.sc-continue-btn:not(.disabled):active {
+  transform: scale(0.97);
+  background-color: var(--krushi-deep-green);
+}
+
+.sc-continue-btn.disabled,
+.sc-continue-btn:disabled {
+  background-color: var(--border-gray);
+  color: var(--muted-gray);
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}

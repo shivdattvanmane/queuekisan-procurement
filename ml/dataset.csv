@@ -1,0 +1,1801 @@
+text,intent,language
+Madat kara,HELP,mr_roman
+What questions can I ask?,HELP,en
+Majhi rangeetil sthiti kay aahe?,QUEUE_POSITION,mr_roman
+Help please,HELP,hi_roman
+माझ्या पुढे किती शेतकरी थांबले आहेत?,QUEUE_POSITION,mr
+Meri booking check karo,BOOKING_STATUS,hi_roman
+आप क्या कर सकते हैं?,HELP,hi
+What can I ask about QueueKisan?,HELP,en
+Mujhe help chahiye,HELP,hi_roman
+मेरी फसल के लिए कौन से कागज चाहिए?,DOCUMENTS,hi
+Hello ji,GREETING,mr_roman
+Tell me where my produce will be procured,CENTRE_INFO,en
+मी रांगेत कितव्या नंबरवर आहे?,QUEUE_POSITION,mr
+Namaste,GREETING,en
+Maine procurement ke liye kya book kiya?,CROP_INFO,hi_roman
+Queue mein mera number kya hai?,QUEUE_POSITION,hinglish
+कौन से कागज लाने हैं?,DOCUMENTS,hi
+Meri booking wapas leni hai,CANCEL_BOOKING,hinglish
+मेरे से पहले कितने टोकन हैं?,QUEUE_POSITION,hi
+Meri booking mein kaunsa anaj hai?,CROP_INFO,hi_roman
+मला काय घेऊन यायचे?,DOCUMENTS,mr
+Mere slot ke liye kaunsi crop hai?,CROP_INFO,hi_roman
+Maza token number dakhva,TOKEN_NUMBER,mr_roman
+How many minutes until my turn?,WAITING_TIME,en
+Chat shuru karein,GREETING,hi_roman
+Can I cancel confirmed slot?,CANCEL_BOOKING,hinglish
+Please guide me,HELP,en
+मेरा वेटिंग टाइम चेक करो,WAITING_TIME,hi
+Tumhi mala guide karu shakta ka?,HELP,mr_roman
+सध्या कोणता नंबर चालू आहे?,CURRENT_SERVING,mr
+Aatta konta number chalu aahe?,CURRENT_SERVING,mr_roman
+Can I see my queue position?,QUEUE_POSITION,en
+स्लॉट बुकिंग हेल्प,BOOKING_HELP,mr
+Meri crop ki procurement kaha hogi?,CENTRE_INFO,hinglish
+माझी खरेदी बुकिंग कन्फर्म आहे का?,BOOKING_STATUS,mr
+Booking process sanga,BOOKING_HELP,mr_roman
+Kya meri booking abhi valid hai?,BOOKING_STATUS,hi_roman
+Sadhya konta number chalu aahe?,CURRENT_SERVING,mr_roman
+माझी बुकिंग सुरू आहे का?,BOOKING_STATUS,mr
+शुभ प्रभात,GREETING,mr
+मेरी बारी कितने मिनट में आएगी?,WAITING_TIME,hi
+केंद्रावर कोणती कागदपत्रे लागतील?,DOCUMENTS,mr
+Mujhe booking karni hai please,BOOKING_HELP,hinglish
+Which documents are necessary?,DOCUMENTS,en
+Waiting time sanga,WAITING_TIME,mr_roman
+Booking status check karo,BOOKING_STATUS,hinglish
+Hi assistant,GREETING,mr_roman
+या वेळी कोणता टोकन अॅक्टिव्ह आहे?,CURRENT_SERVING,mr
+Meri crop info chahiye,CROP_INFO,hinglish
+Mi maza token kasa pahu?,TOKEN_NUMBER,mr_roman
+How do I select a procurement time?,BOOKING_HELP,en
+Which papers should I bring?,DOCUMENTS,en
+Rangeet majhi jaga dakhva,QUEUE_POSITION,mr_roman
+Document requirement kya hai?,DOCUMENTS,hi_roman
+Mera token kitni der mein aayega?,WAITING_TIME,hi_roman
+मला मदत हवी आहे,GREETING,mr
+Meri queue position kya hai?,QUEUE_POSITION,hi_roman
+How do I cancel my booking?,CANCEL_BOOKING,en
+Is my booking successful?,BOOKING_STATUS,en
+How can I withdraw my booking?,CANCEL_BOOKING,en
+कौन सा टोकन मुझे मिला है?,TOKEN_NUMBER,hi
+Maza token number check kara,TOKEN_NUMBER,mr_roman
+QueueKisan ke baare mein kya puch sakta hoon?,HELP,hinglish
+Maine kaunsa produce book kiya?,CROP_INFO,hi_roman
+आप मेरी कैसे मदद कर सकते हैं?,HELP,hi
+Crop information chahiye,CROP_INFO,hi_roman
+क्या लाना जरूरी है?,DOCUMENTS,hi
+What crop did I book?,CROP_INFO,en
+मी कोणते पीक केंद्रावर घेऊन जाऊ?,CROP_INFO,mr
+Can you tell my token?,TOKEN_NUMBER,hinglish
+Tell me the token assigned to me,TOKEN_NUMBER,en
+Kya mera slot book hua hai?,BOOKING_STATUS,hinglish
+Kya confirmed slot cancel kar sakte hain?,CANCEL_BOOKING,hi_roman
+Slot bookingchi paddhat sanga,BOOKING_HELP,mr_roman
+आप क्या-क्या कर सकते हैं?,HELP,hi
+Mera number kaunsa hai?,TOKEN_NUMBER,hi_roman
+Tell me the crop I selected,CROP_INFO,en
+Chatbot kaise use karna hai?,HELP,hinglish
+माझ्या पुढे किती शेतकरी आहेत?,QUEUE_POSITION,mr
+Kaunsa token abhi active hai?,CURRENT_SERVING,hi_roman
+Majhya tokenchya pudhe kiti lok aahet?,QUEUE_POSITION,mr_roman
+Can you tell me my crop?,CROP_INFO,en
+Procurement slot kaise reserve karein?,BOOKING_HELP,hinglish
+मेरा खरीद केंद्र कौन सा है?,CENTRE_INFO,hi
+Who is being served currently?,CURRENT_SERVING,en
+Current serving token batao,CURRENT_SERVING,hi_roman
+Meri booked fasal batao,CROP_INFO,hi_roman
+Aap kaunsi services dete hain?,HELP,hi_roman
+बुकिंग कैंसल करनी है,CANCEL_BOOKING,hi
+Mi konte peek centrevar gheun jau?,CROP_INFO,mr_roman
+क्या मेरी खरीद बुकिंग कन्फर्म है?,BOOKING_STATUS,hi
+Check where I stand in the queue,QUEUE_POSITION,en
+क्या मेरी बुकिंग एक्टिव है?,BOOKING_STATUS,hi
+Maza token number kuthe aahe?,TOKEN_NUMBER,mr_roman
+Maine kya fasal book ki hai?,CROP_INFO,hi_roman
+How far am I from my turn?,QUEUE_POSITION,en
+मुझे मदद चाहिए,GREETING,hi
+Booking cancel karaychi aahe,CANCEL_BOOKING,mr_roman
+Main apni fasal kahan le jaaun?,CENTRE_INFO,hi_roman
+Kya meri bari jaldi aayegi?,WAITING_TIME,hi_roman
+बताइए मेरी बुकिंग कन्फर्म है या नहीं,BOOKING_STATUS,hi
+How can I see my token?,TOKEN_NUMBER,hinglish
+अनुमानित प्रतीक्षा समय क्या है?,WAITING_TIME,hi
+माझ्या बुकिंगबद्दल सांगा,BOOKING_STATUS,mr
+Meri booking remove karni hai,CANCEL_BOOKING,hinglish
+Majhya bookingmadhe konte peek aahe?,CROP_INFO,mr_roman
+Kontya kharedi kendravar jayche?,CENTRE_INFO,mr_roman
+मला कोणता टोकन मिळाला आहे?,TOKEN_NUMBER,mr
+Majhi pali lavkar yeil ka?,WAITING_TIME,mr_roman
+Mera current booking status batao,BOOKING_STATUS,hi_roman
+काउंटरवर कोणता टोकन आहे?,CURRENT_SERVING,mr
+मेरी स्लॉट बुकिंग पक्की है?,BOOKING_STATUS,hi
+Tumhi kay kay karu shakta?,HELP,mr_roman
+सध्या कोणता टोकन सर्व्ह होत आहे?,CURRENT_SERVING,mr
+मेरी फसल की जानकारी दो,CROP_INFO,hi
+मदद करो,HELP,hi
+रांगेतील माझी स्थिती सांगा,QUEUE_POSITION,mr
+Booking start kaha se karein?,BOOKING_HELP,hinglish
+What is happening with my booking?,BOOKING_STATUS,en
+Which crop is in my booking?,CROP_INFO,en
+How to cancel a procurement slot?,CANCEL_BOOKING,hinglish
+माझ्या बुकिंगमध्ये कोणते धान्य आहे?,CROP_INFO,mr
+Namaskar chatbot,GREETING,hi_roman
+मुझे कब तक इंतजार करना पड़ेगा?,WAITING_TIME,hi
+मेरा अनुमानित इंतजार बताओ,WAITING_TIME,hi
+Kitne log mujhse aage hain?,QUEUE_POSITION,hi_roman
+Ha assistant majhi kashi madat karel?,HELP,mr_roman
+Mera current queue number kya hai?,QUEUE_POSITION,hi_roman
+बुकिंग कैसे डिलीट करें?,CANCEL_BOOKING,hi
+Which crop is assigned to my slot?,CROP_INFO,en
+Procurement slot kasa radd karaycha?,CANCEL_BOOKING,mr_roman
+Can you tell me the wait time?,WAITING_TIME,en
+Mujhe mera token bataiye,TOKEN_NUMBER,hi_roman
+माझी बुकिंग अॅक्टिव्ह आहे का?,BOOKING_STATUS,mr
+क्या मेरी बुकिंग कन्फर्म है?,BOOKING_STATUS,hi
+Kitne minutes remaining hain?,WAITING_TIME,hinglish
+Good day,GREETING,en
+माझा टोकन किती वेळात येईल?,WAITING_TIME,mr
+Konte kagad aanayche?,DOCUMENTS,mr_roman
+मेरी बुकिंग का टोकन क्या है?,TOKEN_NUMBER,hi
+Please tell required documents,DOCUMENTS,hinglish
+मुझे कितने मिनट इंतजार करना होगा?,WAITING_TIME,hi
+Slot kasa book karaycha?,BOOKING_HELP,mr_roman
+वेटिंग टाइम हवा आहे,WAITING_TIME,mr
+What happened to my booking?,BOOKING_STATUS,en
+माझी पाळी कधी येईल?,WAITING_TIME,mr
+Which documents do I need?,DOCUMENTS,en
+खरेदीची वेळ कशी निवडायची?,BOOKING_HELP,mr
+Can you explain how to book?,BOOKING_HELP,en
+मी माझा टोकन कुठे पाहू शकतो?,TOKEN_NUMBER,mr
+Meri booking successful hui hai?,BOOKING_STATUS,hi_roman
+मेरा टोकन कितनी देर में आएगा?,WAITING_TIME,hi
+How can this assistant help me?,HELP,en
+How many people are in front of me?,QUEUE_POSITION,en
+मैं कौन से सवाल पूछ सकता हूँ?,HELP,hi
+Mera procurement centre batao,CENTRE_INFO,hi_roman
+Token number bataiye,TOKEN_NUMBER,hi_roman
+Majhi slot booking pakki aahe ka?,BOOKING_STATUS,mr_roman
+क्या मेरा स्लॉट कन्फर्म हुआ है?,BOOKING_STATUS,hi
+Hello ji,GREETING,hi_roman
+Where can I see my token?,TOKEN_NUMBER,en
+Meri booking confirm hai ya nahi batao,BOOKING_STATUS,hi_roman
+Abhi kis farmer ki turn hai?,CURRENT_SERVING,hinglish
+प्रोक्योरमेंट टोकन कैसे मिलेगा?,BOOKING_HELP,hi
+Documents chahiye,DOCUMENTS,hi_roman
+Please help me book,BOOKING_HELP,hinglish
+Namaskar chatbot,GREETING,mr_roman
+प्रोक्योरमेंट स्लॉट कसा बुक करायचा?,BOOKING_HELP,mr
+क्या आप मेरी मदद कर सकते हैं?,GREETING,hi
+Token currently running kaunsa hai?,CURRENT_SERVING,hinglish
+यह चैटबॉट कैसे इस्तेमाल करें?,HELP,hi
+Shubh din,GREETING,hi_roman
+Majhi booking dakhva,BOOKING_STATUS,mr_roman
+Hello assistant,GREETING,mr_roman
+Mala konte purave anayche?,DOCUMENTS,mr_roman
+तुम्ही माझे पीक सांगू शकता का?,CROP_INFO,mr
+Mera centre dikhao,CENTRE_INFO,hi_roman
+Please show my booking token,TOKEN_NUMBER,en
+Mujhe kitni der wait karna hoga?,WAITING_TIME,hi_roman
+Mujhe booking mein help chahiye,BOOKING_HELP,hi_roman
+Hey,GREETING,hinglish
+Kya aap mera centre bata sakte hain?,CENTRE_INFO,hi_roman
+मी किती वेळात सर्व्ह होईन?,WAITING_TIME,mr
+Majhya tokenchi mahiti havi aahe,TOKEN_NUMBER,mr_roman
+Centre par kaunse papers submit karne hain?,DOCUMENTS,hinglish
+मेरे केंद्र का नाम बताइए,CENTRE_INFO,hi
+सध्याचा टोकन कोणता आहे?,CURRENT_SERVING,mr
+Konte papers anave lagtil?,DOCUMENTS,mr_roman
+Now serving token batao,CURRENT_SERVING,hi_roman
+Main apni crop ka slot kaise book karun?,BOOKING_HELP,hi_roman
+Required documents please,DOCUMENTS,en
+नमस्ते चैटबॉट,GREETING,hi
+नमस्कार जी,GREETING,mr
+Majhyapudhe kiti jan aahet?,QUEUE_POSITION,mr_roman
+Procurement ke liye kya docs chahiye?,DOCUMENTS,hinglish
+अभी कितना इंतजार है?,WAITING_TIME,hi
+तुम्ही माझ्या बुकिंगमध्ये मदत करू शकता का?,HELP,mr
+क्या मैं ऐप से स्लॉट बुक कर सकता हूँ?,BOOKING_HELP,hi
+Meri token ki waiting kitni hai?,WAITING_TIME,hinglish
+माझे नियुक्त खरेदी केंद्र कोणते आहे?,CENTRE_INFO,mr
+Mi kharedisathi kay book kele?,CROP_INFO,mr_roman
+What token is currently running?,CURRENT_SERVING,en
+हाय,GREETING,mr
+आणखी किती वेळ थांबायचे?,WAITING_TIME,mr
+Which crop is linked to my booking?,CROP_INFO,hinglish
+मेरी बुकिंग में कौन सी फसल दर्ज है?,CROP_INFO,hi
+माझ्यासाठी कोणते पीक निवडले आहे?,CROP_INFO,mr
+टोकन सर्व्ह होण्यासाठी किती वेळ आहे?,WAITING_TIME,mr
+क्या कन्फर्म स्लॉट कैंसल कर सकते हैं?,CANCEL_BOOKING,hi
+What token is being served now?,CURRENT_SERVING,en
+Which centre should I go to?,CENTRE_INFO,hinglish
+मैं अपनी फसल का स्लॉट कैसे बुक करूं?,BOOKING_HELP,hi
+Slot reserve karna hai,BOOKING_HELP,hinglish
+What position am I in the queue?,QUEUE_POSITION,en
+मुझे अपना टोकन चाहिए,TOKEN_NUMBER,hi
+Procurement booking cancel karni hai,CANCEL_BOOKING,hinglish
+Mujhe help chahiye,HELP,hinglish
+Mujhe kya carry karna hai?,DOCUMENTS,hinglish
+I need to cancel my slot,CANCEL_BOOKING,en
+Slot ka status kya hai?,BOOKING_STATUS,hinglish
+Mera centre ka naam kya hai?,CENTRE_INFO,hinglish
+मेरा केंद्र कहाँ है?,CENTRE_INFO,hi
+स्लॉट बुकिंग हेल्प,BOOKING_HELP,hi
+माझी पाळी कधी येणार?,WAITING_TIME,mr
+कौन से केंद्र पर रिपोर्ट करना है?,CENTRE_INFO,hi
+Booking process batao,BOOKING_HELP,hinglish
+स्लॉट बुक करण्यासाठी मदत करा,BOOKING_HELP,mr
+Mala konti kagadpatre havi aahet?,DOCUMENTS,mr_roman
+Kitne log mujhse aage hain?,QUEUE_POSITION,hinglish
+My token number,TOKEN_NUMBER,en
+Current serving number please,CURRENT_SERVING,en
+Booking process batao,BOOKING_HELP,hi_roman
+Meri booking ka centre kaunsa hai?,CENTRE_INFO,hi_roman
+Meri booking ka number kya hai?,TOKEN_NUMBER,hi_roman
+मेरी बुक की गई फसल बताओ,CROP_INFO,hi
+Aatta konta token bolavla aahe?,CURRENT_SERVING,mr_roman
+मैं कितनी देर में सर्व हो जाऊंगा?,WAITING_TIME,hi
+Waiting time chahiye,WAITING_TIME,hi_roman
+आत्ता कोणता टोकन बोलावला आहे?,CURRENT_SERVING,mr
+What should I bring?,DOCUMENTS,hinglish
+नवीन बुकिंग कशी करायची?,BOOKING_HELP,mr
+Namaskar,GREETING,hinglish
+मला बुकिंग कॅन्सलेशनची मदत हवी आहे,CANCEL_BOOKING,mr
+Please cancel my booking,CANCEL_BOOKING,hinglish
+मैं अपनी बुकिंग कैसे रद्द करूं?,CANCEL_BOOKING,hi
+Majha token number kay aahe?,TOKEN_NUMBER,mr_roman
+Ya veli konta token active aahe?,CURRENT_SERVING,mr_roman
+तुम्ही माझी कशी मदत करू शकता?,HELP,mr
+तुम्ही काय करू शकता?,HELP,mr
+सध्या कोणता टोकन चालू आहे?,CURRENT_SERVING,mr
+Crop ka naam batao,CROP_INFO,hinglish
+Assigned centre check karo,CENTRE_INFO,hinglish
+Madatiche options dakhva,HELP,mr_roman
+Mera slot sahi hai?,BOOKING_STATUS,hi_roman
+Required documents batao,DOCUMENTS,hinglish
+Mujhe kaunse papers chahiye?,DOCUMENTS,hi_roman
+माझी बुकिंग कशी रद्द करायची?,CANCEL_BOOKING,mr
+Maze assigned kharedi kendra konte aahe?,CENTRE_INFO,mr_roman
+कितने लोग मुझसे आगे हैं?,QUEUE_POSITION,hi
+बुकिंग कशी करायची?,BOOKING_HELP,mr
+अभी कौन सा टोकन प्रोसेस हो रहा है?,CURRENT_SERVING,hi
+Procurement slot kasa book karaycha?,BOOKING_HELP,mr_roman
+माझे रिझर्वेशन कॅन्सल करायचे आहे,CANCEL_BOOKING,mr
+Cancel karne ke liye kya karna hoga?,CANCEL_BOOKING,hi_roman
+माझ्या पुढे किती लोक आहेत?,QUEUE_POSITION,mr
+Meri turn kab aayegi?,WAITING_TIME,hinglish
+माझ्या पिकासाठी कोणते कागद लागतात?,DOCUMENTS,mr
+तुम्ही कोणती माहिती देऊ शकता?,HELP,mr
+What crop did I register?,CROP_INFO,en
+मेरी बुकिंग का क्या हुआ?,BOOKING_STATUS,hi
+Sadhyachya tokenchi mahiti dya,CURRENT_SERVING,mr_roman
+Where should I take my crop?,CENTRE_INFO,en
+Majhi booking confirm aahe ka te sanga,BOOKING_STATUS,mr_roman
+Meri booking ki crop dikhao,CROP_INFO,hi_roman
+New booking kaise banani hai?,BOOKING_HELP,hinglish
+Majhya pikachi kharedi kuthe hoil?,CENTRE_INFO,mr_roman
+Majha token konta aahe?,TOKEN_NUMBER,mr_roman
+ID proof chahiye kya?,DOCUMENTS,hinglish
+Shubh dupar,GREETING,mr_roman
+माझ्यासाठी कोणते केंद्र निवडले आहे?,CENTRE_INFO,mr
+माझे खरेदी केंद्र कोणते आहे?,CENTRE_INFO,mr
+Hello assistant,GREETING,en
+How much time is left?,WAITING_TIME,en
+Tell me the required documents,DOCUMENTS,en
+Which farmer token is currently in service?,CURRENT_SERVING,en
+Procurement booking kaise karein?,BOOKING_HELP,hinglish
+Majhya booking centreche nav kay aahe?,CENTRE_INFO,mr_roman
+Yeh booking hatani hai,CANCEL_BOOKING,hi_roman
+What should I carry to the centre?,DOCUMENTS,en
+Mala kuthe jayche aahe?,CENTRE_INFO,mr_roman
+खरीद के लिए कौन से दस्तावेज चाहिए?,DOCUMENTS,hi
+मेरा स्लॉट बुक हुआ है क्या?,BOOKING_STATUS,hi
+Mere token ke saath kaunsi crop hai?,CROP_INFO,hinglish
+कौन से दस्तावेज आवश्यक हैं?,DOCUMENTS,hi
+Chat suru kara,GREETING,mr_roman
+Abhi kitna wait hai?,WAITING_TIME,hi_roman
+Hi there,GREETING,hinglish
+Kya meri booking active hai?,BOOKING_STATUS,hi_roman
+Slot kasa reserve karaycha?,BOOKING_HELP,mr_roman
+How do I remove this booking?,CANCEL_BOOKING,hinglish
+Status of my booking please,BOOKING_STATUS,hinglish
+Can you check my queue?,QUEUE_POSITION,hinglish
+रांगेत माझा नंबर कितवा आहे?,QUEUE_POSITION,mr
+Meri line ki position batao,QUEUE_POSITION,hi_roman
+हाय असिस्टेंट,GREETING,hi
+Mi app madhun slot book karu shakto ka?,BOOKING_HELP,mr_roman
+Majhya bookingcha token kay aahe?,TOKEN_NUMBER,mr_roman
+What crop is in my booking?,CROP_INFO,hinglish
+मेरा टोकन नंबर चाहिए,TOKEN_NUMBER,hi
+मी कोणते उत्पादन बुक केले?,CROP_INFO,mr
+स्लॉट कॅन्सल करण्याची पद्धत सांगा,CANCEL_BOOKING,mr
+Majhi booking ajun valid aahe ka?,BOOKING_STATUS,mr_roman
+QueueKisan mein kya help milegi?,HELP,hinglish
+Majhya pikासाठी konte kagad lagtat?,DOCUMENTS,mr_roman
+मेरा नियुक्त खरीद केंद्र क्या है?,CENTRE_INFO,hi
+Majhya bookingcha number konta aahe?,TOKEN_NUMBER,mr_roman
+Show me how to book a slot,BOOKING_HELP,en
+माझा स्लॉट बुक झाला आहे का?,BOOKING_STATUS,mr
+Maza centre dakhva,CENTRE_INFO,mr_roman
+Which documents are necessary?,DOCUMENTS,hinglish
+क्या मेरी बुकिंग चालू है?,BOOKING_STATUS,hi
+माझ्या बुकिंगची स्थिती काय आहे?,BOOKING_STATUS,mr
+माझी बुकिंग कॅन्सल करा,CANCEL_BOOKING,mr
+Jo token sadhya chalu aahe to konta?,CURRENT_SERVING,mr_roman
+How can I register for a slot?,BOOKING_HELP,en
+Now kaunsa token chal raha hai?,CURRENT_SERVING,hinglish
+मी कोणते पीक नोंदवले आहे?,CROP_INFO,mr
+माझा सध्याचा क्यू नंबर काय आहे?,QUEUE_POSITION,mr
+Centervar konti kagadpatre lagtil?,DOCUMENTS,mr_roman
+शुभ दुपार,GREETING,mr
+क्या मेरा स्लॉट मंजूर हुआ है?,BOOKING_STATUS,hi
+Rangeet maza number kiti aahe?,QUEUE_POSITION,mr_roman
+Check the current serving token,CURRENT_SERVING,en
+Tumhi konti mahiti deu shakta?,HELP,mr_roman
+Meri reservation status batao,BOOKING_STATUS,hi_roman
+Abhi kaunsa token serve ho raha hai?,CURRENT_SERVING,hi_roman
+मेरा टोकन नंबर कहाँ है?,TOKEN_NUMBER,hi
+Can you tell my waiting time?,WAITING_TIME,hinglish
+Sadhyacha token hava aahe,CURRENT_SERVING,mr_roman
+Maza centre kuthe aahe?,CENTRE_INFO,mr_roman
+Mi slot kasa reserve karu?,BOOKING_HELP,mr_roman
+आवश्यक कागद सांगा,DOCUMENTS,mr
+पिकाची माहिती हवी आहे,CROP_INFO,mr
+कोणता टोकन अॅक्टिव्ह आहे?,CURRENT_SERVING,mr
+Mujhe kab tak rukna padega?,WAITING_TIME,hinglish
+Kya aap meri help kar sakte hain?,GREETING,hi_roman
+Hi,GREETING,en
+Mere liye kaunsa market centre hai?,CENTRE_INFO,hi_roman
+Booking kashi delete karaychi?,CANCEL_BOOKING,mr_roman
+Meri booking ka status kya hai?,BOOKING_STATUS,hinglish
+Queue mein meri jagah dikhao,QUEUE_POSITION,hi_roman
+मला स्लॉट बुक करायचा आहे,BOOKING_HELP,mr
+माझी क्यू पोजीशन काय आहे?,QUEUE_POSITION,mr
+Abhi kaunsa number call hua?,CURRENT_SERVING,hinglish
+Documents list batao,DOCUMENTS,hinglish
+वर्तमान टोकन चाहिए,CURRENT_SERVING,hi
+Hello chatbot,GREETING,en
+मी कोणते पीक बुक केले?,CROP_INFO,mr
+When will my token be called?,WAITING_TIME,hinglish
+स्लॉट कुठून बुक होईल?,BOOKING_HELP,mr
+Meri booking dikhao,BOOKING_STATUS,hi_roman
+Kitna time baki hai?,WAITING_TIME,hi_roman
+स्लॉट बुक करने में मदद चाहिए,BOOKING_HELP,hi
+मैं यहाँ हूँ,GREETING,hi
+Mere aage kitne log hain?,QUEUE_POSITION,hi_roman
+How long before my number?,WAITING_TIME,hinglish
+Now serving number chahiye,CURRENT_SERVING,hinglish
+Majhya slot sathi konte peek aahe?,CROP_INFO,mr_roman
+What should I do to cancel?,CANCEL_BOOKING,en
+Majhi booking yashasvi zali ka?,BOOKING_STATUS,mr_roman
+When should I expect my turn?,WAITING_TIME,en
+Hello sir,GREETING,en
+Please help me with slot booking,BOOKING_HELP,en
+Kaunse documents chahiye?,DOCUMENTS,hi_roman
+Apna slot kaise cancel karein?,CANCEL_BOOKING,hi_roman
+Meri centre information chahiye,CENTRE_INFO,hi_roman
+मेरा स्लॉट सही है या नहीं?,BOOKING_STATUS,hi
+माझा नंबर कधी बोलावला जाईल?,WAITING_TIME,mr
+Booking cancel karni hai,CANCEL_BOOKING,hi_roman
+Meri booking ka status kya hai?,BOOKING_STATUS,hi_roman
+तुम्ही काय करू शकता?,HELP,mr
+माझी बुकिंग कॅन्सल करण्यासाठी मदत करा,CANCEL_BOOKING,mr
+Meri turn se pehle kitne kisan hain?,QUEUE_POSITION,hinglish
+Is my turn coming soon?,WAITING_TIME,en
+Hi sir,GREETING,hinglish
+Mujhe kitne minutes wait karna hoga?,WAITING_TIME,hi_roman
+Waiting time hava aahe,WAITING_TIME,mr_roman
+What is the current status of my slot?,BOOKING_STATUS,en
+Tell me my booked crop,CROP_INFO,en
+Hi assistant,GREETING,hi_roman
+How can you help me?,HELP,hinglish
+My waiting time please,WAITING_TIME,en
+Procurement time kaise choose karu?,BOOKING_HELP,hinglish
+माझ्या बुकिंगचे पीक दाखवा,CROP_INFO,mr
+Aap farmers ki kaise help karte hain?,HELP,hi_roman
+Mera market centre kaunsa hai?,CENTRE_INFO,hinglish
+मेरी बुकिंग का हाल बताओ,BOOKING_STATUS,hi
+Abhi kaunse token ki service ho rahi hai?,CURRENT_SERVING,hi_roman
+कौन से दस्तावेज तैयार रखें?,DOCUMENTS,hi
+Madatiche options dakhva,HELP,mr_roman
+माझ्या आधी किती लोकांची पाळी आहे?,QUEUE_POSITION,mr
+Kya mujhe koi documents laane honge?,DOCUMENTS,hi_roman
+Line mein meri jagah kya hai?,QUEUE_POSITION,hi_roman
+माझा प्रतीक्षा वेळ किती आहे?,WAITING_TIME,mr
+Show my place in the queue,QUEUE_POSITION,en
+Mala madat havi aahe,HELP,mr_roman
+Meri fasal ke liye kaunse papers chahiye?,DOCUMENTS,hi_roman
+Mera estimated wait batao,WAITING_TIME,hinglish
+How many farmers mere aage hain?,QUEUE_POSITION,hinglish
+Majhya centrechi mahiti havi aahe,CENTRE_INFO,mr_roman
+माझ्या केंद्राचे नाव सांगा,CENTRE_INFO,mr
+मुझे किस केंद्र पर जाना है?,CENTRE_INFO,hi
+Mere liye kaunsi crop select hui hai?,CROP_INFO,hi_roman
+Namaskar,GREETING,mr_roman
+Current token sanga,CURRENT_SERVING,mr_roman
+Please tell my crop,CROP_INFO,hinglish
+Majhya bookingchi mahiti sanga,BOOKING_STATUS,mr_roman
+What is the centre for my booking?,CENTRE_INFO,en
+माझी क्यू पोजीशन तपासा,QUEUE_POSITION,mr
+Booking ke liye mera token kya hai?,TOKEN_NUMBER,hi_roman
+Kya mera slot confirm hua hai?,BOOKING_STATUS,hi_roman
+When will my number be called?,WAITING_TIME,en
+Has my slot been approved?,BOOKING_STATUS,en
+Meri fasal bataiye,CROP_INFO,hi_roman
+Kagadpatranchi mahiti havi aahe,DOCUMENTS,mr_roman
+How many farmers are before me?,QUEUE_POSITION,en
+How many minutes till my turn?,WAITING_TIME,hinglish
+नमस्कार चॅटबॉट,GREETING,mr
+कोणती कागदपत्रे तयार ठेवावी?,DOCUMENTS,mr
+ओळखपत्र लागते का?,DOCUMENTS,mr
+मेरा इंतजार का समय कितना है?,WAITING_TIME,hi
+Mala booking cancellationchi madat havi aahe,CANCEL_BOOKING,mr_roman
+सध्या कोणता टोकन प्रोसेस होत आहे?,CURRENT_SERVING,mr
+वर्तमान टोकन की जानकारी दो,CURRENT_SERVING,hi
+स्लॉट बुकिंगसाठी मदत हवी आहे,BOOKING_HELP,mr
+Can I cancel my booking?,CANCEL_BOOKING,en
+Which market centre should I visit?,CENTRE_INFO,en
+Mala support hava aahe,HELP,mr_roman
+Kya mera slot book hua hai?,BOOKING_STATUS,hi_roman
+Can I book from the app?,BOOKING_HELP,hinglish
+Queue madhye majhi jaga konti?,QUEUE_POSITION,mr_roman
+माझ्या बुकिंग सेंटरचे नाव काय आहे?,CENTRE_INFO,mr
+मैं अपना टोकन कैसे देखूं?,TOKEN_NUMBER,hi
+मला अजून किती वेळ थांबावे लागेल?,WAITING_TIME,mr
+Hello sir,GREETING,hi_roman
+नमस्ते,GREETING,hi
+Abhi kaunsa token process ho raha hai?,CURRENT_SERVING,hi_roman
+Queue mein meri jagah kya hai?,QUEUE_POSITION,hinglish
+Booking status hava aahe,BOOKING_STATUS,mr_roman
+Majhi booking confirm aahe ka?,BOOKING_STATUS,mr_roman
+Majhya bookingbaddal sanga,BOOKING_STATUS,mr_roman
+आप किसानों की कैसे मदद करते हैं?,HELP,hi
+I want to schedule a slot,BOOKING_HELP,en
+What can you do?,HELP,en
+Abhi kaunsa number chal raha hai?,CURRENT_SERVING,hi_roman
+Radd karanyachi prakriya kay aahe?,CANCEL_BOOKING,mr_roman
+Majha waiting time kiti aahe?,WAITING_TIME,mr_roman
+Majhya current bookingchi sthiti sanga,BOOKING_STATUS,mr_roman
+Meri fasal ki procurement kahan hogi?,CENTRE_INFO,hi_roman
+Where can I book?,BOOKING_HELP,hinglish
+Tell me how long I need to wait,WAITING_TIME,en
+या वेळी कोणता नंबर घेतला जात आहे?,CURRENT_SERVING,mr
+Slot cancellation ka method batao,CANCEL_BOOKING,hinglish
+बुकिंग स्टेटस हवा आहे,BOOKING_STATUS,mr
+My queue position please,QUEUE_POSITION,en
+Kaha jaana hai procurement ke liye?,CENTRE_INFO,hinglish
+Hey,GREETING,en
+Majhya pudhe kiti token aahet?,QUEUE_POSITION,mr_roman
+Tumhi maze peek sangu shakta ka?,CROP_INFO,mr_roman
+Which crop did I book?,CROP_INFO,hinglish
+बुकिंग कॅन्सल करायची आहे,CANCEL_BOOKING,mr
+Procurement time kaise choose karun?,BOOKING_HELP,hi_roman
+Hi,GREETING,hinglish
+Booking kahan se cancel hogi?,CANCEL_BOOKING,hinglish
+Majhya bookingche peek dakhva,CROP_INFO,mr_roman
+मेरी बारी कब होगी?,WAITING_TIME,hi
+माझ्या टोकनशी कोणते पीक जोडले आहे?,CROP_INFO,mr
+Mala maza token number hava aahe,TOKEN_NUMBER,mr_roman
+दस्तावेजों की जानकारी चाहिए,DOCUMENTS,hi
+Centre par kya documents leke jaun?,DOCUMENTS,hinglish
+How many people are ahead of my token?,QUEUE_POSITION,en
+Booking cancel karni hai,CANCEL_BOOKING,hinglish
+Which centre do I report to?,CENTRE_INFO,en
+Mujhe help chahiye,GREETING,hinglish
+Which number is being served?,CURRENT_SERVING,hinglish
+Kya lana zaroori hai?,DOCUMENTS,hi_roman
+Tumhi majhya bookingmadhe madat karu shakta ka?,HELP,mr_roman
+क्या मुझे कोई दस्तावेज लाने होंगे?,DOCUMENTS,hi
+Majhi booking active aahe ka?,BOOKING_STATUS,mr_roman
+Mere token ke aage kitne log hain?,QUEUE_POSITION,hinglish
+Maza token sanga,TOKEN_NUMBER,mr_roman
+Can my booking be cancelled?,CANCEL_BOOKING,en
+Confirm slot cancel karta yeto ka?,CANCEL_BOOKING,mr_roman
+मेरी लाइन पोजीशन बताइए,QUEUE_POSITION,hi
+माझ्या बुकिंगमध्ये कोणते पीक आहे?,CROP_INFO,mr
+Do I need any ID documents?,DOCUMENTS,en
+Current token please,CURRENT_SERVING,hinglish
+I want to schedule a slot,BOOKING_HELP,hinglish
+आपकी सुविधाएं क्या हैं?,HELP,hi
+Mala kontya kendravar jayche aahe?,CENTRE_INFO,mr_roman
+Mera token number check karo,TOKEN_NUMBER,hi_roman
+Shubh prabhat,GREETING,mr_roman
+Mala bookingchi madat havi aahe,BOOKING_HELP,mr_roman
+कृपया मार्गदर्शन करें,HELP,hi
+Mera assigned procurement centre kya hai?,CENTRE_INFO,hi_roman
+तुम्ही शेतकऱ्यांना कशी मदत करता?,HELP,mr
+Aapke features kya hain?,HELP,hi_roman
+Kaunse kagaz laane hain?,DOCUMENTS,hi_roman
+Hi there assistant,GREETING,en
+अपना स्लॉट कैसे कैंसल करें?,CANCEL_BOOKING,hi
+Majhya pikachi mahiti dya,CROP_INFO,mr_roman
+मेरे लिए कौन सा खरीद केंद्र है?,CENTRE_INFO,hi
+Meri booking mein kaunsi fasal hai?,CROP_INFO,hinglish
+क्या मैं अपनी बुकिंग रद्द कर सकता हूँ?,CANCEL_BOOKING,hi
+What information can you give?,HELP,hinglish
+हॅलो सर,GREETING,mr
+What crop is associated with my booking?,CROP_INFO,en
+Check my booking status,BOOKING_STATUS,en
+Mujhe booking cancellation help chahiye,CANCEL_BOOKING,hinglish
+मला एक स्लॉट शेड्यूल करायचा आहे,BOOKING_HELP,mr
+Meri booking ka kya hua?,BOOKING_STATUS,hi_roman
+मुझे स्लॉट कैंसल करना है,CANCEL_BOOKING,hi
+Meri booking successful hui?,BOOKING_STATUS,hinglish
+Greetings,GREETING,en
+Which number is currently called?,CURRENT_SERVING,en
+Namaste,GREETING,hinglish
+मैं खरीद का समय कैसे चुनूं?,BOOKING_HELP,hi
+वेटिंग टाइम चाहिए,WAITING_TIME,hi
+Kaunse documents chahiye?,DOCUMENTS,hinglish
+Help me book a procurement slot,BOOKING_HELP,en
+Slotsathi nondani kashi karaychi?,BOOKING_HELP,mr_roman
+नाऊ सर्व्हिंग टोकन सांगा,CURRENT_SERVING,mr
+Papers ki info chahiye,DOCUMENTS,hinglish
+मी कोणते पीक निवडले?,CROP_INFO,mr
+मी बुकिंग कशी करू?,BOOKING_HELP,mr
+Slot booking help,BOOKING_HELP,mr_roman
+इंतजार का समय बताओ,WAITING_TIME,hi
+Check my queue position,QUEUE_POSITION,en
+Shubh dopahar,GREETING,hi_roman
+Help options batao,HELP,hinglish
+काय आणणे आवश्यक आहे?,DOCUMENTS,mr
+Booking status please,BOOKING_STATUS,en
+Required documents bataiye,DOCUMENTS,hi_roman
+Main apna token kaise dekhun?,TOKEN_NUMBER,hi_roman
+Tell me what I need to bring,DOCUMENTS,en
+Which produce is booked?,CROP_INFO,hinglish
+Crop information dikhao,CROP_INFO,hinglish
+Help me cancel my booking,CANCEL_BOOKING,en
+Help please,HELP,en
+Documents kaunse hain?,DOCUMENTS,hinglish
+Majha token kay aahe?,TOKEN_NUMBER,mr_roman
+My token number please,TOKEN_NUMBER,en
+What can I ask you?,HELP,en
+मेरी बुकिंग का केंद्र कौन सा है?,CENTRE_INFO,hi
+Which is my token?,TOKEN_NUMBER,en
+माझा अंदाजे वेटिंग टाइम सांगा,WAITING_TIME,mr
+Main kaunse questions pooch sakta hoon?,HELP,hi_roman
+QueueKisan के बारे में क्या पूछ सकता हूँ?,HELP,hi
+हा चॅटबॉट कसा वापरायचा?,HELP,mr
+Please help me cancel the slot,CANCEL_BOOKING,en
+Can you tell me my centre?,CENTRE_INFO,en
+Namaste,GREETING,hi_roman
+Can I cancel my booking?,CANCEL_BOOKING,hinglish
+How can I make a booking?,BOOKING_HELP,en
+Centre information chahiye,CENTRE_INFO,hi_roman
+Maza procurement centre konta aahe?,CENTRE_INFO,mr_roman
+Mere aage kitne token hain?,QUEUE_POSITION,hi_roman
+मैं कौन सी फसल केंद्र पर ले जाऊँ?,CROP_INFO,hi
+Yeh assistant meri kaise madad karega?,HELP,hi_roman
+Meri booking mein kaunsi crop registered hai?,CROP_INFO,hi_roman
+मी माझी बुकिंग रद्द करू शकतो का?,CANCEL_BOOKING,mr
+मी कोणते प्रश्न विचारू शकतो?,HELP,mr
+Is my slot confirmed?,BOOKING_STATUS,hinglish
+हैलो असिस्टेंट,GREETING,hi
+Booking parat kashi ghaychi?,CANCEL_BOOKING,mr_roman
+Crop ka slot kaise book karun?,BOOKING_HELP,hinglish
+What is my queue token?,TOKEN_NUMBER,en
+Mala madat havi aahe,GREETING,mr_roman
+अभी सर्विंग नंबर क्या है?,CURRENT_SERVING,hi
+Mi rangeet kityavya numbervar aahe?,QUEUE_POSITION,mr_roman
+Which market yard is assigned to me?,CENTRE_INFO,hinglish
+Majhya pudhe kiti lok aahet?,QUEUE_POSITION,mr_roman
+Mujhe slot book karna hai,BOOKING_HELP,hinglish
+Tumhi kashi madat deta?,HELP,mr_roman
+Hello chatbot,GREETING,mr_roman
+मेरी वर्तमान बुकिंग स्थिति बताओ,BOOKING_STATUS,hi
+What is the status of my booking?,BOOKING_STATUS,en
+Mujhe kis market centre par jana hai?,CENTRE_INFO,hi_roman
+Now serving token please,CURRENT_SERVING,en
+What documents are needed for my booking?,DOCUMENTS,en
+आप कौन सी सेवाएं देते हैं?,HELP,hi
+Slot select kaise karna hai?,BOOKING_HELP,hinglish
+Mera waiting time check karo,WAITING_TIME,hi_roman
+Hello,GREETING,en
+Kaunsa token active hai abhi?,CURRENT_SERVING,hinglish
+मैंने खरीद के लिए क्या बुक किया?,CROP_INFO,hi
+मेरी बुकिंग दिखाओ,BOOKING_STATUS,hi
+Maza centre sanga,CENTRE_INFO,mr_roman
+मेरा टोकन नंबर क्या है?,TOKEN_NUMBER,hi
+Tell me my estimated wait,WAITING_TIME,en
+Mera centre kahan hai?,CENTRE_INFO,hi_roman
+What number am I in the line?,QUEUE_POSITION,en
+कोणत्या केंद्रावर हजर राहायचे?,CENTRE_INFO,mr
+मैं अपना टोकन कहाँ देख सकता हूँ?,TOKEN_NUMBER,hi
+What is the now-serving token?,CURRENT_SERVING,en
+वर्तमान टोकन कौन सा है?,CURRENT_SERVING,hi
+हॅलो मॅडम,GREETING,mr
+Which procurement centre is assigned to me?,CENTRE_INFO,en
+मेरी बुकिंग में कौन सा अनाज है?,CROP_INFO,hi
+Do I have a confirmed booking?,BOOKING_STATUS,en
+Mere aage kitne kisan hain?,QUEUE_POSITION,hi_roman
+माझ्या पिकाची खरेदी कुठे होईल?,CENTRE_INFO,mr
+Tell me how to cancel my slot,CANCEL_BOOKING,en
+Can I know my estimated wait?,WAITING_TIME,en
+Am I near the front of the queue?,QUEUE_POSITION,en
+शुभ प्रभात,GREETING,hi
+Kis centre par report karna hai?,CENTRE_INFO,hi_roman
+मेरे टोकन की जानकारी चाहिए,TOKEN_NUMBER,hi
+Hello assistant,GREETING,hinglish
+Mujhe apna token chahiye,TOKEN_NUMBER,hi_roman
+मेरी क्यू पोजीशन चेक करो,QUEUE_POSITION,hi
+कोणते पेपर लागतात?,DOCUMENTS,mr
+Majha number konta aahe?,TOKEN_NUMBER,mr_roman
+क्यू में मेरा स्थान क्या है?,QUEUE_POSITION,hi
+Main kya pooch sakta hoon?,HELP,hinglish
+Mujhe mera token number batao,TOKEN_NUMBER,hi_roman
+Hey QueueKisan,GREETING,hinglish
+Shubh prabhat,GREETING,hi_roman
+मेरी सेंटर जानकारी चाहिए,CENTRE_INFO,hi
+Which produce is in my booking?,CROP_INFO,en
+Can you find my token number?,TOKEN_NUMBER,en
+Meri booking centre ka naam kya hai?,CENTRE_INFO,hi_roman
+Hi ma'am,GREETING,hinglish
+नमस्कार QueueKisan,GREETING,mr
+अभी कौन सा टोकन चल रहा है?,CURRENT_SERVING,hi
+Mera queue position kya hai?,QUEUE_POSITION,hi_roman
+मेरे आगे कितने किसान इंतजार कर रहे हैं?,QUEUE_POSITION,hi
+माझ्यासाठी कोणता टोकन आहे?,TOKEN_NUMBER,mr
+Sadhya konta token chalu aahe?,CURRENT_SERVING,mr_roman
+Mera token kaunsa hai?,TOKEN_NUMBER,hi_roman
+Mera slot cancel kar do,CANCEL_BOOKING,hinglish
+Maza current queue number kay aahe?,QUEUE_POSITION,mr_roman
+Meri booking information chahiye,BOOKING_STATUS,hinglish
+Procurement ke liye maine kya book kiya?,CROP_INFO,hinglish
+क्या मेरा स्लॉट एक्टिव है?,BOOKING_STATUS,hi
+Mujhe kab tak wait karna padega?,WAITING_TIME,hi_roman
+Mi rangeet kuthe aahe?,QUEUE_POSITION,mr_roman
+How many turns until me?,QUEUE_POSITION,en
+मेरा प्रोक्योरमेंट सेंटर कौन सा है?,CENTRE_INFO,hi
+माझ्या पिकाचा स्लॉट कसा बुक करू?,BOOKING_HELP,mr
+माझी बुकिंग कन्फर्म आहे का ते सांगा,BOOKING_STATUS,mr
+Konti kagadpatre tayar thevavi?,DOCUMENTS,mr_roman
+How do I delete my booking?,CANCEL_BOOKING,en
+Mujhe assistance chahiye,HELP,hinglish
+मैं लाइन में कहाँ हूँ?,QUEUE_POSITION,hi
+Majhi reservation sthiti sanga,BOOKING_STATUS,mr_roman
+क्या मेरी बुकिंग अभी भी मान्य है?,BOOKING_STATUS,hi
+Namaskar,GREETING,hi_roman
+माझे केंद्र कुठे आहे?,CENTRE_INFO,mr
+Hello sir,GREETING,mr_roman
+कितना समय बाकी है?,WAITING_TIME,hi
+Kagadpatranchi garaj kay aahe?,DOCUMENTS,mr_roman
+नमस्कार,GREETING,hi
+Aap meri kis tarah help kar sakte ho?,HELP,hinglish
+बुकिंग प्रोसेस सांगा,BOOKING_HELP,mr
+Help options dikhaao,HELP,hi_roman
+मदद चाहिए,HELP,hi
+सध्याचा टोकन हवा आहे,CURRENT_SERVING,mr
+Kitni der wait karna hoga?,WAITING_TIME,hinglish
+Radd karanyasathi kay karave lagel?,CANCEL_BOOKING,mr_roman
+ही बुकिंग हटवायची आहे,CANCEL_BOOKING,mr
+Mala ek slot schedule karaycha aahe,BOOKING_HELP,mr_roman
+स्लॉट के लिए रजिस्टर कैसे करें?,BOOKING_HELP,hi
+मदतीचे पर्याय दाखवा,HELP,mr
+मेरा खरीद केंद्र बताइए,CENTRE_INFO,hi
+Booking status check karna hai,BOOKING_STATUS,hi_roman
+What time will my token come?,WAITING_TIME,en
+Mi majhi booking radd karu shakto ka?,CANCEL_BOOKING,mr_roman
+बुकिंग प्रोसेस बताओ,BOOKING_HELP,hi
+Konta token active aahe?,CURRENT_SERVING,mr_roman
+Meri booking ke baare mein batao,BOOKING_STATUS,hi_roman
+Majhi rangechi sthiti sanga,QUEUE_POSITION,mr_roman
+Mera kharid centre kaunsa hai?,CENTRE_INFO,hinglish
+Rangeetil majhi jaga kay aahe?,QUEUE_POSITION,mr_roman
+अभी सर्व होने वाला टोकन कौन सा है?,CURRENT_SERVING,hi
+Main kitni der mein serve honga?,WAITING_TIME,hi_roman
+मेरी बुकिंग के लिए कौन से दस्तावेज चाहिए?,DOCUMENTS,hi
+दस्तावेज की जरूरत क्या है?,DOCUMENTS,hi
+मैंने कौन सी फसल बुक की है?,CROP_INFO,hi
+What services do you provide?,HELP,en
+Maza token kiti velat yeil?,WAITING_TIME,mr_roman
+Booking wala token batao,TOKEN_NUMBER,hinglish
+मला कोणत्या बाजार केंद्रावर जायचे आहे?,CENTRE_INFO,mr
+What is the current token?,CURRENT_SERVING,en
+Meri slot booking pakki hai?,BOOKING_STATUS,hi_roman
+Namaskar ji,GREETING,mr_roman
+नाउ सर्विंग टोकन बताओ,CURRENT_SERVING,hi
+Hey QueueKisan,GREETING,hi_roman
+Abhi kis kisan ki bari hai?,CURRENT_SERVING,hi_roman
+Maine kaunsi crop book ki hai?,CROP_INFO,hinglish
+मेरे बुकिंग सेंटर का नाम क्या है?,CENTRE_INFO,hi
+बुकिंग रद्द करण्यासाठी मदत हवी आहे,CANCEL_BOOKING,mr
+Mera token number dikhao,TOKEN_NUMBER,hi_roman
+शुभ दिन,GREETING,hi
+Countervar konta token aahe?,CURRENT_SERVING,mr_roman
+Tell me the current serving number,CURRENT_SERVING,en
+Majhya bookingche centre konte aahe?,CENTRE_INFO,mr_roman
+टोकन नंबर तपासायचा आहे,TOKEN_NUMBER,mr
+माझी रांग पोजीशन सांगा,QUEUE_POSITION,mr
+Mujhe kis jagah jana hoga?,CENTRE_INFO,hi_roman
+Mujhe slot cancel karna hai,CANCEL_BOOKING,hinglish
+डॉक्यूमेंट्स चाहिए,DOCUMENTS,hi
+Majhi pali kadhi yenar?,WAITING_TIME,mr_roman
+What are you able to do?,HELP,en
+What crop am I taking to the centre?,CROP_INFO,en
+Shubh sandhya,GREETING,hi_roman
+Madad karo,HELP,hi_roman
+Which token is assigned to me?,TOKEN_NUMBER,hinglish
+Kharedisathi konti kagadpatre havit?,DOCUMENTS,mr_roman
+Please check my queue position,QUEUE_POSITION,hinglish
+स्लॉटसाठी नोंदणी कशी करायची?,BOOKING_HELP,mr
+Aap kya kar sakte hain?,HELP,hi_roman
+Counter par kaunsa token hai?,CURRENT_SERVING,hi_roman
+मेरे टोकन की प्रतीक्षा कितनी है?,WAITING_TIME,hi
+Namaste ji,GREETING,hi_roman
+What papers are needed for my crop?,DOCUMENTS,en
+Mera token batao,TOKEN_NUMBER,hi_roman
+Procurement slot kaise cancel karein?,CANCEL_BOOKING,hi_roman
+Mujhe help chahiye,GREETING,hi_roman
+शुभ दोपहर,GREETING,hi
+थांबण्याचा वेळ सांगा,WAITING_TIME,mr
+Please check my booking status,BOOKING_STATUS,hinglish
+मुझे अपनी बुकिंग रद्द करनी है,CANCEL_BOOKING,hi
+मेरी फसल की खरीद कहाँ होगी?,CENTRE_INFO,hi
+Booking confirm hui hai kya?,BOOKING_STATUS,hinglish
+कितने किसान मेरे पहले हैं?,QUEUE_POSITION,hi
+कृपया मार्गदर्शन करा,HELP,mr
+Booking kuthun radd hoil?,CANCEL_BOOKING,mr_roman
+Andaje pratikshecha vel kay aahe?,WAITING_TIME,mr_roman
+अभी कौन सा नंबर चल रहा है?,CURRENT_SERVING,hi
+How many turns are before mine?,QUEUE_POSITION,en
+Waiting time bataiye,WAITING_TIME,hi_roman
+Mera procurement location kya hai?,CENTRE_INFO,hinglish
+Majhya bookingchi sthiti kay aahe?,BOOKING_STATUS,mr_roman
+स्लॉट कसा बुक करायचा?,BOOKING_HELP,mr
+Mera number line mein kitna hai?,QUEUE_POSITION,hinglish
+माझ्या खरेदी केंद्राची माहिती द्या,CENTRE_INFO,mr
+मुझे कौन से बाजार केंद्र पर जाना है?,CENTRE_INFO,hi
+Mi ithe aahe,GREETING,mr_roman
+Mi majhi booking hatavu shakto ka?,CANCEL_BOOKING,mr_roman
+Show my procurement centre,CENTRE_INFO,en
+Maza token number sanga,TOKEN_NUMBER,mr_roman
+कतार में मेरा नंबर क्या है?,QUEUE_POSITION,hi
+मेरी स्थिति लाइन में बताओ,QUEUE_POSITION,hi
+बुकिंग परत कशी घ्यायची?,CANCEL_BOOKING,mr
+Majhi queue position kay aahe?,QUEUE_POSITION,mr_roman
+आत्ता सर्व्ह होणारा टोकन कोणता?,CURRENT_SERVING,mr
+Aap kya kar sakte hain?,HELP,hi_roman
+Mera token number chahiye,TOKEN_NUMBER,hi_roman
+मला किती वेळ थांबावे लागेल?,WAITING_TIME,mr
+Current token batao,CURRENT_SERVING,hi_roman
+सहायता विकल्प दिखाएं,HELP,hi
+Can you tell me what papers I need?,DOCUMENTS,en
+Can you help with my booking?,HELP,en
+इस समय कौन सा टोकन है?,CURRENT_SERVING,hi
+माझी पाळी लवकर येईल का?,WAITING_TIME,mr
+क्या मैं अपनी बुकिंग हटा सकता हूँ?,CANCEL_BOOKING,hi
+Hello,GREETING,mr_roman
+Which documents are needed for procurement?,DOCUMENTS,en
+Current token chahiye,CURRENT_SERVING,hi_roman
+Sadhya kiti wait aahe?,WAITING_TIME,mr_roman
+Sadhya kontya tokenchi seva hot aahe?,CURRENT_SERVING,mr_roman
+Kya slot cancel kiya ja sakta hai?,CANCEL_BOOKING,hi_roman
+Check my token,TOKEN_NUMBER,en
+Please tell my centre,CENTRE_INFO,hinglish
+आप कैसी सहायता देते हैं?,HELP,hi
+माझा स्लॉट अॅक्टिव्ह आहे का?,BOOKING_STATUS,mr
+Current token ki information do,CURRENT_SERVING,hi_roman
+Slot booking help please,BOOKING_HELP,hinglish
+How many farmers are ahead of me?,QUEUE_POSITION,en
+Good evening,GREETING,en
+माझ्या टोकनची माहिती द्या,TOKEN_NUMBER,mr
+QueueKisan baddal kay vicharu shakto?,HELP,mr_roman
+आत्ता कोणता टोकन आहे?,CURRENT_SERVING,mr
+मेरे लिए कौन सी फसल चुनी गई है?,CROP_INFO,hi
+Mi konte peek register kele aahe?,CROP_INFO,mr_roman
+माझा टोकन कोणता आहे?,TOKEN_NUMBER,mr
+Procurement ke liye kaunse documents chahiye?,DOCUMENTS,hi_roman
+Kya aap meri booking mein help kar sakte hain?,HELP,hi_roman
+Sadhya kaunsa token chal raha hai?,CURRENT_SERVING,hinglish
+Procurement centre par kya lana hai?,DOCUMENTS,hinglish
+बुकिंग कहाँ से शुरू करें?,BOOKING_HELP,hi
+How can you help me?,HELP,en
+मेरे लिए कौन सा केंद्र चुना गया है?,CENTRE_INFO,hi
+Kaunse papers saath laaun?,DOCUMENTS,hi_roman
+तुम्ही कोणत्या सेवा देता?,HELP,mr
+Majhya pudhe kiti shetkari thamble aahet?,QUEUE_POSITION,mr_roman
+आवश्यक दस्तावेज बताइए,DOCUMENTS,hi
+Sadhya konta token process hot aahe?,CURRENT_SERVING,mr_roman
+Mi konte peek nivadle?,CROP_INFO,mr_roman
+मी तुम्हाला काय विचारू शकतो?,HELP,mr
+Namaste assistant,GREETING,hi_roman
+सध्या कोणत्या टोकनची सेवा होत आहे?,CURRENT_SERVING,mr
+टोकन नंबर सांगा,TOKEN_NUMBER,mr
+मेरा टोकन नंबर चेक करो,TOKEN_NUMBER,hi
+What token is being handled now?,CURRENT_SERVING,en
+शुभ संध्याकाळ,GREETING,mr
+Mi book kelele peek sanga,CROP_INFO,mr_roman
+Who is being served now?,CURRENT_SERVING,hinglish
+Start chat,GREETING,en
+तुम्ही मला मार्गदर्शन करू शकता का?,HELP,mr
+Booking ka current status kya hai?,BOOKING_STATUS,hinglish
+What is the process to cancel?,CANCEL_BOOKING,en
+Aatta konta number bolavla aahe?,CURRENT_SERVING,mr_roman
+Slot cancel karanyachi paddhat sanga,CANCEL_BOOKING,mr_roman
+Mera number kab bulaya jayega?,WAITING_TIME,hi_roman
+I want to book a slot,BOOKING_HELP,en
+Mera reservation cancel karna hai,CANCEL_BOOKING,hi_roman
+Mere token ke aage kitne log hain?,QUEUE_POSITION,hi_roman
+नमस्कार,GREETING,mr
+Mi booking kashi karu?,BOOKING_HELP,mr_roman
+Guide me please,HELP,hinglish
+Kharedichi vel kashi nivadaychi?,BOOKING_HELP,mr_roman
+I want to remove this booking,CANCEL_BOOKING,en
+माझे केंद्र सांगा,CENTRE_INFO,mr
+When is my turn expected?,WAITING_TIME,en
+Mera token batao please,TOKEN_NUMBER,hinglish
+New booking kaise banayein?,BOOKING_HELP,hi_roman
+Kaunse documents ready rakhein?,DOCUMENTS,hi_roman
+केंद्राची माहिती हवी आहे,CENTRE_INFO,mr
+Can you guide me?,HELP,en
+Cancel my reservation,CANCEL_BOOKING,en
+What is my current queue number?,QUEUE_POSITION,en
+How do you help farmers?,HELP,en
+Namaskar ji,GREETING,hinglish
+माझा टोकन नंबर सांगा,TOKEN_NUMBER,mr
+माझ्या बुकिंगचे केंद्र कोणते आहे?,CENTRE_INFO,mr
+Mala sahayya have aahe,HELP,mr_roman
+Navin booking kashi karaychi?,BOOKING_HELP,mr_roman
+What token is assigned to me?,TOKEN_NUMBER,en
+कन्फर्म स्लॉट कॅन्सल करता येतो का?,CANCEL_BOOKING,mr
+Is my booking confirmed?,BOOKING_STATUS,en
+हेलो चैटबॉट,GREETING,hi
+Fasal kis centre par leke jaana hai?,CENTRE_INFO,hinglish
+Majhya pikacha slot kasa book karu?,BOOKING_HELP,mr_roman
+What number is being served now?,CURRENT_SERVING,en
+Show my booking status,BOOKING_STATUS,en
+Majhi line position sanga,QUEUE_POSITION,mr_roman
+Mera queue token kya hai?,TOKEN_NUMBER,hinglish
+Check my current booking,BOOKING_STATUS,hinglish
+मी रांगेत कुठे उभा आहे?,QUEUE_POSITION,mr
+Booking kashi karaychi?,BOOKING_HELP,mr_roman
+Meri booking kis crop ke liye hai?,CROP_INFO,hinglish
+Where is my procurement centre?,CENTRE_INFO,en
+जो टोकन सध्या चालू आहे तो कोणता?,CURRENT_SERVING,mr
+Kis procurement centre par jana hai?,CENTRE_INFO,hi_roman
+Help options dikhao,HELP,hinglish
+Mere se pehle kitne farmers hain?,QUEUE_POSITION,hinglish
+मदद के विकल्प दिखाओ,HELP,hi
+Abhi kaunsa token bulaya hai?,CURRENT_SERVING,hi_roman
+मेरे टोकन से कौन सी फसल जुड़ी है?,CROP_INFO,hi
+मला माझा टोकन नंबर सांगा,TOKEN_NUMBER,mr
+मेरे लिए कौन सा टोकन है?,TOKEN_NUMBER,hi
+कौन सा टोकन अभी सक्रिय है?,CURRENT_SERVING,hi
+काउंटर पर कौन सा टोकन है?,CURRENT_SERVING,hi
+Aankhi kiti vel thambayche?,WAITING_TIME,mr_roman
+मेरी बुकिंग कैंसल करने में मदद करें,CANCEL_BOOKING,hi
+कागदपत्रांची गरज काय आहे?,DOCUMENTS,mr
+Can I remove my booking?,CANCEL_BOOKING,en
+Mi rangeet kuthe ubha aahe?,QUEUE_POSITION,mr_roman
+मला स्लॉट हवा आहे,BOOKING_HELP,mr
+Mera centre kahan hai?,CENTRE_INFO,hi_roman
+मला माझा टोकन हवा आहे,TOKEN_NUMBER,mr
+मेरी बुकिंग में कौन सी फसल है?,CROP_INFO,hi
+मला कोणती कागदपत्रे आणावी लागतील?,DOCUMENTS,mr
+Mera kharid centre kaunsa hai?,CENTRE_INFO,hi_roman
+Which centre is selected for me?,CENTRE_INFO,en
+Good morning,GREETING,en
+Hi assistant,GREETING,hi_roman
+मेरी बुकिंग का नंबर क्या है?,TOKEN_NUMBER,hi
+आप क्या कर सकते हैं?,HELP,hi
+रद्द करण्याची प्रक्रिया काय आहे?,CANCEL_BOOKING,mr
+Which token is active right now?,CURRENT_SERVING,en
+Current token kaunsa hai?,CURRENT_SERVING,hi_roman
+Aap kya kar sakte ho?,HELP,hinglish
+Sadhya kontya shetkaryachi pali aahe?,CURRENT_SERVING,mr_roman
+Kaunsa number currently called hai?,CURRENT_SERVING,hinglish
+यह असिस्टेंट मेरी कैसे मदद करेगा?,HELP,hi
+What is my booking status?,BOOKING_STATUS,en
+मैं बुकिंग कैसे करूं?,BOOKING_HELP,hi
+मेरे खरीद केंद्र की जानकारी दो,CENTRE_INFO,hi
+What is my expected wait?,WAITING_TIME,en
+Token number kaha milega?,TOKEN_NUMBER,hinglish
+Mala slot cancel karaycha aahe,CANCEL_BOOKING,mr_roman
+Token kitni der mein aayega?,WAITING_TIME,hinglish
+Mujhe token number check karna hai,TOKEN_NUMBER,hinglish
+Is time kaunsa number liya ja raha hai?,CURRENT_SERVING,hi_roman
+Mera booked produce kaunsa hai?,CROP_INFO,hinglish
+Tell me the paperwork required,DOCUMENTS,en
+Mere liye kaunsa procurement centre hai?,CENTRE_INFO,hi_roman
+Slot ke liye register kaise karein?,BOOKING_HELP,hi_roman
+Can you check my booking?,BOOKING_STATUS,hinglish
+Hello,GREETING,hi_roman
+Tell me your features,HELP,en
+Token number tapasaycha aahe,TOKEN_NUMBER,mr_roman
+Mujhe apni booking cancel karni hai,CANCEL_BOOKING,hi_roman
+Kiti vel baki aahe?,WAITING_TIME,mr_roman
+Where do I need to go?,CENTRE_INFO,en
+Meri booking ka status batao,BOOKING_STATUS,hi_roman
+सध्याचा सर्व्हिंग नंबर काय आहे?,CURRENT_SERVING,mr
+Token serve honyas kiti vel aahe?,WAITING_TIME,mr_roman
+किती वेळ बाकी आहे?,WAITING_TIME,mr
+Hello QueueKisan,GREETING,hinglish
+Mala konte kagad have?,DOCUMENTS,mr_roman
+Show me help options,HELP,en
+Token serve hone mein kitna time hai?,WAITING_TIME,hi_roman
+Current serving number kya hai?,CURRENT_SERVING,hinglish
+How many farmers are in front of my token?,QUEUE_POSITION,en
+Tell me what you can do,HELP,en
+Which crop did I select?,CROP_INFO,en
+Book kelele peek dakhva,CROP_INFO,mr_roman
+Meri booking ka token kya hai?,TOKEN_NUMBER,hinglish
+Meri current queue position batao,QUEUE_POSITION,hinglish
+टोकन नंबर बताइए,TOKEN_NUMBER,hi
+Do I need any documents?,DOCUMENTS,en
+मेरा अनुमानित समय क्या है?,WAITING_TIME,hi
+How do I cancel a procurement slot?,CANCEL_BOOKING,en
+Maze kharedi kendra sanga,CENTRE_INFO,mr_roman
+Mera assigned token kaunsa hai?,TOKEN_NUMBER,hinglish
+हॅलो,GREETING,mr
+Kaunse papers laane padenge?,DOCUMENTS,hi_roman
+What support do you provide?,HELP,en
+Slot kaise reserve karein?,BOOKING_HELP,hi_roman
+मेरा रिजर्वेशन कैंसल करना है,CANCEL_BOOKING,hi
+How do I get a slot?,BOOKING_HELP,hinglish
+माझा नंबर कोणता आहे?,TOKEN_NUMBER,mr
+Meri selected fasal kaunsi hai?,CROP_INFO,hi_roman
+Mujhe kis jagah jana hoga?,CENTRE_INFO,hinglish
+आवश्यक कागजात बताओ,DOCUMENTS,hi
+How can I book a slot?,BOOKING_HELP,hinglish
+Booking cancel karne ka process kya hai?,CANCEL_BOOKING,hinglish
+Can I know the required papers?,DOCUMENTS,en
+Mi konte peek book kele?,CROP_INFO,mr_roman
+माझे केंद्र दाखवा,CENTRE_INFO,mr
+केंद्रावर मला काय आणायचे?,DOCUMENTS,mr
+Mujhe kaunse papers lane hain?,DOCUMENTS,hinglish
+आत्ता कोणता नंबर बोलावला आहे?,CURRENT_SERVING,mr
+Tell me the name of my centre,CENTRE_INFO,en
+Kya meri booking confirm hai?,BOOKING_STATUS,hinglish
+Documents needed please,DOCUMENTS,en
+कोणते उत्पादन बुक आहे?,CROP_INFO,mr
+My procurement centre please,CENTRE_INFO,en
+Mala kiti minutes thambave lagel?,WAITING_TIME,mr_roman
+Wait time please,WAITING_TIME,hinglish
+Mujhe ek slot schedule karna hai,BOOKING_HELP,hi_roman
+Slot kaise book karein?,BOOKING_HELP,hi_roman
+कौन सा टोकन सर्व हो रहा है?,CURRENT_SERVING,hi
+Maza slot confirm zala aahe ka?,BOOKING_STATUS,mr_roman
+Which token did I get?,TOKEN_NUMBER,hinglish
+Mujhe slot chahiye,BOOKING_HELP,hi_roman
+Support chahiye,HELP,hinglish
+सध्याच्या टोकनची माहिती द्या,CURRENT_SERVING,mr
+Serving token kya hai?,CURRENT_SERVING,hinglish
+मेरी बारी कब आएगी?,WAITING_TIME,hi
+Maza estimated time kiti aahe?,WAITING_TIME,mr_roman
+Majhe peek sanga,CROP_INFO,mr_roman
+Mera procurement centre kaunsa hai?,CENTRE_INFO,hinglish
+मेरी बुकिंग चेक करो,BOOKING_STATUS,hi
+क्या आप मुझे गाइड कर सकते हैं?,HELP,hi
+माझा स्लॉट कन्फर्म झाला आहे का?,BOOKING_STATUS,mr
+Aatta konta token aahe?,CURRENT_SERVING,mr_roman
+Mujhe current serving token batao,CURRENT_SERVING,hinglish
+मी माझे पीक कुठे घेऊन जाऊ?,CENTRE_INFO,mr
+मुझे किस जगह जाना होगा?,CENTRE_INFO,hi
+I want to cancel my booking,CANCEL_BOOKING,en
+Mala maza token number sanga,TOKEN_NUMBER,mr_roman
+Can you verify my booking status?,BOOKING_STATUS,en
+What is the token number for my booking?,TOKEN_NUMBER,en
+स्लॉट बुक करण्याची पद्धत सांगा,BOOKING_HELP,mr
+वर्तमान सर्विंग टोकन बताओ,CURRENT_SERVING,hi
+Meri booking mein kaunsi fasal hai?,CROP_INFO,hi_roman
+मी बुक केलेले पीक सांगा,CROP_INFO,mr
+सध्या किती वेळ थांबावे लागेल?,WAITING_TIME,mr
+Mera token bata dijiye,TOKEN_NUMBER,hinglish
+Maza waiting time check kara,WAITING_TIME,mr_roman
+I need booking cancellation help,CANCEL_BOOKING,en
+Kya ID proof chahiye?,DOCUMENTS,hi_roman
+हैलो सर,GREETING,hi
+Hi,GREETING,mr_roman
+Namaste,GREETING,mr_roman
+मी निवडलेले पीक कोणते आहे?,CROP_INFO,mr
+Abhi kaunsa token chal raha hai?,CURRENT_SERVING,hi_roman
+Is my booking still valid?,BOOKING_STATUS,en
+What is the document requirement?,DOCUMENTS,en
+Mere token ki waiting kitni hai?,WAITING_TIME,hi_roman
+मेरी बुकिंग कैंसल कर दो,CANCEL_BOOKING,hi
+Which token do I have?,TOKEN_NUMBER,en
+Mujhe kaunse proof laane hain?,DOCUMENTS,hi_roman
+Show me available help,HELP,en
+Mujhe kis centre par jana hai?,CENTRE_INFO,hi_roman
+कोणत्या खरेदी केंद्रावर जायचे?,CENTRE_INFO,mr
+मला माझा टोकन नंबर हवा आहे,TOKEN_NUMBER,mr
+Mera token kya hai?,TOKEN_NUMBER,hi_roman
+How do I use this chatbot?,HELP,en
+मेरा वर्तमान क्यू नंबर क्या है?,QUEUE_POSITION,hi
+Hi there,GREETING,en
+Majhya bookingche kay zale?,BOOKING_STATUS,mr_roman
+मेरी बारी में कितना समय है?,WAITING_TIME,hi
+Mera assigned centre batao,CENTRE_INFO,hinglish
+Majhya tokenchi waiting kiti aahe?,WAITING_TIME,mr_roman
+Can I see my crop?,CROP_INFO,hinglish
+Majhyasathi konte market centre aahe?,CENTRE_INFO,mr_roman
+चॅट सुरू करा,GREETING,mr
+Mujhe kaunse documents chahiye?,DOCUMENTS,hi_roman
+Tell me my position in the queue,QUEUE_POSITION,en
+मेरे आगे कितने टोकन हैं?,QUEUE_POSITION,hi
+Procurement booking kashi radd karaychi?,CANCEL_BOOKING,mr_roman
+माझ्या बुकिंगचे काय झाले?,BOOKING_STATUS,mr
+माझ्या टोकनची माहिती हवी आहे,TOKEN_NUMBER,mr
+Centervar mala kay anayche?,DOCUMENTS,mr_roman
+कौन से दस्तावेज चाहिए?,DOCUMENTS,hi
+Jo token abhi chal raha hai woh kaunsa hai?,CURRENT_SERVING,hi_roman
+I want to cancel this slot,CANCEL_BOOKING,en
+Token number check karna hai,TOKEN_NUMBER,hi_roman
+Where is my centre?,CENTRE_INFO,hinglish
+What documents should I bring?,DOCUMENTS,en
+मुझे स्लॉट बुक करना है,BOOKING_HELP,hi
+प्रतीक्षा वेळ सांगा,WAITING_TIME,mr
+यह स्लॉट रद्द करना है,CANCEL_BOOKING,hi
+Slot booking help chahiye,BOOKING_HELP,hi_roman
+Hello assistant,GREETING,hi_roman
+Kya mera slot active hai?,BOOKING_STATUS,hi_roman
+हाय,GREETING,hi
+Mujhe assistance chahiye,HELP,hi_roman
+तुमच्या सुविधा काय आहेत?,HELP,mr
+Mera slot pakka hai?,BOOKING_STATUS,hinglish
+Meri position line mein batao,QUEUE_POSITION,hi_roman
+Which token is being served now?,CURRENT_SERVING,hinglish
+मला मदत हवी,HELP,mr
+How can I reserve my place?,BOOKING_HELP,en
+Mera assigned centre batao,CENTRE_INFO,hi_roman
+Mi konte peek book kele aahe?,CROP_INFO,mr_roman
+What is my queue position?,QUEUE_POSITION,en
+बुकिंग स्थिती तपासायची आहे,BOOKING_STATUS,mr
+Konte papers lagtat?,DOCUMENTS,mr_roman
+Centre info chahiye,CENTRE_INFO,hinglish
+How do I reserve a procurement slot?,BOOKING_HELP,hinglish
+Olakhpatra lagte ka?,DOCUMENTS,mr_roman
+माझे सेंटर कुठे आहे?,CENTRE_INFO,mr
+Can you check my booking?,BOOKING_STATUS,en
+Farmers kitne ahead hain?,QUEUE_POSITION,hinglish
+बुकिंगसाठी माझा टोकन कोणता आहे?,TOKEN_NUMBER,mr
+How do I create a booking?,BOOKING_HELP,en
+Mera token number please,TOKEN_NUMBER,hinglish
+Which token is being called now?,CURRENT_SERVING,en
+मेरा केंद्र दिखाओ,CENTRE_INFO,hi
+बुकिंग कुठून सुरू करायची?,BOOKING_HELP,mr
+करंट टोकन सांगा,CURRENT_SERVING,mr
+How long do I have to wait?,WAITING_TIME,hinglish
+When will my turn come?,WAITING_TIME,en
+Maza slot book zala aahe ka?,BOOKING_STATUS,mr_roman
+रांगेतील माझी जागा काय आहे?,QUEUE_POSITION,mr
+मेरे टोकन के आगे कितने लोग हैं?,QUEUE_POSITION,hi
+Kaunsa token active hai?,CURRENT_SERVING,hi_roman
+कतार में मेरी जगह दिखाओ,QUEUE_POSITION,hi
+आत्ता कोणाची पाळी आहे?,CURRENT_SERVING,mr
+स्लॉट कैसे रिजर्व करें?,BOOKING_HELP,hi
+Maza slot kasa cancel karaycha?,CANCEL_BOOKING,mr_roman
+मेरी क्रॉप डिटेल चाहिए,CROP_INFO,hi
+Centre details batao,CENTRE_INFO,hinglish
+Tumhi maza token sangu shakta ka?,TOKEN_NUMBER,mr_roman
+Hi assistant,GREETING,en
+Slot book karanyasathi madat kara,BOOKING_HELP,mr_roman
+Booking cancel karne mein help chahiye,CANCEL_BOOKING,hi_roman
+Tell me how many people are ahead,QUEUE_POSITION,en
+How many people are ahead of me?,QUEUE_POSITION,hinglish
+Mera slot active hai kya?,BOOKING_STATUS,hinglish
+How long before my turn?,WAITING_TIME,en
+Is my booking active?,BOOKING_STATUS,en
+Majhya booking sathi konti kagadpatre havit?,DOCUMENTS,mr_roman
+कौन सा नंबर अभी चल रहा है?,CURRENT_SERVING,hi
+Maza slot active aahe ka?,BOOKING_STATUS,mr_roman
+Which centre is my booking for?,CENTRE_INFO,en
+Is my booking still valid?,BOOKING_STATUS,hinglish
+Maza slot approve zala ka?,BOOKING_STATUS,mr_roman
+Bookingchi prakriya kay aahe?,BOOKING_HELP,mr_roman
+बुकिंग की प्रक्रिया क्या है?,BOOKING_HELP,hi
+हॅलो जी,GREETING,mr
+Slot booking ka method batao,BOOKING_HELP,hinglish
+Required papers batao,DOCUMENTS,hi_roman
+माझ्या सध्याच्या बुकिंगची स्थिती सांगा,BOOKING_STATUS,mr
+माझा अंदाजे वेळ किती आहे?,WAITING_TIME,mr
+Shubh sandhyakal,GREETING,mr_roman
+Mera centre kaha hai?,CENTRE_INFO,hinglish
+माझ्या टोकनची प्रतीक्षा किती आहे?,WAITING_TIME,mr
+Majhya aadhi kiti shetkari aahet?,QUEUE_POSITION,mr_roman
+प्रोक्योरमेंट स्लॉट कैसे रद्द करें?,CANCEL_BOOKING,hi
+Maza estimated wait sanga,WAITING_TIME,mr_roman
+मेरी बारी कब आने की उम्मीद है?,WAITING_TIME,hi
+Meri line position bataiye,QUEUE_POSITION,hi_roman
+I need help,HELP,en
+Now serving token batao,CURRENT_SERVING,hinglish
+Show current token,CURRENT_SERVING,en
+Slot booking mein help karo,BOOKING_HELP,hi_roman
+मी स्लॉट कसा रिजर्व करू?,BOOKING_HELP,mr
+How long until my token?,WAITING_TIME,en
+Need document help,DOCUMENTS,hinglish
+Majhya centreche nav sanga,CENTRE_INFO,mr_roman
+Mera estimated wait batao,WAITING_TIME,hi_roman
+Abhi kitna wait hai?,WAITING_TIME,hinglish
+माझा स्लॉट कसा कॅन्सल करायचा?,CANCEL_BOOKING,mr
+माझी आरक्षण स्थिती सांगा,BOOKING_STATUS,mr
+डॉक्युमेंट्स हवी आहेत,DOCUMENTS,mr
+How many minutes do I have to wait?,WAITING_TIME,en
+Namaste ji,GREETING,hinglish
+मला सपोर्ट हवा आहे,HELP,mr
+हाय सहायक,GREETING,hi
+Namaste assistant,GREETING,hinglish
+Kya meri booking chal rahi hai?,BOOKING_STATUS,hi_roman
+How far am I in the queue?,QUEUE_POSITION,hinglish
+Procurement token kaise milega?,BOOKING_HELP,hi_roman
+Mala kiti vel thambave lagel?,WAITING_TIME,mr_roman
+Slot booking sathi madat havi aahe,BOOKING_HELP,mr_roman
+कागदपत्रांची माहिती हवी आहे,DOCUMENTS,mr
+Mujhe kis centre par jaana hai?,CENTRE_INFO,hinglish
+माझे प्रोक्योरमेंट सेंटर कोणते आहे?,CENTRE_INFO,mr
+Tell me the token for my booking,TOKEN_NUMBER,en
+Booking mein help chahiye,BOOKING_HELP,hinglish
+आवश्यक कागदपत्रे सांगा,DOCUMENTS,mr
+What is my place in line?,QUEUE_POSITION,en
+कोणते पेपर आणावे लागतील?,DOCUMENTS,mr
+तुम्ही मला मदत करू शकता का?,GREETING,mr
+केंद्र की जानकारी चाहिए,CENTRE_INFO,hi
+What crop is registered in my booking?,CROP_INFO,en
+नमस्ते,GREETING,mr
+Estimated waiting time kya hai?,WAITING_TIME,hi_roman
+Slot book karne ka tareeka batao,BOOKING_HELP,hi_roman
+माझी बुकिंग तपासा,BOOKING_STATUS,mr
+बुकिंग कुठून रद्द होईल?,CANCEL_BOOKING,mr
+हा स्लॉट रद्द करायचा आहे,CANCEL_BOOKING,mr
+Queue status mein main kaha hoon?,QUEUE_POSITION,hinglish
+Please tell me my token,TOKEN_NUMBER,hinglish
+मेरा टोकन कौन सा है?,TOKEN_NUMBER,hi
+मला कोणते कागद हवेत?,DOCUMENTS,mr
+अभी किस टोकन को बुलाया है?,CURRENT_SERVING,hi
+मुझे मेरा टोकन बताइए,TOKEN_NUMBER,hi
+Fasal ki information batao,CROP_INFO,hinglish
+What is now being served?,CURRENT_SERVING,en
+Main slot kaise reserve karun?,BOOKING_HELP,hi_roman
+अंदाजे प्रतीक्षा वेळ काय आहे?,WAITING_TIME,mr
+माझा स्लॉट ठीक आहे का?,BOOKING_STATUS,mr
+शुभ संध्या,GREETING,hi
+केंद्र पर मुझे क्या लाना है?,DOCUMENTS,hi
+आप कौन सी जानकारी दे सकते हैं?,HELP,hi
+Show the token being served,CURRENT_SERVING,en
+Mera token number kya hai?,TOKEN_NUMBER,hi_roman
+नमस्कार जी,GREETING,hi
+क्या पहचान पत्र चाहिए?,DOCUMENTS,hi
+Meri booking verify karo,BOOKING_STATUS,hi_roman
+Abhi serve hone wala token kaunsa hai?,CURRENT_SERVING,hi_roman
+नमस्ते सहायक,GREETING,hi
+मैं स्लॉट रिजर्व कैसे करूं?,BOOKING_HELP,hi
+रद्द करने की प्रक्रिया क्या है?,CANCEL_BOOKING,hi
+Mujhe kaunsa token mila hai?,TOKEN_NUMBER,hi_roman
+Meri bari kab aane ki ummeed hai?,WAITING_TIME,hi_roman
+मेरी कतार में स्थिति क्या है?,QUEUE_POSITION,hi
+Kya aap mera token bata sakte hain?,TOKEN_NUMBER,hi_roman
+Meri booking ke liye kaunse documents lagenge?,DOCUMENTS,hinglish
+हाय असिस्टंट,GREETING,mr
+Kya aap meri crop bata sakte hain?,CROP_INFO,hi_roman
+Main apna token kahan dekh sakta hoon?,TOKEN_NUMBER,hi_roman
+माझ्यापुढे किती जण आहेत?,QUEUE_POSITION,mr
+Booking kaise delete karein?,CANCEL_BOOKING,hi_roman
+Majhi booking cancel karanyasathi madat kara,CANCEL_BOOKING,mr_roman
+Main aapse kya pooch sakta hoon?,HELP,hi_roman
+I need help,GREETING,en
+Main queue mein kitne number par hoon?,QUEUE_POSITION,hi_roman
+How to cancel procurement booking?,CANCEL_BOOKING,en
+प्रोक्योरमेंट का समय कैसे चुनें?,BOOKING_HELP,hi
+Kya meri booking cancel ho sakti hai?,CANCEL_BOOKING,hi_roman
+Hi booking hatvaychi aahe,CANCEL_BOOKING,mr_roman
+Mera waiting time kitna hai?,WAITING_TIME,hi_roman
+Abhi kaunsa number bulaya gaya hai?,CURRENT_SERVING,hi_roman
+प्रतीक्षा समय बताइए,WAITING_TIME,hi
+मैंने क्या फसल बुक की है?,CROP_INFO,hi
+नमस्कार QueueKisan,GREETING,mr
+Can I book a slot from the app?,BOOKING_HELP,en
+Show me my token,TOKEN_NUMBER,en
+मुझे मेरा टोकन नंबर बताओ,TOKEN_NUMBER,hi
+जरूरी दस्तावेज कौन से हैं?,DOCUMENTS,hi
+Majhi booking check kara,BOOKING_STATUS,mr_roman
+Mere liye kaunsa centre select hua hai?,CENTRE_INFO,hi_roman
+कोणती कागदपत्रे आवश्यक आहेत?,DOCUMENTS,mr
+बुकिंग की स्थिति चेक करनी है,BOOKING_STATUS,hi
+Aap meri kaise madad kar sakte hain?,HELP,hi_roman
+प्रोक्योरमेंट बुकिंग कशी रद्द करायची?,CANCEL_BOOKING,mr
+Meri bari se pehle kitne log hain?,QUEUE_POSITION,hi_roman
+Crop information please,CROP_INFO,en
+Meri turn soon aayegi kya?,WAITING_TIME,hinglish
+Mere crop ke liye kya documents chahiye?,DOCUMENTS,hinglish
+Is my slot active?,BOOKING_STATUS,en
+Maze booked peek check kara,CROP_INFO,mr_roman
+मेरा टोकन क्या है?,TOKEN_NUMBER,hi
+Booking active hai kya?,BOOKING_STATUS,hinglish
+How many turns before mine?,QUEUE_POSITION,hinglish
+माझ्या टोकनच्या पुढे किती लोक आहेत?,QUEUE_POSITION,mr
+Majhi booking kashi radd karaychi?,CANCEL_BOOKING,mr_roman
+Current queue token batao,CURRENT_SERVING,hinglish
+माझी बुकिंग अजून वैध आहे का?,BOOKING_STATUS,mr
+Abhi kis token ki bari hai?,CURRENT_SERVING,hi_roman
+मैं आपसे क्या पूछ सकता हूँ?,HELP,hi
+Which token is currently at the counter?,CURRENT_SERVING,en
+मेरी बारी से पहले कितने किसान हैं?,QUEUE_POSITION,hi
+Mera estimated time kya hai?,WAITING_TIME,hi_roman
+Meri crop details chahiye,CROP_INFO,hi_roman
+Shubh divas,GREETING,mr_roman
+Mera token dikhao,TOKEN_NUMBER,hi_roman
+Mi nivadlele peek konte aahe?,CROP_INFO,mr_roman
+Meri bari kab aayegi?,WAITING_TIME,hi_roman
+मला किती मिनिटे थांबावे लागेल?,WAITING_TIME,mr
+Mujhe support chahiye,HELP,hi_roman
+Kripaya margadarshan kara,HELP,mr_roman
+Abhi kaunsa token process ho raha hai?,CURRENT_SERVING,hinglish
+मुझे सहायता चाहिए,HELP,hi
+माझा टोकन नंबर दाखवा,TOKEN_NUMBER,mr
+What is my token number?,TOKEN_NUMBER,en
+Slot booking help,BOOKING_HELP,hi_roman
+मी माझी बुकिंग हटवू शकतो का?,CANCEL_BOOKING,mr
+माझा टोकन सांगा,TOKEN_NUMBER,mr
+Hello chatbot,GREETING,hi_roman
+और कितना इंतजार करना है?,WAITING_TIME,hi
+Hey there,GREETING,hinglish
+मी इथे आहे,GREETING,mr
+Mi konte prashna vicharu shakto?,HELP,mr_roman
+Can you help me?,GREETING,en
+Can I check my token?,TOKEN_NUMBER,hinglish
+माझा टोकन दाखवा,TOKEN_NUMBER,mr
+Mera token number kya hai?,TOKEN_NUMBER,hinglish
+माझी पाळी किती मिनिटांत येईल?,WAITING_TIME,mr
+स्लॉट रद्द करता येतो का?,CANCEL_BOOKING,mr
+माझी रांगेची स्थिती सांगा,QUEUE_POSITION,mr
+Kaunsa produce book hai?,CROP_INFO,hi_roman
+मी माझा टोकन कसा पाहू?,TOKEN_NUMBER,mr
+Reservation cancel kaise karein?,CANCEL_BOOKING,hinglish
+Majhya palila kiti vel aahe?,WAITING_TIME,mr_roman
+Mere aage kitne farmers hain?,QUEUE_POSITION,hinglish
+Can I see my crop details?,CROP_INFO,en
+मला सहाय्य हवे आहे,HELP,mr
+माझे पीक सांगा,CROP_INFO,mr
+मेरा आवंटित केंद्र बताओ,CENTRE_INFO,hi
+Mujhe slot book karna hai,BOOKING_HELP,hi_roman
+Kaunsa token serve ho raha hai?,CURRENT_SERVING,hi_roman
+Which token is mine?,TOKEN_NUMBER,en
+Maza number kadhi bolavla jail?,WAITING_TIME,mr_roman
+Majhya bookingmadhe konte dhanya aahe?,CROP_INFO,mr_roman
+मुझे बुकिंग की मदद चाहिए,BOOKING_HELP,hi
+Mala support hava aahe,HELP,mr_roman
+Token number check kar do,TOKEN_NUMBER,hinglish
+Meri crop kaunsi hai?,CROP_INFO,hinglish
+Thambnyacha vel sanga,WAITING_TIME,mr_roman
+Booked crop dikhao,CROP_INFO,hi_roman
+Rangeetil majhi sthiti sanga,QUEUE_POSITION,mr_roman
+मदत करा,HELP,mr
+Majhi booking radd hou shakte ka?,CANCEL_BOOKING,mr_roman
+माझ्यासाठी कोणते बाजार केंद्र आहे?,CENTRE_INFO,mr
+तुम्ही कशी मदत देता?,HELP,mr
+Maine kaunsi fasal register ki?,CROP_INFO,hinglish
+I need help with booking,BOOKING_HELP,en
+Has my booking been confirmed?,BOOKING_STATUS,en
+Konti kagadpatre avashyak aahet?,DOCUMENTS,mr_roman
+Aap kis tarah help karte hain?,HELP,hi_roman
+Which procurement centre is mine?,CENTRE_INFO,hinglish
+Kaunse proof chahiye?,DOCUMENTS,hinglish
+Konta token serve hot aahe?,CURRENT_SERVING,mr_roman
+How much longer do I need to wait?,WAITING_TIME,en
+माझी स्लॉट बुकिंग पक्की आहे का?,BOOKING_STATUS,mr
+Ha chatbot kasa vapraycha?,HELP,mr_roman
+प्रोक्योरमेंट टोकन कसा मिळेल?,BOOKING_HELP,mr
+Which papers are required?,DOCUMENTS,hinglish
+माझ्या सेंटरची माहिती हवी आहे,CENTRE_INFO,mr
+चैट शुरू करें,GREETING,hi
+Meri booking kaise cancel karun?,CANCEL_BOOKING,hinglish
+Can you guide me?,HELP,hinglish
+माझी पाळी कधी येण्याची शक्यता आहे?,WAITING_TIME,mr
+बुकिंगची प्रक्रिया काय आहे?,BOOKING_HELP,mr
+बुकिंग स्टेटस चाहिए,BOOKING_STATUS,hi
+Tell me my current queue place,QUEUE_POSITION,en
+अभी किस किसान की बारी है?,CURRENT_SERVING,hi
+Booking kaise hoti hai?,BOOKING_HELP,hinglish
+माझी रांगेतील स्थिती काय आहे?,QUEUE_POSITION,mr
+तुम्ही माझे केंद्र सांगू शकता का?,CENTRE_INFO,mr
+Mere se pehle kitne token hain?,QUEUE_POSITION,hi_roman
+मैं अपनी फसल कहाँ ले जाऊँ?,CENTRE_INFO,hi
+अभी किस टोकन की बारी है?,CURRENT_SERVING,hi
+Meri bari mein kitna time hai?,WAITING_TIME,hi_roman
+Is my slot confirmed?,BOOKING_STATUS,en
+माझ्या बुकिंगसाठी कोणती कागदपत्रे हवीत?,DOCUMENTS,mr
+Tell me the booking process,BOOKING_HELP,en
+Hello ji,GREETING,hinglish
+Booking centre dikhao,CENTRE_INFO,hinglish
+नई बुकिंग कैसे बनाएं?,BOOKING_HELP,hi
+रद्द करण्यासाठी काय करावे लागेल?,CANCEL_BOOKING,mr
+माझ्या बुकिंगचा स्टेटस काय आहे?,BOOKING_STATUS,mr
+क्या मेरी बारी जल्द आएगी?,WAITING_TIME,hi
+How long do I have to wait?,WAITING_TIME,en
+बुकिंग कशी डिलीट करायची?,CANCEL_BOOKING,mr
+मेरा नंबर कब बुलाया जाएगा?,WAITING_TIME,hi
+मेरी बारी से पहले कितने लोग हैं?,QUEUE_POSITION,hi
+Hello madam,GREETING,mr_roman
+मेरा टोकन बताओ,TOKEN_NUMBER,hi
+Mi kiti velat serve hoil?,WAITING_TIME,mr_roman
+Namaskar sahayyak,GREETING,mr_roman
+Mujhe booking cancellation help chahiye,CANCEL_BOOKING,hi_roman
+माझे खरेदी केंद्र सांगा,CENTRE_INFO,mr
+How can I schedule my procurement?,BOOKING_HELP,en
+Tumhi kontya seva deta?,HELP,mr_roman
+मैंने कौन सा उत्पाद बुक किया?,CROP_INFO,hi
+माझ्या स्लॉटसाठी कोणते पीक आहे?,CROP_INFO,mr
+Procurement token kasa milel?,BOOKING_HELP,mr_roman
+माझ्या क्रॉपची माहिती हवी आहे,CROP_INFO,mr
+माझ्या आधी किती शेतकरी आहेत?,QUEUE_POSITION,mr
+Is my procurement booking confirmed?,BOOKING_STATUS,en
+I am here,GREETING,en
+तुम्ही काय काय करू शकता?,HELP,mr
+मेरा नंबर कौन सा है?,TOKEN_NUMBER,hi
+Kya main apni booking hata sakta hoon?,CANCEL_BOOKING,hi_roman
+Mujhe support chahiye,HELP,hi_roman
+Konte kagad sobat aanu?,DOCUMENTS,mr_roman
+Check my wait time,WAITING_TIME,en
+Kya main app se slot book kar sakta hoon?,BOOKING_HELP,hi_roman
+मेरा टोकन दिखाओ,TOKEN_NUMBER,hi
+Centre location batao,CENTRE_INFO,hinglish
+Meri procurement booking active hai?,BOOKING_STATUS,hinglish
+Avashyak kagad sanga,DOCUMENTS,mr_roman
+Procurement booking kaise cancel karein?,CANCEL_BOOKING,hi_roman
+मदत करा,HELP,mr
+Meri booking cancel kar do,CANCEL_BOOKING,hi_roman
+Kaunsa token mere liye hai?,TOKEN_NUMBER,hi_roman
+Booking verify kar do,BOOKING_STATUS,hinglish
+क्या स्लॉट रद्द किया जा सकता है?,CANCEL_BOOKING,hi
+Majhyasathi konte kharedi kendra aahe?,CENTRE_INFO,mr_roman
+Hi QueueKisan,GREETING,en
+माझी बुकिंग दाखवा,BOOKING_STATUS,mr
+Please tell me my token,TOKEN_NUMBER,en
+Please check my reservation,BOOKING_STATUS,en
+हाय QueueKisan,GREETING,hi
+Which token is mine?,TOKEN_NUMBER,hinglish
+Majhi booking suru aahe ka?,BOOKING_STATUS,mr_roman
+Hello,GREETING,hinglish
+What is my assigned centre?,CENTRE_INFO,en
+Kaunsi crop select ki hai?,CROP_INFO,hinglish
+Mera slot approved hai kya?,BOOKING_STATUS,hinglish
+Meri booking kis crop ke liye hai?,CROP_INFO,hi_roman
+स्लॉट कैंसल करने का तरीका बताइए,CANCEL_BOOKING,hi
+Booking status tapasaycha aahe,BOOKING_STATUS,mr_roman
+क्या आप मेरा केंद्र बता सकते हैं?,CENTRE_INFO,hi
+मला कोणत्या केंद्रावर जायचे आहे?,CENTRE_INFO,mr
+मेरी बुकिंग की फसल दिखाओ,CROP_INFO,hi
+Majhyapudhe kiti lokanchi pali yeil?,QUEUE_POSITION,mr_roman
+मुझे मदद चाहिए,HELP,hi
+नमस्ते QueueKisan,GREETING,hi
+Good morning,GREETING,hinglish
+Meri booked crop batao,CROP_INFO,hinglish
+How do I get a procurement token?,BOOKING_HELP,en
+Is it possible to cancel my slot?,CANCEL_BOOKING,en
+Can I delete my booking?,CANCEL_BOOKING,hinglish
+Help me,HELP,en
+Where do I start booking?,BOOKING_HELP,en
+Sadhyacha serving token sanga,CURRENT_SERVING,mr_roman
+तुम्ही माझा टोकन सांगू शकता का?,TOKEN_NUMBER,mr
+Meri booking cancel karne mein help karo,CANCEL_BOOKING,hi_roman
+Aatta serve honara token konta?,CURRENT_SERVING,mr_roman
+How can I check my token?,TOKEN_NUMBER,en
+Maine kya produce book kiya?,CROP_INFO,hinglish
+Majhya tokenshi konte peek jodle aahe?,CROP_INFO,mr_roman
+Majhi pali kadhi yeil?,WAITING_TIME,mr_roman
+माझा टोकन नंबर कुठे आहे?,TOKEN_NUMBER,mr
+Booking kahan se start karein?,BOOKING_HELP,hi_roman
+Queue mein meri current position kya hai?,QUEUE_POSITION,hinglish
+Kis centre par report karna hai?,CENTRE_INFO,hinglish
+मुझे सहायता चाहिए,HELP,hi
+सध्या कोणत्या शेतकऱ्याची पाळी आहे?,CURRENT_SERVING,mr
+स्लॉट कैसे बुक करें?,BOOKING_HELP,hi
+Hi chatbot,GREETING,hinglish
+मला कुठे जायचे आहे?,CENTRE_INFO,mr
+Hey QueueKisan,GREETING,en
+Slot kuthun book hoil?,BOOKING_HELP,mr_roman
+Maine kaunsi fasal register ki?,CROP_INFO,hi_roman
+मैंने कौन सी फसल रजिस्टर की है?,CROP_INFO,hi
+Procurement slot kaise book karein?,BOOKING_HELP,hi_roman
+Which token is currently being served?,CURRENT_SERVING,en
+Where can I book a slot?,BOOKING_HELP,en
+Hi,GREETING,hi_roman
+Majhi pali kadhi yenaychi shakyata aahe?,WAITING_TIME,mr_roman
+Kitne logon ki bari pehle aayegi?,QUEUE_POSITION,hi_roman
+I need my token number,TOKEN_NUMBER,en
+Tell me what crop I booked,CROP_INFO,en
+Procurementchi vel kashi nivadaychi?,BOOKING_HELP,mr_roman
+Meri queue position check karo,QUEUE_POSITION,hi_roman
+माझा टोकन नंबर चेक करा,TOKEN_NUMBER,mr
+Mala kontya market centrevar jayche aahe?,CENTRE_INFO,mr_roman
+Mera waiting time kya hai?,WAITING_TIME,hinglish
+Namaste assistant,GREETING,en
+Which token is on the counter?,CURRENT_SERVING,hinglish
+Namaskar QueueKisan,GREETING,mr_roman
+मुझे कौन से प्रमाण लाने हैं?,DOCUMENTS,hi
+रांगेतील माझी जागा दाखवा,QUEUE_POSITION,mr
+Ya veli konta number ghetla jat aahe?,CURRENT_SERVING,mr_roman
+किस खरीद केंद्र पर जाना है?,CENTRE_INFO,hi
+बुकिंग कहाँ से रद्द होगी?,CANCEL_BOOKING,hi
+माझ्या पाळीआधी किती शेतकरी आहेत?,QUEUE_POSITION,mr
+Current serving number kya hai?,CURRENT_SERVING,hi_roman
+Namaste QueueKisan,GREETING,hi_roman
+Abhi kis token ki bari hai?,CURRENT_SERVING,hinglish
+Majhya cropchi mahiti havi aahe,CROP_INFO,mr_roman
+हाय असिस्टंट,GREETING,mr
+Can you tell me the current token?,CURRENT_SERVING,en
+Majhi pali kiti minutesat yeil?,WAITING_TIME,mr_roman
+Tell me if my booking is confirmed,BOOKING_STATUS,en
+Booking sathi maza token konta aahe?,TOKEN_NUMBER,mr_roman
+Aap kaunsi information de sakte hain?,HELP,hi_roman
+स्लॉट कहाँ से बुक होगा?,BOOKING_HELP,hi
+Hi QueueKisan,GREETING,hi_roman
+Can I cancel a confirmed slot?,CANCEL_BOOKING,en
+मला माझी बुकिंग रद्द करायची आहे,CANCEL_BOOKING,mr
+कौन से कागज साथ लाऊँ?,DOCUMENTS,hi
+Mala konti kagadpatre aanavi lagtil?,DOCUMENTS,mr_roman
+What crop is linked to my token?,CROP_INFO,en
+Majhya tokenchi mahiti dya,TOKEN_NUMBER,mr_roman
+Check my booked crop,CROP_INFO,en
+मेरी बुकिंग का स्टेटस क्या है?,BOOKING_STATUS,hi
+Which token is active at the centre?,CURRENT_SERVING,en
+Meri booked crop check karo,CROP_INFO,hi_roman
+What is my collection centre?,CENTRE_INFO,en
+मेरा टोकन नंबर दिखाइए,TOKEN_NUMBER,hi
+Kaunse papers chahiye?,DOCUMENTS,hi_roman
+Maine kaunsi crop select ki?,CROP_INFO,hi_roman
+Kya meri booking confirm hai?,BOOKING_STATUS,hi_roman
+Please guide me,HELP,hi_roman
+Which centre should I go to?,CENTRE_INFO,en
+Show me the centre location,CENTRE_INFO,en
+माझ्याआधी किती टोकन आहेत?,QUEUE_POSITION,mr
+Kya papers ready rakhne hain?,DOCUMENTS,hinglish
+Procurement ka time kaise select karein?,BOOKING_HELP,hi_roman
+Yeh chatbot kaise use karein?,HELP,hi_roman
+Can I know my assigned centre?,CENTRE_INFO,en
+मेरी फसल बताइए,CROP_INFO,hi
+माझ्या बुकिंगचा टोकन काय आहे?,TOKEN_NUMBER,mr
+मेरी आरक्षण स्थिति बताओ,BOOKING_STATUS,hi
+बुकिंग के लिए मेरा टोकन क्या है?,TOKEN_NUMBER,hi
+Meri booking ka haal batao,BOOKING_STATUS,hi_roman
+Aatta kontya tokenchi pali aahe?,CURRENT_SERVING,mr_roman
+Booking wapas kaise lein?,CANCEL_BOOKING,hi_roman
+Mala majhi booking radd karaychi aahe,CANCEL_BOOKING,mr_roman
+Is my procurement slot confirmed?,BOOKING_STATUS,hinglish
+क्या आप मेरी बुकिंग में मदद कर सकते हैं?,HELP,hi
+Kitne kisan mere pehle hain?,QUEUE_POSITION,hi_roman
+कैंसल करने के लिए क्या करना होगा?,CANCEL_BOOKING,hi
+गरजेची कागदपत्रे कोणती?,DOCUMENTS,mr
+Can you show my token number?,TOKEN_NUMBER,en
+मला कोणती कागदपत्रे हवी आहेत?,DOCUMENTS,mr
+लाइन में मेरी जगह क्या है?,QUEUE_POSITION,hi
+Mera queue position check karo,QUEUE_POSITION,hinglish
+What documents do I need?,DOCUMENTS,hinglish
+मेरी चुनी हुई फसल क्या है?,CROP_INFO,hi
+Kya meri procurement booking confirm hai?,BOOKING_STATUS,hi_roman
+Mera token kaha hai?,TOKEN_NUMBER,hinglish
+प्रोक्योरमेंट स्लॉट कसा रद्द करायचा?,CANCEL_BOOKING,mr
+मैं कतार में कहाँ खड़ा हूँ?,QUEUE_POSITION,hi
+मुझे कौन से कागज चाहिए?,DOCUMENTS,hi
+Aap kaunse services provide karte ho?,HELP,hinglish
+Where am I in the queue?,QUEUE_POSITION,en
+Booking kaise karni hai?,BOOKING_HELP,hi_roman
+Majhi booking kontya pikasathi aahe?,CROP_INFO,mr_roman
+Tell me my procurement centre,CENTRE_INFO,en
+How can I book a slot?,BOOKING_HELP,en
+Kya main apni booking cancel kar sakta hoon?,CANCEL_BOOKING,hi_roman
+Meri booking ka token kya hai?,TOKEN_NUMBER,hi_roman
+Tell me the current serving token,CURRENT_SERVING,en
+स्लॉट बुक करने का तरीका बताओ,BOOKING_HELP,hi
+Meri bari se pehle kitne kisan hain?,QUEUE_POSITION,hi_roman
+Token ki info chahiye,TOKEN_NUMBER,hinglish
+मेरी बुकिंग की स्थिति क्या है?,BOOKING_STATUS,hi
+Selected crop batao,CROP_INFO,hinglish
+Give me some help,HELP,en
+Mere token ki jankari do,TOKEN_NUMBER,hi_roman
+Meri slot booking hatao,CANCEL_BOOKING,hinglish
+Mera token kya hai bhai?,TOKEN_NUMBER,hinglish
+मेरी बुकिंग सत्यापित करो,BOOKING_STATUS,hi
+मुझे स्लॉट चाहिए,BOOKING_HELP,hi
+Slot booking help please,BOOKING_HELP,en
+माझा स्लॉट मंजूर झाला का?,BOOKING_STATUS,mr
+Tumchya suvidha kay aahet?,HELP,mr_roman
+स्लॉट कसा रिजर्व करायचा?,BOOKING_HELP,mr
+Centre information please,CENTRE_INFO,en
+How do I book a procurement slot?,BOOKING_HELP,en
+Centrechi mahiti havi aahe,CENTRE_INFO,mr_roman
+Konte utpadan book aahe?,CROP_INFO,mr_roman
+Avashyak kagadpatre sanga,DOCUMENTS,mr_roman
+Where is my assigned procurement location?,CENTRE_INFO,en
+Kaunse kagaz leke aane hain?,DOCUMENTS,hinglish
+Aur kitna wait karna hai?,WAITING_TIME,hi_roman
+माझी बुकिंग रद्द होऊ शकते का?,CANCEL_BOOKING,mr
+नमस्कार सहाय्यक,GREETING,mr
+मी कोणते पीक बुक केले आहे?,CROP_INFO,mr
+मदतीचे पर्याय दाखवा,HELP,mr
+Pikachi mahiti havi aahe,CROP_INFO,mr_roman
+How can I cancel this slot?,CANCEL_BOOKING,hinglish
+Which documents should I keep ready?,DOCUMENTS,en
+मेरी बुकिंग सफल हुई है?,BOOKING_STATUS,hi
+मला स्लॉट कॅन्सल करायचा आहे,CANCEL_BOOKING,mr
+Mere booking ka token batao,TOKEN_NUMBER,hinglish
+कौन से पेपर लाने होंगे?,DOCUMENTS,hi
+Meri bari kitne minutes mein aayegi?,WAITING_TIME,hi_roman
+Aap kya kya kar sakte hain?,HELP,hi_roman
+Hello ma'am,GREETING,hi_roman
+Mi tumhala kay vicharu shakto?,HELP,mr_roman
+Hello ma'am,GREETING,en
+Aur kitna wait karna hai?,WAITING_TIME,hinglish
+कौन सा उत्पाद बुक है?,CROP_INFO,hi
+Kya mera slot approve hua hai?,BOOKING_STATUS,hi_roman
+Sadhyacha serving number kay aahe?,CURRENT_SERVING,mr_roman
+नमस्कार QueueKisan,GREETING,hi
+कौन से पेपर चाहिए?,DOCUMENTS,hi
+Is time kaunsa token hai?,CURRENT_SERVING,hi_roman
+Line mein meri position kya hai?,QUEUE_POSITION,hinglish
+माझी बुकिंग कन्फर्म आहे का?,BOOKING_STATUS,mr
+Please check my waiting time,WAITING_TIME,en
+Which produce is booked?,CROP_INFO,en
+करंट टोकन बताओ,CURRENT_SERVING,hi
+Where is my booking centre?,CENTRE_INFO,en
+Majhi booking verify kara,BOOKING_STATUS,mr_roman
+Ha slot radd karaycha aahe,CANCEL_BOOKING,mr_roman
+My crop details please,CROP_INFO,en
+I forgot my token number,TOKEN_NUMBER,en
+Chat start karein,GREETING,hinglish
+Maza token dakhva,TOKEN_NUMBER,mr_roman
+इस समय कौन सा नंबर लिया जा रहा है?,CURRENT_SERVING,hi
+Booking kahan se cancel hogi?,CANCEL_BOOKING,hi_roman
+Majhyasathi konta token aahe?,TOKEN_NUMBER,mr_roman
+Where is my token in the queue?,QUEUE_POSITION,en
+माझी बुकिंग पडताळा,BOOKING_STATUS,mr
+Show the crop in my booking,CROP_INFO,en
+अभी कौन सा नंबर बुलाया गया है?,CURRENT_SERVING,hi
+बुकिंग कैसे करनी है?,BOOKING_HELP,hi
+Cancel booking please,CANCEL_BOOKING,en
+Mere token ki information chahiye,TOKEN_NUMBER,hi_roman
+Abhi kaunsa number chal raha hai?,CURRENT_SERVING,hi_roman
+QueueKisan बद्दल काय विचारू शकतो?,HELP,mr
+कोणता टोकन सर्व्ह होत आहे?,CURRENT_SERVING,mr
+Hello farmer assistant,GREETING,hinglish
+Konti kagadpatre lagtat?,DOCUMENTS,mr_roman
+Cancel karne ke liye kya karna hoga?,CANCEL_BOOKING,hinglish
+माझ्याआधी किती लोकांची पाळी येईल?,QUEUE_POSITION,mr
+Tumhi mala madat karu shakta ka?,GREETING,mr_roman
+मेरा सेंटर कहाँ है?,CENTRE_INFO,hi
+Booking kuthun suru karaychi?,BOOKING_HELP,mr_roman
+Booking cancel possible hai kya?,CANCEL_BOOKING,hinglish
+Meri queue place batao,QUEUE_POSITION,hinglish
+Meri booking ka kya hua?,BOOKING_STATUS,hinglish
+क्या आप मेरी फसल बता सकते हैं?,CROP_INFO,hi
+हाय QueueKisan,GREETING,mr
+Majhyavarti kiti token aahet?,QUEUE_POSITION,mr_roman
+Centre par mujhe kya lana hai?,DOCUMENTS,hi_roman
+Which token is active at the centre?,CURRENT_SERVING,hinglish
+कितने लोगों की बारी पहले आएगी?,QUEUE_POSITION,hi
+Main apni booking kaise cancel karun?,CANCEL_BOOKING,hi_roman
+Wait time batao,WAITING_TIME,hi_roman
+Sadhya konta token serve hot aahe?,CURRENT_SERVING,mr_roman
+Hey there,GREETING,en
+Hello QueueKisan,GREETING,en
+Expected wait time kya hai?,WAITING_TIME,hinglish
+Centre par kaunse documents lagenge?,DOCUMENTS,hi_roman
+Meri bari kab hogi?,WAITING_TIME,hinglish
+What did I book for procurement?,CROP_INFO,en
+Booking status chahiye,BOOKING_STATUS,hi_roman
+Tumhi shetkaryanna kashi madat karta?,HELP,mr_roman
+What documents are required?,DOCUMENTS,en
+Please help cancel slot,CANCEL_BOOKING,hinglish
+Abhi kaunsa token serve ho raha hai?,CURRENT_SERVING,hinglish
+मुझे क्या लेकर आना है?,DOCUMENTS,hi
+Which procurement centre do I have?,CENTRE_INFO,en
+केंद्र पर कौन से दस्तावेज लगेंगे?,DOCUMENTS,hi
+मी रांगेत कुठे आहे?,QUEUE_POSITION,mr
+माझ्या पिकाची माहिती द्या,CROP_INFO,mr
+Please cancel my booking,CANCEL_BOOKING,en
+How many farmers are waiting before me?,QUEUE_POSITION,en
+Mera procurement centre kaunsa hai?,CENTRE_INFO,hi_roman
+माझ्या पाळीला किती वेळ आहे?,WAITING_TIME,mr
+Majhya pudhe kiti shetkari aahet?,QUEUE_POSITION,mr_roman
+Tell me my token number,TOKEN_NUMBER,en
+Kaunse documents necessary hain?,DOCUMENTS,hi_roman
+Slot kahan se book hoga?,BOOKING_HELP,hi_roman
+मेरा क्यू पोजीशन क्या है?,QUEUE_POSITION,hi
+Mera wait time kitna hai?,WAITING_TIME,hinglish
+आत्ता कोणता नंबर चालू आहे?,CURRENT_SERVING,mr
+Meri crop details kya hain?,CROP_INFO,hinglish
+Hi assistant,GREETING,hinglish
+Slot kaise book karein?,BOOKING_HELP,hinglish
+Meri booking ka centre kya hai?,CENTRE_INFO,hinglish
+Mi maze peek kuthe gheun jau?,CENTRE_INFO,mr_roman
+माझ्या बुकिंगचा नंबर कोणता आहे?,TOKEN_NUMBER,mr
+Majhya bookingcha status kay aahe?,BOOKING_STATUS,mr_roman
+What is the process to book?,BOOKING_HELP,en
+Mere token se kaunsi crop judi hai?,CROP_INFO,hi_roman
+टोकन सर्व होने में कितना समय है?,WAITING_TIME,hi
+Waiting time check karo,WAITING_TIME,hinglish
+Maine kaunsi fasal book ki hai?,CROP_INFO,hi_roman
+यह बुकिंग हटानी है,CANCEL_BOOKING,hi
+Hi assistant,GREETING,mr_roman
+Tumhi majhi kashi madat karu shakta?,HELP,mr_roman
+I want to know my token,TOKEN_NUMBER,en
+Main line mein kahan hoon?,QUEUE_POSITION,hi_roman
+टोकन नंबर चेक करना है,TOKEN_NUMBER,hi
+हा असिस्टंट माझी कशी मदत करेल?,HELP,mr
+माझा टोकन काय आहे?,TOKEN_NUMBER,mr
+What help do you provide?,HELP,hinglish
+Hi QueueKisan,GREETING,hinglish
+Majhyasathi konte centre nivadle aahe?,CENTRE_INFO,mr_roman
+Please check my wait time,WAITING_TIME,hinglish
+Slot kahan se book hoga?,BOOKING_HELP,hinglish
+Meri line position dikhao,QUEUE_POSITION,hinglish
+Zaroori documents kaunse hain?,DOCUMENTS,hi_roman
+Documents havi aahet,DOCUMENTS,mr_roman
+Where can I cancel my booking?,CANCEL_BOOKING,en
+Tumhi kay karu shakta?,HELP,mr_roman
+Booked crop check karo,CROP_INFO,hinglish
+Where is my token number?,TOKEN_NUMBER,en
+Mujhe slot cancel karna hai,CANCEL_BOOKING,hi_roman
+मुझे एक स्लॉट शेड्यूल करना है,BOOKING_HELP,hi
+Meri booking ke liye kaunse documents chahiye?,DOCUMENTS,hi_roman
+Meri bari kab hogi?,WAITING_TIME,hi_roman
+Mala maza token hava aahe,TOKEN_NUMBER,mr_roman
+कोणते कागद सोबत आणू?,DOCUMENTS,mr
+मला कोणते पुरावे आणायचे?,DOCUMENTS,mr
+What produce did I book?,CROP_INFO,en
+Mala konta token milala aahe?,TOKEN_NUMBER,mr_roman
+Booking mein help karoge?,HELP,hinglish
+Mala kay gheun yayche?,DOCUMENTS,mr_roman
+Which centre is selected for me?,CENTRE_INFO,hinglish
+मेरे आगे कितने लोग हैं?,QUEUE_POSITION,hi
+Majhi procurement booking confirm aahe ka?,BOOKING_STATUS,mr_roman
+क्या आप मेरा टोकन बता सकते हैं?,TOKEN_NUMBER,hi
+How do I book my crop slot?,BOOKING_HELP,en
+I want to check my booking,BOOKING_STATUS,en
+Main kitne number par hoon?,QUEUE_POSITION,hinglish
+What should I bring with me?,DOCUMENTS,en
+Mere procurement centre ki information do,CENTRE_INFO,hi_roman
+Meri crop ki information do,CROP_INFO,hi_roman
+I need assistance,HELP,en
+Document requirement kya hai?,DOCUMENTS,hinglish
+मी खरेदीसाठी काय बुक केले?,CROP_INFO,mr
+मी अॅपमधून स्लॉट बुक करू शकतो का?,BOOKING_HELP,mr
+Kya aap mujhe guide kar sakte hain?,HELP,hi_roman
+मला मदत हवी आहे,HELP,mr
+QueueKisan ke baare mein kya pooch sakta hoon?,HELP,hi_roman
+Main queue mein kaha hoon?,QUEUE_POSITION,hinglish
+बुकिंग वापस कैसे लें?,CANCEL_BOOKING,hi
+Main booking kaise karun?,BOOKING_HELP,hi_roman
+Help me,HELP,hinglish
+Meri queue position kya hai?,QUEUE_POSITION,hinglish
+स्लॉट बुक करने में मदद करें,BOOKING_HELP,hi
+Help please,HELP,hinglish
+बुकिंग रद्द करने में मदद चाहिए,CANCEL_BOOKING,hi
+I need support,HELP,en
+Mere aage kitne kisan wait kar rahe hain?,QUEUE_POSITION,hi_roman
+Tumhi maze centre sangu shakta ka?,CENTRE_INFO,mr_roman
+प्रोक्योरमेंटची वेळ कशी निवडायची?,BOOKING_HELP,mr
+Mere centre ka naam bataiye,CENTRE_INFO,hi_roman
+Majhyasathi konte peek nivadale aahe?,CROP_INFO,mr_roman
+मेरी बुकिंग किस फसल के लिए है?,CROP_INFO,hi
+माझ्या पुढे किती टोकन आहेत?,QUEUE_POSITION,mr
+Hey QueueKisan,GREETING,mr_roman
+Main yahan hoon,GREETING,hi_roman
+मेरे स्लॉट के लिए कौन सी फसल है?,CROP_INFO,hi
+Which crop is my booking for?,CROP_INFO,en
+प्रोक्योरमेंट बुकिंग कैसे रद्द करें?,CANCEL_BOOKING,hi
+मला बुकिंगची मदत हवी आहे,BOOKING_HELP,mr
+क्यूमध्ये माझी जागा कोणती?,QUEUE_POSITION,mr
+Which crop did I select?,CROP_INFO,hinglish
+I need support,HELP,hinglish
+कौन सा टोकन एक्टिव है?,CURRENT_SERVING,hi
+What procurement location is assigned to me?,CENTRE_INFO,en
+Meri reservation confirm hai?,BOOKING_STATUS,hinglish
+Meri bari ka estimated time kya hai?,WAITING_TIME,hinglish
+माझा वेटिंग टाइम तपासा,WAITING_TIME,mr
+Mala slot book karaycha aahe,BOOKING_HELP,mr_roman
+फसल की जानकारी चाहिए,CROP_INFO,hi
+Slot cancel karne ka tareeka bataiye,CANCEL_BOOKING,hi_roman
+Mala slot hava aahe,BOOKING_HELP,mr_roman
+Majhya procurement centrechi mahiti dya,CENTRE_INFO,mr_roman
+हैलो,GREETING,hi
+कोणते कागद आणायचे?,DOCUMENTS,mr
+Queue mein mera place kya hai?,QUEUE_POSITION,hi_roman
+मैं कतार में कितने नंबर पर हूँ?,QUEUE_POSITION,hi
+Tell me available help,HELP,hinglish
+Help please,HELP,mr_roman
+Mujhe kya lekar aana hai?,DOCUMENTS,hi_roman
+मुझे कितनी देर इंतजार करना होगा?,WAITING_TIME,hi
+Maze kharedi kendra konte aahe?,CENTRE_INFO,mr_roman
+Majhya paliaadhi kiti shetkari aahet?,QUEUE_POSITION,mr_roman
+Show my crop,CROP_INFO,en
+Majhya bookingmadhe konte peek nondale aahe?,CROP_INFO,mr_roman
+Garjechi kagadpatre konti?,DOCUMENTS,mr_roman
+Maze reservation cancel karayche aahe,CANCEL_BOOKING,mr_roman
+मुझे बुकिंग कैंसलेशन की मदद चाहिए,CANCEL_BOOKING,hi
+Now serving token sanga,CURRENT_SERVING,mr_roman
+मैंने कौन सी फसल चुनी?,CROP_INFO,hi
+माझ्या बुकिंगमध्ये कोणते पीक नोंदले आहे?,CROP_INFO,mr
+सध्याचा सर्व्हिंग टोकन सांगा,CURRENT_SERVING,mr
+मेरी लाइन की स्थिति बताओ,QUEUE_POSITION,hi
+बुक केलेले पीक दाखवा,CROP_INFO,mr
+Mera slot schedule kaise karu?,BOOKING_HELP,hinglish
+Maza centre kuthe aahe?,CENTRE_INFO,mr_roman
+Queue mein mera number kya hai?,QUEUE_POSITION,hi_roman
+Good evening,GREETING,hinglish
+Cancel booking please,CANCEL_BOOKING,hinglish
+How do I reserve a slot?,BOOKING_HELP,en
+What can I ask?,HELP,hinglish
+What token is being processed now?,CURRENT_SERVING,en
+मुझे सपोर्ट चाहिए,HELP,hi
+Mera booking status batao,BOOKING_STATUS,hinglish
+वर्तमान में किस टोकन की सेवा हो रही है?,CURRENT_SERVING,hi
+Current token konta aahe?,CURRENT_SERVING,mr_roman
+Tell me my current booking status,BOOKING_STATUS,en
+Which crop is selected for me?,CROP_INFO,en
+Booking radd karanyasathi madat havi aahe,CANCEL_BOOKING,mr_roman
+मेरी बुकिंग के बारे में बताओ,BOOKING_STATUS,hi
+Help options dikhao,HELP,hi_roman
+माझे बुक केलेले पीक तपासा,CROP_INFO,mr
+Mala ajun kiti vel thambave lagel?,WAITING_TIME,mr_roman
+Maza slot barobar aahe ka?,BOOKING_STATUS,mr_roman
+Required papers please,DOCUMENTS,hinglish
+माझा टोकन नंबर काय आहे?,TOKEN_NUMBER,mr
+Cancel karne ka process kya hai?,CANCEL_BOOKING,hi_roman
+Which token is on the counter?,CURRENT_SERVING,en
+कोणती कागदपत्रे लागतात?,DOCUMENTS,mr
+Good afternoon,GREETING,en
+Documents ki information chahiye,DOCUMENTS,hi_roman
+Main queue mein kahan khada hoon?,QUEUE_POSITION,hi_roman
+Tumhi kay karu shakta?,HELP,mr_roman
+Check whether my slot is confirmed,BOOKING_STATUS,en
+Current token kaunsa hai?,CURRENT_SERVING,hinglish
+क्या मेरी बुकिंग रद्द हो सकती है?,CANCEL_BOOKING,hi
+Majhi queue position check kara,QUEUE_POSITION,mr_roman
+माझ्यासाठी कोणते खरेदी केंद्र आहे?,CENTRE_INFO,mr
+Slot kaise cancel karein?,CANCEL_BOOKING,hinglish
+माझी बुकिंग कोणत्या पिकासाठी आहे?,CROP_INFO,mr
+What paperwork do I need?,DOCUMENTS,en
+खरेदीसाठी कोणती कागदपत्रे हवीत?,DOCUMENTS,mr
+What proof should I carry?,DOCUMENTS,en
+What can you do for farmers?,HELP,hinglish
+माझी बुकिंग यशस्वी झाली का?,BOOKING_STATUS,mr
+Meri turn kitne minute mein hai?,WAITING_TIME,hinglish
+मेरी बुक की फसल चेक करो,CROP_INFO,hi
+मेरे टोकन की जानकारी दो,TOKEN_NUMBER,hi
+Good afternoon,GREETING,hinglish
+माझ्या बुकिंगची माहिती सांगा,BOOKING_STATUS,mr
+हॅलो चॅटबॉट,GREETING,mr
+Majhi booking cancel kara,CANCEL_BOOKING,mr_roman
+मेरे आगे कितने किसान हैं?,QUEUE_POSITION,hi
+Abhi kaunsa token chal raha hai?,CURRENT_SERVING,hinglish
+Kitna time baki hai?,WAITING_TIME,hinglish
+What token did I get?,TOKEN_NUMBER,en
+Counter par kaunsa token hai?,CURRENT_SERVING,hinglish
+हैलो मैडम,GREETING,hi
+Mi maza token kuthe pahu shakto?,TOKEN_NUMBER,mr_roman
+Mera token number kahan hai?,TOKEN_NUMBER,hi_roman
+अभी कौन सा टोकन सर्व हो रहा है?,CURRENT_SERVING,hi
+हॅलो असिस्टंट,GREETING,mr
+Mujhe guidance chahiye,HELP,hinglish
+Slot radd karta yeto ka?,CANCEL_BOOKING,mr_roman
+Mi konte utpadan book kele?,CROP_INFO,mr_roman
+Hi QueueKisan,GREETING,mr_roman
+मेरे लिए कौन सा बाजार केंद्र है?,CENTRE_INFO,hi
+Yeh slot cancel karna hai,CANCEL_BOOKING,hi_roman
+What is the estimated waiting time?,WAITING_TIME,en
+Majhya aadhi kiti lokanchi pali aahe?,QUEUE_POSITION,mr_roman
+Main kaunsi fasal centre par le jaaun?,CROP_INFO,hi_roman
+मुझे कौन से दस्तावेज चाहिए?,DOCUMENTS,hi
+बुकी हुई फसल दिखाओ,CROP_INFO,hi
+What documents are required at the centre?,DOCUMENTS,en
+What is the current waiting time?,WAITING_TIME,en
+How much time before my token is served?,WAITING_TIME,en
+शुभ दिवस,GREETING,mr
+Token number sanga,TOKEN_NUMBER,mr_roman
+What papers are needed?,DOCUMENTS,en
+Booking ka process kya hai?,BOOKING_HELP,hi_roman
+Mujhe apna token chahiye,TOKEN_NUMBER,hinglish
+Kay anane avashyak aahe?,DOCUMENTS,mr_roman
+I need to book a slot,BOOKING_HELP,en
+Token dikha do please,TOKEN_NUMBER,hinglish
+What information can you provide?,HELP,en
+जो टोकन अभी चल रहा है वह कौन सा है?,CURRENT_SERVING,hi
+प्रोक्योरमेंट स्लॉट कैसे बुक करें?,BOOKING_HELP,hi
+हैलो जी,GREETING,hi
+Token number show karo,TOKEN_NUMBER,hinglish
+What is my waiting time?,WAITING_TIME,en
+How can I cancel my slot?,CANCEL_BOOKING,en
+Kontya kendravar hajar rahayche?,CENTRE_INFO,mr_roman

@@ -1,0 +1,234 @@
+/**
+ * KrushiDarpan — Internationalization (i18n) Styles
+ */
+
+/* ===== Header Language Selector ===== */
+.header-lang-selector {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 6px;
+  z-index: 100;
+}
+
+.header-lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: rgba(32, 122, 64, 0.1);
+  border: 1px solid rgba(32, 122, 64, 0.25);
+  color: #207A40;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.header-lang-btn:hover {
+  background: rgba(32, 122, 64, 0.18);
+  border-color: #207A40;
+  transform: translateY(-1px);
+}
+
+.header-lang-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  background: #ffffff;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  padding: 4px;
+  min-width: 120px;
+  z-index: 200;
+  animation: slideDown 0.18s ease-out;
+}
+
+.lang-option-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
+  border: none;
+  background: transparent;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1F2937;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.15s;
+}
+
+.lang-option-btn:hover {
+  background: #F0FDF4;
+  color: #207A40;
+}
+
+.lang-option-btn.active {
+  background: #207A40;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ===== Fixed Floating Language Selector (Auth pages) ===== */
+.lang-selector-container {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 1000;
+}
+
+.lang-selector-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  border: 1px solid #E5E7EB;
+  color: #1F2937;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.lang-selector-btn:hover {
+  background-color: #F0FDF4;
+  border-color: #207A40;
+  box-shadow: 0 4px 12px rgba(32, 122, 64, 0.12);
+}
+
+.lang-selector-icon {
+  font-size: 15px;
+}
+
+.lang-selector-text {
+  white-space: nowrap;
+}
+
+.lang-selector-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  padding: 4px;
+  min-width: 130px;
+  overflow: hidden;
+  z-index: 1001;
+  animation: slideDown 0.18s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lang-option {
+  display: block;
+  width: 100%;
+  padding: 9px 14px;
+  background: none;
+  border: none;
+  text-align: left;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1F2937;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.15s;
+}
+
+.lang-option:hover {
+  background-color: #F0FDF4;
+  color: #207A40;
+}
+
+.lang-option.active {
+  background-color: #207A40;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ===== Language Switcher in Profile ===== */
+.lang-switcher-section {
+  padding: 16px 20px;
+  border-top: 1px solid #E5E7EB;
+  border-bottom: 1px solid #E5E7EB;
+  margin: 16px 0;
+}
+
+.lang-switcher-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.lang-switcher-options {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.lang-switcher-btn {
+  flex: 1;
+  min-width: 80px;
+  padding: 10px 12px;
+  background-color: #ffffff;
+  border: 1.5px solid #E5E7EB;
+  color: #1F2937;
+  border-radius: 10px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.lang-switcher-btn:hover {
+  border-color: #207A40;
+  background-color: #F0FDF4;
+  color: #207A40;
+}
+
+.lang-switcher-btn.active {
+  background-color: #207A40;
+  border-color: #207A40;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(32, 122, 64, 0.2);
+}
+
+/* ===== Accessibility ===== */
+.lang-selector-btn:focus,
+.lang-option:focus,
+.header-lang-btn:focus,
+.lang-option-btn:focus,
+.lang-switcher-btn:focus {
+  outline: 2px solid #207A40;
+  outline-offset: 2px;
+}

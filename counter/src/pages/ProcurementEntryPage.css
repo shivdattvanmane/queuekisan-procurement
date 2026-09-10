@@ -1,0 +1,767 @@
+/* ============================================================
+   KrushiDarpan ACC — Procurement Entry & Settlement Page
+   ============================================================ */
+
+.procurement-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ── Top Header ── */
+.procurement-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.procurement-header-left h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.procurement-header-left p {
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+}
+
+.procurement-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ── Process Stepper ── */
+.procurement-stepper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  background: var(--color-card);
+  padding: 16px;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: var(--color-bg);
+  border: 1px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.step-item.active {
+  background: var(--color-soft-green);
+  border-color: #a7f3d0;
+}
+
+.step-item.completed {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.step-number {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  background: #cbd5e1;
+  color: #334155;
+  flex-shrink: 0;
+}
+
+.step-item.active .step-number {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.step-item.completed .step-number {
+  background: var(--color-primary-dark);
+  color: #fff;
+}
+
+.step-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-title {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.step-desc {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* ── Main 2-Column Grid Layout ── */
+.procurement-grid {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* ── Left Column Cards ── */
+.left-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.farmer-summary-card,
+.bank-summary-card,
+.msp-reference-card {
+  background: var(--color-card);
+  border-radius: var(--radius-card);
+  padding: 20px;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.card-heading-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.token-pill {
+  background: var(--color-primary-dark);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+}
+
+.data-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.data-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.data-label {
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.data-val {
+  font-weight: 600;
+  color: var(--color-text);
+  text-align: right;
+}
+
+.data-val.crop {
+  color: var(--color-primary);
+  font-weight: 700;
+  background: var(--color-soft-green);
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.bank-verified-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1d4ed8;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+/* ── MSP Reference Table ── */
+.msp-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.msp-chip {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all var(--transition-fast);
+}
+
+.msp-chip:hover {
+  border-color: var(--color-primary);
+  background: var(--color-soft-green);
+  color: var(--color-primary-dark);
+}
+
+.msp-chip.active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+}
+
+/* ── Right Column: Form Workspace ── */
+.procurement-form-card {
+  background: var(--color-card);
+  border-radius: var(--radius-card);
+  padding: 24px 28px;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-top: 4px solid var(--color-primary);
+}
+
+.form-section-title {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-section-divider {
+  border-top: 1px dashed var(--color-border);
+  margin: 8px 0;
+}
+
+.form-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-3col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.field-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.field-input {
+  width: 100%;
+  height: 44px;
+  padding: 0 14px;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-input);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text);
+  background: var(--color-card);
+  transition: all var(--transition-fast);
+}
+
+.field-input.has-addon-right {
+  padding-right: 48px;
+}
+
+.field-input.has-addon-left {
+  padding-left: 36px;
+}
+
+.field-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(32, 122, 64, 0.12);
+}
+
+.field-input:disabled {
+  background: #f8fafc;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+.input-unit {
+  position: absolute;
+  right: 14px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.input-prefix {
+  position: absolute;
+  left: 14px;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  pointer-events: none;
+}
+
+.helper-btn {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  transition: color var(--transition-fast);
+}
+
+.helper-btn:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
+
+/* Moisture Status Badge */
+.moisture-status-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  width: fit-content;
+  margin-top: 4px;
+}
+
+.moisture-status-tag.good {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.moisture-status-tag.acceptable {
+  background: #fffbeb;
+  color: #b45309;
+  border: 1px solid #fde68a;
+}
+
+.moisture-status-tag.high {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+/* ── Live Calculation Card ── */
+.calc-summary-card {
+  background: linear-gradient(135deg, #0f3d1f 0%, #17542d 100%);
+  color: #fff;
+  border-radius: var(--radius-card);
+  padding: 22px 24px;
+  box-shadow: 0 10px 25px -5px rgba(16, 64, 32, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.calc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 12px;
+}
+
+.calc-title {
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.calc-formula-badge {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.calc-items-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 4px 0;
+}
+
+.calc-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.calc-item-label {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.calc-item-value {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.calc-total-box {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.calc-total-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.calc-total-amount {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #4ade80;
+  line-height: 1;
+}
+
+.calc-in-words {
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-style: italic;
+  padding-top: 4px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.15);
+}
+
+/* ── Form Actions ── */
+.form-actions-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-border);
+}
+
+.btn-procure {
+  height: 46px;
+  padding: 0 22px;
+  border-radius: var(--radius-button);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-procure.primary {
+  background: var(--color-primary);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(32, 122, 64, 0.25);
+}
+
+.btn-procure.primary:hover:not(:disabled) {
+  background: var(--color-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(32, 122, 64, 0.35);
+}
+
+.btn-procure.accent {
+  background: #0284c7;
+  color: #fff;
+}
+
+.btn-procure.accent:hover:not(:disabled) {
+  background: #0369a1;
+}
+
+.btn-procure.secondary {
+  background: var(--color-bg);
+  border: 1.5px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.btn-procure.secondary:hover:not(:disabled) {
+  background: #e2e8f0;
+}
+
+.btn-procure:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* ── Receipt Modal ── */
+.receipt-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.receipt-modal-card {
+  background: #fff;
+  width: 100%;
+  max-width: 680px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: var(--radius-card);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+.receipt-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg);
+}
+
+.receipt-content-printable {
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #0f172a;
+}
+
+.receipt-header-branding {
+  text-align: center;
+  border-bottom: 2px solid #0f172a;
+  padding-bottom: 16px;
+}
+
+.receipt-org {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.receipt-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 4px 0;
+}
+
+.receipt-centre {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.receipt-meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  background: #f8fafc;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  font-size: 0.8125rem;
+}
+
+.receipt-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.receipt-table th {
+  background: #f1f5f9;
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1.5px solid #cbd5e1;
+  font-weight: 700;
+}
+
+.receipt-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.receipt-table .num-cell {
+  text-align: right;
+  font-weight: 600;
+}
+
+.receipt-total-highlight {
+  background: #ecfdf5;
+  border: 1.5px solid #a7f3d0;
+  border-radius: 8px;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.receipt-signatures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 24px;
+  padding-top: 16px;
+}
+
+.sig-box {
+  border-top: 1px solid #94a3b8;
+  padding-top: 8px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.receipt-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 16px 24px;
+  border-top: 1px solid var(--color-border);
+  background: var(--color-bg);
+}
+
+/* ── Print Specific Styling ── */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .receipt-content-printable,
+  .receipt-content-printable * {
+    visibility: visible;
+  }
+
+  .receipt-modal-backdrop {
+    position: static;
+    background: none;
+    padding: 0;
+  }
+
+  .receipt-modal-card {
+    max-width: 100%;
+    box-shadow: none;
+    border: none;
+  }
+
+  .receipt-modal-header,
+  .receipt-modal-footer {
+    display: none !important;
+  }
+
+  .receipt-content-printable {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  .procurement-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .procurement-stepper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .form-2col,
+  .form-3col {
+    grid-template-columns: 1fr;
+  }
+
+  .calc-items-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .procurement-stepper {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,541 @@
+/* =========================================
+   KrushiDarpan — Token Generated Styles
+   ========================================= */
+
+/* Topbar */
+.tg-topbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background-color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.tg-close-btn {
+  background: none;
+  border: none;
+  color: var(--dark-text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.tg-topbar-title h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark-text);
+}
+
+/* Main Content */
+.tg-main {
+  padding: 24px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Success Header */
+.tg-success-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+  animation: fadeSlideDown 0.5s ease-out;
+}
+
+@keyframes fadeSlideDown {
+  from { opacity: 0; transform: translateY(-16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.tg-success-icon-wrap {
+  width: 56px;
+  height: 56px;
+  background-color: #E0F4E0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(32, 122, 64, 0.15);
+}
+
+.tg-success-header p {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--krushi-green);
+}
+
+/* ---- Ticket Card ---- */
+.tg-ticket-card {
+  width: 100%;
+  max-width: 380px;
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  margin-bottom: 32px;
+  animation: fadeUp 0.6s ease-out 0.1s both;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.05));
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ticket Top: Token Info */
+.tg-ticket-top {
+  padding: 24px 20px;
+  text-align: center;
+  background-color: var(--krushi-deep-green);
+  color: var(--white);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tg-ticket-top::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.tg-token-label {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+}
+
+.tg-token-number {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 4px 0 8px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tg-booking-id {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.tg-booking-id span {
+  font-weight: 600;
+  color: var(--white);
+}
+
+/* Perforated Divider */
+.tg-ticket-divider {
+  position: relative;
+  height: 20px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+}
+
+.tg-ticket-divider::before {
+  content: '';
+  position: absolute;
+  top: -20px; /* Cover bottom of top section slightly if needed */
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: var(--krushi-deep-green);
+  z-index: 1;
+}
+
+.tg-ticket-divider .dashed-line {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  height: 0;
+  border-top: 2px dashed var(--border-gray);
+  z-index: 3;
+}
+
+.notch {
+  width: 24px;
+  height: 24px;
+  background-color: var(--cream-bg); /* Match app bg */
+  border-radius: 50%;
+  position: absolute;
+  z-index: 4;
+}
+
+.notch-left {
+  left: -12px;
+  box-shadow: inset -4px 0 6px rgba(0,0,0,0.03);
+}
+
+.notch-right {
+  right: -12px;
+  box-shadow: inset 4px 0 6px rgba(0,0,0,0.03);
+}
+
+/* Ticket Bottom: QR & Details */
+.tg-ticket-bottom {
+  background-color: var(--white);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 24px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+/* QR Section */
+.tg-qr-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.tg-qr-wrapper {
+  background-color: var(--white);
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid var(--pale-green);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tg-qr-instruction {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--krushi-green);
+}
+
+/* Details Grid */
+.tg-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  background-color: var(--cream-bg);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.tg-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tg-detail-item.full-width {
+  grid-column: span 2;
+  padding-bottom: 12px;
+  margin-bottom: 4px;
+  border-bottom: 1px dashed var(--border-gray);
+}
+
+.tg-d-label {
+  font-size: 11px;
+  color: var(--muted-gray);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.tg-d-val {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--dark-text);
+}
+
+.tg-d-val.highlight {
+  color: var(--krushi-deep-green);
+}
+
+/* ---- Prediction Card ---- */
+.tg-prediction-card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--white);
+  border: 1px solid var(--border-gray);
+  border-radius: 16px;
+  padding: 16px;
+  margin-top: -12px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+}
+
+.tg-prediction-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.tg-prediction-header h3 {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--dark-text);
+}
+
+.tg-prediction-chip {
+  background: rgba(32, 122, 64, 0.1);
+  color: var(--krushi-green);
+  border: 1px solid rgba(32, 122, 64, 0.18);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tg-prediction-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.tg-prediction-item {
+  background: var(--cream-bg);
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tg-prediction-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--muted-gray);
+}
+
+.tg-prediction-value {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--dark-text);
+}
+
+/* ---- Actions Container ---- */
+.tg-actions-container {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: fadeUp 0.6s ease-out 0.3s both;
+}
+
+.tg-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 12px;
+}
+
+.tg-action-btn.btn-primary {
+  background-color: var(--krushi-green);
+  transition: transform 0.1s, background-color 0.2s;
+}
+
+.tg-action-btn.btn-primary:active {
+  transform: scale(0.98);
+  background-color: var(--krushi-deep-green);
+}
+
+.tg-secondary-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.tg-secondary-actions .btn-outline {
+  flex: 1;
+  background-color: var(--white);
+}
+
+.tg-cancel-btn {
+  background: none;
+  border: none;
+  color: #D64545;
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 16px;
+  margin-top: 8px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* ---- QR Fullscreen Modal ---- */
+.tg-qr-modal-overlay,
+.tg-cancel-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 64, 32, 0.6);
+  backdrop-filter: blur(6px);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.tg-qr-modal-overlay.visible,
+.tg-cancel-modal-overlay.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tg-qr-modal-card {
+  background: var(--white);
+  border-radius: 24px;
+  padding: 32px 24px;
+  text-align: center;
+  width: 90%;
+  max-width: 340px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+  transform: scale(0.9) translateY(20px);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.tg-qr-modal-overlay.visible .tg-qr-modal-card {
+  transform: scale(1) translateY(0);
+}
+
+.tg-qr-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: var(--muted-gray);
+  cursor: pointer;
+  line-height: 1;
+}
+
+.tg-qr-modal-card h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--krushi-deep-green);
+}
+
+.tg-qr-modal-card p {
+  font-size: 13px;
+  color: var(--muted-gray);
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.tg-qr-large-wrap {
+  display: inline-block;
+  padding: 16px;
+  background: var(--white);
+  border: 2px solid var(--border-gray);
+  border-radius: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.tg-qr-large-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--pale-green);
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.tg-qr-large-token {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--krushi-green);
+}
+
+.tg-qr-large-time {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--krushi-deep-green);
+}
+
+/* ---- Cancel Modal ---- */
+.tg-cancel-modal-card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 24px;
+  text-align: center;
+  width: 90%;
+  max-width: 320px;
+  transform: scale(0.95);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tg-cancel-modal-overlay.visible .tg-cancel-modal-card {
+  transform: scale(1);
+}
+
+.tg-cancel-icon {
+  width: 64px;
+  height: 64px;
+  background-color: #FFEBEB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.tg-cancel-modal-card h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--dark-text);
+  margin-bottom: 8px;
+}
+
+.tg-cancel-modal-card p {
+  font-size: 14px;
+  color: var(--muted-gray);
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.tg-cancel-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.tg-cancel-actions .btn {
+  flex: 1;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.tg-btn-danger {
+  background-color: #D64545;
+  color: var(--white);
+  border: none;
+}
+
+.tg-btn-danger:active {
+  background-color: #B53636;
+}

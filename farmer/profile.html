@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>QueueKisan - Profile</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="i18n/i18n.css">
+</head>
+<body class="profile-body">
+  <div class="app-container profile-container">
+    <header class="profile-topbar">
+      <button class="profile-back-btn" id="backBtn" aria-label="Go to Home">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      </button>
+      <h1 data-i18n="profile.profile">Profile</h1>
+    </header>
+    <main class="profile-main">
+      <section class="profile-card" aria-label="Farmer profile">
+        <div class="profile-avatar">👨🏽‍🌾</div>
+        <h2 id="profileName">Farmer</h2>
+        <p id="profileMobile">Mobile number not available</p>
+        <div class="profile-details">
+          <div><span data-i18n="profile.farmerId">Farmer ID</span><strong id="profileId" data-i18n="profile.notAvailable">Not available</strong></div>
+          <div><span data-i18n="profile.village">Village</span><strong id="profileVillage" data-i18n="profile.notAvailable">Not available</strong></div>
+          <div><span data-i18n="profile.loginStatus">Login Status</span><strong id="profileLoginStatus" data-i18n="profile.active">Active</strong></div>
+          <div><span data-i18n="profile.lastLogin">Last Login</span><strong id="profileLastLogin" data-i18n="profile.notAvailable">Not available</strong></div>
+        </div>
+        <form class="profile-payment-form" id="paymentProfileForm">
+          <h3 data-i18n="payment.paymentDetails">Payment Details</h3>
+          <label>
+            <span data-i18n="payment.accountHolder">Account Holder</span>
+            <input id="paymentAccountHolder" type="text" autocomplete="name" placeholder="Farmer name">
+          </label>
+          <label>
+            <span data-i18n="payment.bankName">Bank Name</span>
+            <input id="paymentBankName" type="text" autocomplete="organization" placeholder="Bank name">
+          </label>
+          <label>
+            <span data-i18n="payment.accountNumber">Account Number</span>
+            <input id="paymentAccountNumber" type="text" inputmode="numeric" autocomplete="off" placeholder="Account number">
+          </label>
+          <label>
+            <span data-i18n="payment.ifsc">IFSC Code</span>
+            <input id="paymentIfsc" type="text" autocomplete="off" placeholder="IFSC code">
+          </label>
+          <label>
+            <span data-i18n="payment.upi">UPI ID</span>
+            <input id="paymentUpi" type="text" inputmode="email" autocomplete="off" placeholder="name@bank">
+          </label>
+          <button class="btn profile-save-btn w-full" id="savePaymentProfileBtn" type="submit" data-i18n="payment.saveDetails">Save Payment Details</button>
+          <p class="profile-payment-note" id="paymentProfileStatus" data-i18n="payment.note">Payment details help the centre process settlement faster.</p>
+        </form>
+        <button class="btn profile-logout-btn w-full" id="logoutBtn" type="button" data-i18n="profile.logout">Logout</button>
+      </section>
+
+      <!-- Language Switcher Section -->
+      <div class="lang-switcher-section">
+        <label class="lang-switcher-label" data-i18n="profile.changeLanguage">Change Language</label>
+        <div class="lang-switcher-options" id="langSwitcherOptions">
+          <button class="lang-switcher-btn" data-lang="en">English</button>
+          <button class="lang-switcher-btn" data-lang="mr">मराठी</button>
+          <button class="lang-switcher-btn" data-lang="hi">हिंदी</button>
+      </div>
+
+    </main>
+
+    <!-- ========== BOTTOM NAVIGATION ========== -->
+    <nav class="bottom-nav" id="bottomNav">
+      <a href="index.html" class="bnav-item" aria-label="Home">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span data-i18n="nav.home">Home</span>
+      </a>
+      <a href="history.html" class="bnav-item" aria-label="History">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span data-i18n="nav.history">History</span>
+      </a>
+      <a href="token-generated.html" class="bnav-item bnav-scan" aria-label="Scan QR">
+        <div class="scan-fab">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><rect x="7" y="7" width="3" height="3"/><rect x="14" y="7" width="3" height="3"/><rect x="7" y="14" width="3" height="3"/><rect x="14" y="14" width="3" height="3"/></svg>
+        </div>
+        <span data-i18n="nav.scan">Scan</span>
+      </a>
+      <a href="notifications.html" class="bnav-item" aria-label="Alerts">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        <span data-i18n="nav.alerts">Alerts</span>
+      </a>
+      <a href="profile.html" class="bnav-item active" aria-label="Profile">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span data-i18n="nav.profile">Profile</span>
+      </a>
+    </nav>
+
+  </div>
+
+  <!-- Translation Files -->
+  <script src="i18n/en.js"></script>
+  <script src="i18n/mr.js"></script>
+  <script src="i18n/hi.js"></script>
+  <script src="i18n/translator.js"></script>
+  <script src="js/appConfig.js"></script>
+  <script src="js/krushiApi.js"></script>
+  <script src="profile.js"></script>
+</body>
+</html>

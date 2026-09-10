@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  }
+
+body {
+background: #f4f7f4;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* Main chatbot */
+.chatbot-container {
+width: 400px;
+height: 650px;
+background: white;
+border-radius: 18px;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+.chatbot-header {
+background: #2e7d32;
+color: white;
+padding: 16px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.bot-info {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.bot-icon {
+width: 45px;
+height: 45px;
+background: white;
+color: #2e7d32;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+}
+
+.bot-info h2 {
+font-size: 18px;
+margin-bottom: 3px;
+}
+
+.bot-info span {
+font-size: 12px;
+opacity: 0.9;
+}
+
+.close-chat {
+border: none;
+background: transparent;
+color: white;
+font-size: 28px;
+cursor: pointer;
+}
+
+/* Messages area */
+.chat-messages {
+flex: 1;
+padding: 18px;
+overflow-y: auto;
+background: #f7faf7;
+}
+
+.message {
+display: flex;
+gap: 8px;
+margin-bottom: 15px;
+}
+
+.message-icon {
+width: 32px;
+height: 32px;
+background: #e8f5e9;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+}
+
+.message-content {
+max-width: 80%;
+}
+
+.message-content p {
+background: white;
+padding: 11px 13px;
+border-radius: 12px;
+font-size: 14px;
+line-height: 1.5;
+box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* User messages */
+.user-message {
+justify-content: flex-end;
+}
+
+.user-message .message-content p {
+background: #2e7d32;
+color: white;
+border-radius: 12px 12px 3px 12px;
+}
+
+/* Suggested questions */
+.suggested-questions {
+padding: 10px;
+display: flex;
+gap: 7px;
+overflow-x: auto;
+background: white;
+border-top: 1px solid #eeeeee;
+}
+
+.suggested-questions button {
+white-space: nowrap;
+border: 1px solid #2e7d32;
+background: white;
+color: #2e7d32;
+border-radius: 18px;
+padding: 8px 11px;
+cursor: pointer;
+font-size: 12px;
+}
+
+.suggested-questions button:hover {
+background: #e8f5e9;
+}
+
+/* Input area */
+.chat-input-area {
+display: flex;
+padding: 12px;
+gap: 8px;
+border-top: 1px solid #eeeeee;
+background: white;
+}
+
+.chat-input-area input {
+flex: 1;
+border: 1px solid #cccccc;
+border-radius: 22px;
+padding: 11px 15px;
+outline: none;
+font-size: 14px;
+}
+
+.chat-input-area input:focus {
+border-color: #2e7d32;
+}
+
+.chat-input-area button {
+width: 42px;
+height: 42px;
+border: none;
+border-radius: 50%;
+background: #2e7d32;
+color: white;
+font-size: 18px;
+cursor: pointer;
+}
+
+.chat-input-area button:hover {
+background: #1b5e20;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+
+body {
+    align-items: stretch;
+}
+
+.chatbot-container {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+}
+
+}

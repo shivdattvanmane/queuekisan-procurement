@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>QueueKisan — Review Booking</title>
+  <meta name="description" content="Review and confirm your crop procurement slot on QueueKisan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="confirm-booking.css">
+  <link rel="stylesheet" href="i18n/i18n.css">
+</head>
+<body>
+  <div class="app-container">
+
+    <!-- ========== TOP BAR ========== -->
+    <header class="sc-topbar">
+      <button class="sc-back-btn" id="backBtn" aria-label="Go back">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      </button>
+      <div class="sc-topbar-title">
+        <h1 data-i18n="confirm.confirmBooking">Confirm Booking</h1>
+        <p data-i18n="confirm.step4of4">Step 4 of 4 — Review and confirm</p>
+      </div>
+    </header>
+
+    <!-- ========== PROGRESS BAR ========== -->
+    <div class="sc-progress-bar">
+      <div class="sc-progress-track">
+        <div class="sc-progress-fill" style="width: 100%;"></div>
+      </div>
+      <div class="sc-progress-steps">
+        <span class="sc-step completed" data-i18n="step.crop">Crop</span>
+        <span class="sc-step completed" data-i18n="step.centre">Centre</span>
+        <span class="sc-step completed" data-i18n="step.slot">Slot</span>
+        <span class="sc-step active" data-i18n="step.confirm">Confirm</span>
+      </div>
+    </div>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="sc-main" id="mainContent">
+
+      <h2 class="cb-heading" data-i18n="confirm.bookingDetails">Booking Details</h2>
+      <p class="cb-subheading" data-i18n="confirm.step4of4">Please review your booking details before confirming.</p>
+
+      <!-- Booking Summary Card -->
+      <section class="cb-summary-card">
+        
+        <!-- Farmer Name Row -->
+        <div class="cb-summary-row">
+          <div class="cb-row-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div class="cb-row-content">
+            <span class="cb-label" data-i18n="profile.farmerProfile">Farmer</span>
+            <span class="cb-value" id="cbFarmerName">Loading...</span>
+          </div>
+        </div>
+
+        <div class="cb-divider"></div>
+
+        <!-- Centre Row -->
+        <div class="cb-summary-row">
+          <div class="cb-row-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="cb-row-content">
+            <span class="cb-label" data-i18n="confirm.procurementCentre">Procurement Centre</span>
+            <span class="cb-value" id="cbCentreName">Loading...</span>
+            <span class="cb-sub-value" id="cbCentreLoc">Loading...</span>
+          </div>
+        </div>
+
+        <div class="cb-divider"></div>
+
+        <!-- Crop Row -->
+        <div class="cb-summary-row">
+          <div class="cb-row-icon">
+            <span id="cbCropIcon" style="font-size: 16px;">🌾</span>
+          </div>
+          <div class="cb-row-content">
+            <span class="cb-label" data-i18n="confirm.crop">Crop</span>
+            <span class="cb-value" id="cbCropName">Loading...</span>
+          </div>
+        </div>
+
+        <div class="cb-divider"></div>
+
+        <!-- Date & Slot Row -->
+        <div class="cb-summary-row">
+          <div class="cb-row-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div class="cb-row-content">
+            <span class="cb-label" data-i18n="confirm.timeSlot">Date & Time Slot</span>
+            <span class="cb-value" id="cbDate">Loading...</span>
+            <span class="cb-sub-value highlight" id="cbTimeSlot">Loading...</span>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Estimated Quantity Input -->
+      <section class="cb-quantity-section">
+        <label for="estQuantity" class="cb-quantity-label" data-i18n="confirm.estimatedQuantity">Estimated Quantity (kg)</label>
+        <div class="cb-quantity-input-wrapper">
+          <input type="number" id="estQuantity" class="cb-quantity-input" placeholder="e.g. 500" min="1" max="9999">
+          <span class="cb-quantity-unit">kg</span>
+        </div>
+        <div id="cbMultiBookingInfo" style="display:none; margin-top:10px; padding:10px 14px; background:#e8f4ec; color:#186134; border-radius:10px; font-size:13px; font-weight:600;"></div>
+      </section>
+
+    </main>
+
+    <!-- ========== BOTTOM ACTION BAR ========== -->
+    <div class="sc-bottom-bar" id="bottomBar">
+      <button class="btn btn-primary btn-lg w-full cb-book-btn" id="bookTokenBtn">
+        <span class="btn-text" data-i18n="confirm.confirmAndProceed">Confirm Booking & Get Token</span>
+        <span class="btn-loader" style="display:none;">
+          <span class="spinner"></span>
+        </span>
+      </button>
+    </div>
+
+    <!-- ========== SUCCESS OVERLAY ========== -->
+    <div class="cb-success-overlay" id="successOverlay" style="display: none;">
+      <div class="cb-success-content">
+        <div class="cb-success-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#207A40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h2 class="cb-success-title" data-i18n="confirm.bookingConfirmed">Booking Confirmed!</h2>
+        <p class="cb-success-msg" data-i18n="confirm.yourTokenIs">Your slot has been reserved. Generating your token and QR code...</p>
+        
+        <!-- Animated loader -->
+        <div class="cb-loading-dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="i18n/en.js"></script>
+  <script src="i18n/mr.js"></script>
+  <script src="i18n/hi.js"></script>
+  <script src="i18n/translator.js"></script>
+  <script src="js/appConfig.js"></script>
+  <script src="js/krushiApi.js"></script>
+  <script src="confirm-booking.js?v=4"></script>
+</body>
+</html>

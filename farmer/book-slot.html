@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>QueueKisan — Book Slot</title>
+  <meta name="description" content="Select an available time slot for crop procurement on QueueKisan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="book-slot.css">
+  <link rel="stylesheet" href="i18n/i18n.css">
+</head>
+<body>
+  <div class="app-container">
+
+    <!-- ========== TOP BAR ========== -->
+    <header class="sc-topbar">
+      <button class="sc-back-btn" id="backBtn" aria-label="Go back">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      </button>
+      <div class="sc-topbar-title">
+        <h1 data-i18n="slot.bookSlot">Book Slot</h1>
+        <p data-i18n="slot.step3of4">Step 3 of 4 — Pick a date and time</p>
+      </div>
+    </header>
+
+    <!-- ========== PROGRESS BAR ========== -->
+    <div class="sc-progress-bar">
+      <div class="sc-progress-track">
+        <div class="sc-progress-fill" style="width: 75%;"></div>
+      </div>
+      <div class="sc-progress-steps">
+        <span class="sc-step completed" data-i18n="step.crop">Crop</span>
+        <span class="sc-step completed" data-i18n="step.centre">Centre</span>
+        <span class="sc-step active" data-i18n="step.slot">Slot</span>
+        <span class="sc-step" data-i18n="step.confirm">Confirm</span>
+      </div>
+    </div>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="sc-main">
+
+      <!-- Summary of Selections -->
+      <section class="bs-summary-card">
+        <div class="bs-summary-item">
+          <span class="bs-summary-label" data-i18n="slot.procurementCentre">Procurement Centre</span>
+          <div class="bs-summary-val" id="summaryCentre">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span id="centreText" data-i18n="slot.selectCentre">Select a centre...</span>
+          </div>
+        </div>
+        <div class="bs-summary-divider"></div>
+        <div class="bs-summary-item">
+          <span class="bs-summary-label" data-i18n="slot.crop">Crop</span>
+          <div class="bs-summary-val" id="summaryCrop">
+            <span id="cropIcon">🌾</span>
+            <span id="cropText" data-i18n="slot.selectCrop">Select a crop...</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Date Selection -->
+      <section class="bs-section">
+        <h3 class="bs-section-title" data-i18n="slot.selectDate">Select Date</h3>
+        <div class="bs-date-scroll" id="dateScroll">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+      <!-- Smart Suggestion -->
+      <section class="bs-smart-suggestion" id="smartSuggestion" style="display:none;">
+        <div class="bs-smart-header">
+          <div class="bs-smart-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#207A40" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <h4 data-i18n="slot.smartRecommendation">Smart Recommendation</h4>
+          </div>
+          <span class="bs-smart-badge" data-i18n="slot.aiSuggested">AI Suggested</span>
+        </div>
+        <div class="bs-smart-body">
+          <p><span data-i18n="slot.weRecommend">We recommend</span> <strong id="recSlotTime">02:00 PM – 03:00 PM</strong> <span data-i18n="slot.onDate">on</span> <strong id="recSlotDate">Today</strong>.</p>
+          <ul class="bs-smart-reasons">
+            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3A9A55" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="slot.lessCrowded">Less crowded</span></li>
+            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3A9A55" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> <span data-i18n="slot.lowerWaitTime">Lower estimated waiting time</span></li>
+          </ul>
+          <button class="btn btn-outline w-full bs-smart-btn" id="selectRecBtn" data-i18n="slot.selectRecommended">Select Recommended Slot</button>
+        </div>
+      </section>
+
+      <!-- Time Slots -->
+      <section class="bs-section">
+        <h3 class="bs-section-title" data-i18n="slot.selectTimeSlot">Select Time Slot</h3>
+        <div class="bs-slot-container" id="slotContainer">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ========== BOTTOM ACTION BAR ========== -->
+    <div class="sc-bottom-bar" id="bottomBar">
+      <div class="sc-selected-info" id="selectedInfo">
+        <span class="sc-selected-label" data-i18n="confirm.timeSlot">Time Slot:</span>
+        <span class="sc-selected-val" id="selectedSlotText">None selected</span>
+      </div>
+      <button class="sc-continue-btn disabled" id="continueBtn" disabled>
+        <span class="btn-text">Review Booking</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </button>
+    </div>
+
+  </div>
+  <script src="i18n/en.js"></script>
+  <script src="i18n/mr.js"></script>
+  <script src="i18n/hi.js"></script>
+  <script src="i18n/translator.js"></script>
+  <script src="js/appConfig.js"></script>
+  <script src="js/krushiApi.js"></script>
+  <script src="book-slot.js?v=4"></script>
+</body>
+</html>

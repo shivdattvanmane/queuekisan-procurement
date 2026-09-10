@@ -1,0 +1,250 @@
+/* KrushiDarpan - Token Called Styles */
+
+.tc-body {
+  background: linear-gradient(180deg, #E0F0E0 0, var(--cream-bg) 260px);
+}
+
+.tc-container {
+  min-height: 100vh;
+}
+
+.tc-topbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  background: var(--white);
+  border-bottom: 1px solid var(--border-gray);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.tc-back-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-text);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.tc-topbar-title h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark-text);
+}
+
+.tc-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 28px 20px 48px;
+}
+
+.tc-alert-section {
+  width: 100%;
+  text-align: center;
+  animation: tc-rise 0.45s ease-out both;
+}
+
+.tc-alert-icon {
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--krushi-green);
+  border-radius: 50%;
+  background: var(--white);
+  box-shadow: 0 8px 22px rgba(32, 122, 64, 0.2);
+}
+
+.tc-alert-title {
+  color: var(--krushi-deep-green);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.tc-alert-subtitle {
+  margin-top: 8px;
+  color: var(--muted-gray);
+  font-size: 14px;
+}
+
+.tc-highlight-card,
+.tc-action-card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--white);
+  border: 1px solid var(--border-gray);
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(16, 64, 32, 0.1);
+  animation: tc-rise 0.5s ease-out 0.08s both;
+}
+
+.tc-highlight-card {
+  overflow: hidden;
+}
+
+.tc-token-area {
+  padding: 24px 20px 22px;
+  text-align: center;
+  background: var(--krushi-deep-green);
+  color: var(--white);
+}
+
+.tc-token-label {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.tc-token-value {
+  margin: 4px 0 10px;
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.tc-centre-info,
+.tc-instruction-area {
+  display: flex;
+  align-items: center;
+}
+
+.tc-centre-info {
+  justify-content: center;
+  gap: 6px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tc-divider {
+  height: 1px;
+  margin: 0 20px;
+  border-top: 2px dashed var(--border-gray);
+}
+
+.tc-instruction-area {
+  gap: 12px;
+  padding: 18px 20px;
+}
+
+.tc-instruction-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: var(--pale-green);
+  color: var(--krushi-green);
+}
+
+.tc-instruction-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tc-instruction-label {
+  color: var(--muted-gray);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.tc-instruction-value {
+  color: var(--krushi-deep-green);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.tc-status-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 12px 20px 16px;
+  color: var(--krushi-deep-green);
+  background: #F4FAF4;
+  border-top: 1px solid var(--pale-green);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.tc-status-row svg {
+  color: var(--krushi-green);
+}
+
+.tc-status-row strong {
+  font-weight: 800;
+}
+
+.tc-action-card {
+  padding: 20px;
+  text-align: center;
+  animation-delay: 0.16s;
+}
+
+.tc-action-desc {
+  color: var(--muted-gray);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.tc-qr-wrapper {
+  width: 224px;
+  height: 224px;
+  margin: 16px auto 20px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  border: 2px solid var(--pale-green);
+  border-radius: 14px;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.06);
+}
+
+.tc-qr-wrapper canvas {
+  width: 196px;
+  height: 196px;
+  image-rendering: pixelated;
+}
+
+.tc-proceed-btn {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 18px;
+  font-size: 15px;
+  background: var(--krushi-green);
+}
+
+.tc-proceed-btn:active {
+  background: var(--krushi-deep-green);
+}
+
+@keyframes tc-rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (min-width: 431px) {
+  .tc-main {
+    padding-top: 36px;
+  }
+}

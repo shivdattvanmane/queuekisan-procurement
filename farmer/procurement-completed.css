@@ -1,0 +1,233 @@
+/* KrushiDarpan - Procurement Completed Styles */
+
+.pc-body {
+  background: linear-gradient(180deg, #E0F0E0 0, var(--cream-bg) 250px);
+}
+
+.pc-topbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  background: var(--white);
+  border-bottom: 1px solid var(--border-gray);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.pc-back-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-text);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.pc-topbar h1 {
+  color: var(--dark-text);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.pc-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 28px 20px 48px;
+}
+
+.pc-success-heading {
+  width: 100%;
+  text-align: center;
+}
+
+.pc-success-icon {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+  color: var(--white);
+  background: var(--krushi-green);
+  border: 5px solid #D4EBD7;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(32, 122, 64, 0.2);
+}
+
+.pc-success-heading h2 {
+  color: var(--krushi-deep-green);
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.pc-success-heading p {
+  margin-top: 7px;
+  color: var(--muted-gray);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.pc-summary-card,
+.pc-next-card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--white);
+  border: 1px solid var(--border-gray);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(16, 64, 32, 0.08);
+}
+
+.pc-summary-card {
+  padding: 20px;
+}
+
+.pc-summary-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.pc-summary-label {
+  color: var(--muted-gray);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.pc-completed-badge {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 9px;
+  color: var(--krushi-green);
+  background: var(--pale-green);
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.pc-amount {
+  margin: 16px 0 18px;
+  color: var(--krushi-deep-green);
+  font-size: 31px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.pc-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 12px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border-gray);
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.pc-detail-grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.pc-detail-grid span,
+.pc-id-row span,
+.pc-next-card span {
+  color: var(--muted-gray);
+  font-size: 11px;
+}
+
+.pc-detail-grid strong {
+  color: var(--dark-text);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.pc-detail-grid .pc-status-value {
+  color: var(--krushi-green);
+}
+
+.pc-id-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 15px;
+}
+
+.pc-id-row strong {
+  color: var(--krushi-deep-green);
+  font-size: 12px;
+  font-weight: 800;
+  text-align: right;
+}
+
+.pc-next-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  text-align: left;
+  font-family: var(--font-inter);
+  cursor: pointer;
+  background: #F4FAF4;
+  border-color: var(--pale-green);
+}
+
+.pc-next-card:active {
+  border-color: var(--krushi-green);
+}
+
+.pc-next-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--krushi-green);
+  background: var(--white);
+  border-radius: 12px;
+}
+
+.pc-next-card div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.pc-next-card strong {
+  color: var(--krushi-deep-green);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.pc-next-card p {
+  color: var(--muted-gray);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+@media (max-width: 350px) {
+  .pc-summary-card {
+    padding: 16px;
+  }
+
+  .pc-id-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .pc-id-row strong {
+    text-align: left;
+  }
+}

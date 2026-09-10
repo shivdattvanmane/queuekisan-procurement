@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueueKisan Assistant</title>
+
+```
+<link rel="stylesheet" href="chatbot.css">
+```
+
+</head>
+
+<body>
+
+```
+<div class="chatbot-container">
+
+    <!-- Chatbot Header -->
+    <div class="chatbot-header">
+        <div class="bot-info">
+            <div class="bot-icon">🌾</div>
+
+            <div>
+                <h2>QueueKisan Assistant</h2>
+                <span>Farmer Support</span>
+            </div>
+        </div>
+
+        <button class="close-chat" onclick="closeChat()">×</button>
+    </div>
+
+
+    <!-- Chat Messages -->
+    <div class="chat-messages" id="chatMessages">
+
+        <div class="message bot-message">
+            <div class="message-icon">🌾</div>
+
+            <div class="message-content">
+                <p>
+                    Namaste! 👋<br><br>
+                    I am the QueueKisan Assistant.
+                    I can help you with your token, queue status,
+                    waiting time, booking and other QueueKisan services.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Suggested Questions -->
+    <div class="suggested-questions">
+
+        <button onclick="sendSuggestion('What is my token number?')">
+            🎟️ My token
+        </button>
+
+        <button onclick="sendSuggestion('What is my queue status?')">
+            📋 Queue status
+        </button>
+
+        <button onclick="sendSuggestion('How many people are ahead of me?')">
+            👥 People ahead
+        </button>
+
+        <button onclick="sendSuggestion('What is my estimated waiting time?')">
+            ⏱️ Waiting time
+        </button>
+
+    </div>
+
+
+    <!-- Message Input -->
+    <div class="chat-input-area">
+
+        <input
+            type="text"
+            id="chatInput"
+            placeholder="Ask your question..."
+            autocomplete="off"
+        >
+
+        <button id="sendButton" onclick="sendMessage()">
+            ➤
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="chatbot.js"></script>
+```
+
+</body>
+</html>

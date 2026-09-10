@@ -1,0 +1,249 @@
+/* KrushiDarpan - Farmer Check-in Styles */
+
+.fc-body {
+  background: linear-gradient(180deg, #E0F0E0 0, var(--cream-bg) 220px);
+}
+
+.fc-topbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  background: var(--white);
+  border-bottom: 1px solid var(--border-gray);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.fc-back-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-text);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.fc-topbar-title h1 {
+  color: var(--dark-text);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.fc-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 24px 20px 48px;
+}
+
+.fc-intro {
+  width: 100%;
+  text-align: center;
+}
+
+.fc-intro-icon,
+.fc-success-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+}
+
+.fc-intro-icon {
+  width: 56px;
+  height: 56px;
+  color: var(--krushi-green);
+  background: var(--white);
+  border: 2px solid var(--pale-green);
+}
+
+.fc-intro h2,
+.fc-success h2 {
+  color: var(--krushi-deep-green);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.fc-intro p,
+.fc-success p,
+.fc-qr-card > p {
+  margin-top: 6px;
+  color: var(--muted-gray);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.fc-token-card,
+.fc-qr-card,
+.fc-details-card,
+.fc-success {
+  width: 100%;
+  max-width: 380px;
+  background: var(--white);
+  border: 1px solid var(--border-gray);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(16, 64, 32, 0.08);
+}
+
+.fc-token-card {
+  padding: 20px;
+  text-align: center;
+  color: var(--white);
+  background: var(--krushi-deep-green);
+}
+
+.fc-label {
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.fc-token {
+  display: block;
+  margin: 4px 0 9px;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.fc-centre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.fc-qr-card {
+  padding: 18px 20px 20px;
+  text-align: center;
+}
+
+.fc-qr-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--krushi-deep-green);
+}
+
+.fc-qr-heading h2 {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.fc-qr-wrapper {
+  width: 224px;
+  height: 224px;
+  margin: 14px auto 0;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--pale-green);
+  border-radius: 14px;
+}
+
+.fc-qr-wrapper canvas {
+  width: 196px;
+  height: 196px;
+  image-rendering: pixelated;
+}
+
+.fc-details-card {
+  padding: 6px 18px;
+}
+
+.fc-detail-row,
+.fc-status-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--border-gray);
+  font-size: 13px;
+}
+
+.fc-detail-row span,
+.fc-status-row > span:last-child {
+  color: var(--muted-gray);
+}
+
+.fc-detail-row strong {
+  max-width: 65%;
+  color: var(--dark-text);
+  text-align: right;
+  font-weight: 700;
+}
+
+.fc-status-row {
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 0;
+  color: var(--krushi-deep-green);
+}
+
+.fc-status-icon {
+  display: flex;
+  color: var(--krushi-green);
+}
+
+.fc-status-row strong {
+  color: var(--krushi-deep-green);
+}
+
+.fc-checkin-btn {
+  max-width: 380px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 18px;
+  background: var(--krushi-green);
+  font-size: 15px;
+}
+
+.fc-checkin-btn:active {
+  background: var(--krushi-deep-green);
+}
+
+.fc-success {
+  padding: 26px 20px;
+  text-align: center;
+  border: 2px solid var(--krushi-green);
+  background: #F4FAF4;
+}
+
+.fc-success-icon {
+  width: 64px;
+  height: 64px;
+  color: var(--white);
+  background: var(--krushi-green);
+}
+
+.fc-success h2 {
+  color: var(--krushi-green);
+}
+
+.fc-process-btn {
+  width: 100%;
+  margin-top: 18px;
+  padding: 13px 16px;
+  background: var(--krushi-green);
+  font-size: 14px;
+}

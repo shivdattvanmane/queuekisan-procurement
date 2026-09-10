@@ -1,0 +1,249 @@
+/* KrushiDarpan - Payment Processing Styles */
+
+.pay-body {
+  background: linear-gradient(180deg, #FFF3DC 0, var(--cream-bg) 250px);
+}
+
+.pay-topbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  background: var(--white);
+  border-bottom: 1px solid var(--border-gray);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.pay-back-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-text);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.pay-topbar h1 {
+  color: var(--dark-text);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.pay-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 28px 20px 48px;
+}
+
+.pay-heading {
+  width: 100%;
+  text-align: center;
+}
+
+.pay-processing-icon {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+  color: #8A641C;
+  background: #FFF1C9;
+  border: 5px solid #F5DE9D;
+  border-radius: 50%;
+}
+
+.pay-heading h2 {
+  color: var(--krushi-deep-green);
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.pay-heading p {
+  margin-top: 7px;
+  color: var(--muted-gray);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.pay-card,
+.pay-info-card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--white);
+  border: 1px solid var(--border-gray);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(16, 64, 32, 0.08);
+}
+
+.pay-card {
+  padding: 20px;
+}
+
+.pay-status-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 12px;
+  color: #8A641C;
+  background: #FFF8E9;
+  border: 1px solid #F5DE9D;
+  border-radius: 11px;
+  font-size: 13px;
+}
+
+.pay-status-banner svg {
+  color: var(--harvest-accent);
+}
+
+.pay-status-banner strong {
+  font-weight: 800;
+}
+
+.pay-amount-label {
+  margin-top: 20px;
+  color: var(--muted-gray);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pay-amount {
+  margin-top: 4px;
+  color: var(--krushi-deep-green);
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.pay-detail-list {
+  margin-top: 18px;
+  border-top: 1px solid var(--border-gray);
+}
+
+.pay-detail-list div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.pay-detail-list div:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.pay-detail-list span {
+  color: var(--muted-gray);
+  font-size: 12px;
+}
+
+.pay-detail-list strong {
+  color: var(--dark-text);
+  font-size: 13px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.pay-info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  background: #F4FAF4;
+  border-color: var(--pale-green);
+}
+
+.pay-info-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--krushi-green);
+  background: var(--white);
+  border-radius: 12px;
+}
+
+.pay-info-card > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.pay-info-card strong {
+  color: var(--krushi-deep-green);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.pay-info-card p {
+  color: var(--muted-gray);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.pay-complete-btn {
+  width: 100%;
+  max-width: 380px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 18px;
+  background: var(--krushi-green);
+  font-size: 14px;
+}
+
+.pay-complete-btn:active {
+  background: var(--krushi-deep-green);
+}
+
+.pay-failure-btn {
+  padding: 8px;
+  color: #9B3B3B;
+  background: none;
+  border: 0;
+  font-family: var(--font-inter);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.pay-status-banner.pay-failed {
+  color: #9B3B3B;
+  background: #FBE8E8;
+  border-color: #E9BABA;
+}
+
+.pay-status-banner.pay-failed svg {
+  color: #9B3B3B;
+}
+
+@media (max-width: 350px) {
+  .pay-card {
+    padding: 16px;
+  }
+
+  .pay-detail-list div {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .pay-detail-list strong {
+    text-align: left;
+  }
+}

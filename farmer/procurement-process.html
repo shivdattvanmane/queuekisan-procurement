@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>QueueKisan - Procurement Process</title>
+  <meta name="description" content="Track your crop procurement progress at the procurement centre.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="procurement-process.css">
+  <link rel="stylesheet" href="i18n/i18n.css">
+</head>
+<body class="pp-body">
+  <div class="app-container pp-container">
+    <header class="pp-topbar">
+      <button class="pp-back-btn" id="backBtn" aria-label="Go back">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      </button>
+      <h1 data-i18n="procure.procurementProcess">Procurement Process</h1>
+    </header>
+
+    <main class="pp-main">
+      <section class="pp-heading">
+        <div class="pp-heading-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/><path d="M5 5l14 14M19 5L5 19"/></svg>
+        </div>
+        <h2 data-i18n="procure.inProgress">Your procurement is in progress</h2>
+        <p data-i18n="procure.estimatedTime">We will guide you through each step.</p>
+      </section>
+
+      <section class="pp-timeline-card" aria-label="Procurement progress">
+        <ol class="pp-timeline">
+          <li class="pp-stage completed">
+            <span class="pp-stage-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span class="pp-stage-copy"><strong>Check-in</strong><small data-i18n="status.completed">Completed</small></span>
+          </li>
+          <li class="pp-stage processing">
+            <span class="pp-stage-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg></span>
+            <span class="pp-stage-copy"><strong data-i18n="procure.step1">Document Verification</strong><small data-i18n="status.processing">Processing now</small></span>
+          </li>
+          <li class="pp-stage upcoming">
+            <span class="pp-stage-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/></svg></span>
+            <span class="pp-stage-copy"><strong data-i18n="procure.step2">Crop Quality Check</strong><small data-i18n="status.pending">Next step</small></span>
+          </li>
+          <li class="pp-stage upcoming">
+            <span class="pp-stage-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20V4M6 4h11l-2 3 2 3H6"/></svg></span>
+            <span class="pp-stage-copy"><strong data-i18n="procure.step3">Weighing</strong><small data-i18n="status.pending">Upcoming</small></span>
+          </li>
+          <li class="pp-stage upcoming">
+            <span class="pp-stage-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 12h8M12 8v8"/></svg></span>
+            <span class="pp-stage-copy"><strong data-i18n="home.procurementStatus">Procurement Processing</strong><small data-i18n="status.pending">Upcoming</small></span>
+          </li>
+          <li class="pp-stage upcoming last-stage">
+            <span class="pp-stage-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/></svg></span>
+            <span class="pp-stage-copy"><strong data-i18n="completed.procurementCompleted">Procurement Completed</strong><small data-i18n="status.pending">Upcoming</small></span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="pp-info-card" aria-label="Procurement information">
+        <h2 data-i18n="completed.procurementDetails">Procurement details</h2>
+        <div class="pp-info-grid">
+          <div><span data-i18n="confirm.crop">Crop</span><strong id="ppCrop">—</strong></div>
+          <div><span data-i18n="completed.totalWeight">Quantity</span><strong id="ppQuantity">—</strong></div>
+          <div><span>Quality / Grade</span><strong id="ppGrade">—</strong></div>
+          <div><span data-i18n="confirm.procurementCentre">Centre</span><strong id="ppCentre">—</strong></div>
+        </div>
+        <div class="pp-status">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+          <span>Status: <strong>Document Verification</strong></span>
+        </div>
+      </section>
+
+      <button class="btn btn-primary w-full pp-complete-btn" id="completeBtn">
+        <span class="btn-text" data-i18n="queue.refreshQueue">Refresh Procurement Status</span>
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </button>
+    </main>
+
+    <!-- ========== BOTTOM NAVIGATION ========== -->
+    <nav class="bottom-nav" id="bottomNav">
+      <a href="index.html" class="bnav-item" aria-label="Home">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span data-i18n="nav.home">Home</span>
+      </a>
+      <a href="history.html" class="bnav-item" aria-label="History">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span data-i18n="nav.history">History</span>
+      </a>
+      <a href="token-generated.html" class="bnav-item bnav-scan" aria-label="Scan QR">
+        <div class="scan-fab">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><rect x="7" y="7" width="3" height="3"/><rect x="14" y="7" width="3" height="3"/><rect x="7" y="14" width="3" height="3"/><rect x="14" y="14" width="3" height="3"/></svg>
+        </div>
+        <span data-i18n="nav.scan">Scan</span>
+      </a>
+      <a href="notifications.html" class="bnav-item" aria-label="Alerts">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        <span data-i18n="nav.alerts">Alerts</span>
+      </a>
+      <a href="profile.html" class="bnav-item" aria-label="Profile">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span data-i18n="nav.profile">Profile</span>
+      </a>
+    </nav>
+  </div>
+  <script src="i18n/en.js"></script>
+  <script src="i18n/mr.js"></script>
+  <script src="i18n/hi.js"></script>
+  <script src="i18n/translator.js"></script>
+  <script src="js/appConfig.js"></script>
+  <script src="js/krushiApi.js"></script>
+  <script src="procurement-process.js"></script>
+</body>
+</html>

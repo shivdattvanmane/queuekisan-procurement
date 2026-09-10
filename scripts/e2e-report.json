@@ -1,0 +1,322 @@
+{
+  "startedAt": "2026-09-02T17:01:13.027Z",
+  "tempIds": {
+    "tempCentreCode": "CTR-TKCEX8J",
+    "tempCentreUuid": "92cbffd1-c867-46cb-b48d-94772bd1f0ec",
+    "tempSlotId": "a918c6cc-9722-4cd0-a204-34695ef44225",
+    "tempCounterOfficerId": "OFF-TKCEX8J",
+    "tempCounterEmail": "officer.kcex8j@queuekisan.test",
+    "tempCounterId": "CNT-TKCEX8J",
+    "tempFarmerId": "FRM-123456789013",
+    "tempPublicUserId": "usr-f83498",
+    "tempBookingId": "BK-480723",
+    "tempProcurementId": "PRC-BK480723",
+    "tempPaymentId": "PAY-PRCBK480723"
+  },
+  "checks": [
+    {
+      "name": "Real admin Firebase login",
+      "ok": true,
+      "details": {
+        "adminId": "usr-a001"
+      }
+    },
+    {
+      "name": "Real counter Firebase login",
+      "ok": true,
+      "details": {
+        "officerId": "usr-c001"
+      }
+    },
+    {
+      "name": "Real farmer login via app service",
+      "ok": true,
+      "details": {
+        "farmerId": "FRM-001",
+        "mobile": "9876543210"
+      }
+    },
+    {
+      "name": "Create temp procurement centre",
+      "ok": true,
+      "details": {}
+    },
+    {
+      "name": "Create temp scheduling centre mapping",
+      "ok": true,
+      "details": {}
+    },
+    {
+      "name": "Create temp slot",
+      "ok": true,
+      "details": {
+        "slotTime": "05:00 PM - 06:00 PM"
+      }
+    },
+    {
+      "name": "Counter Firebase login",
+      "ok": true,
+      "details": {
+        "officerId": "OFF-TKCEX8J"
+      }
+    },
+    {
+      "name": "Farmer registration via app service",
+      "ok": true,
+      "details": {
+        "farmerId": "FRM-123456789013",
+        "mobile": "9868476317"
+      }
+    },
+    {
+      "name": "Farmer login via app service",
+      "ok": true,
+      "details": {
+        "farmerId": "FRM-123456789013"
+      }
+    },
+    {
+      "name": "Farmer sees temp centre",
+      "ok": true,
+      "details": {
+        "centresCount": 8
+      }
+    },
+    {
+      "name": "Farmer sees temp slot",
+      "ok": true,
+      "details": {
+        "slotsFound": 1
+      }
+    },
+    {
+      "name": "Farmer creates booking",
+      "ok": true,
+      "details": {
+        "bookingId": "BK-480723",
+        "token": "T-068"
+      }
+    },
+    {
+      "name": "Farmer active booking loads",
+      "ok": true,
+      "details": {
+        "queueStatus": "waiting"
+      }
+    },
+    {
+      "name": "Farmer queue position loads",
+      "ok": true,
+      "details": {
+        "farmersAhead": 0,
+        "servingToken": "—",
+        "timeline": [
+          "T-068"
+        ],
+        "estimatedWaitMinutes": 0,
+        "predictedServiceMinutes": 0,
+        "predictionSource": "historical-heuristic",
+        "predictionModel": "historical-heuristic",
+        "loadCluster": "Unclassified"
+      }
+    },
+    {
+      "name": "Farmer queue prediction metadata available",
+      "ok": true,
+      "details": {
+        "predictionSource": "historical-heuristic",
+        "loadCluster": "Unclassified",
+        "predictionModel": "historical-heuristic"
+      }
+    },
+    {
+      "name": "Farmer check-in updates status",
+      "ok": true,
+      "details": {
+        "verificationStatus": "Checked-in"
+      }
+    },
+    {
+      "name": "Counter queue loads",
+      "ok": true,
+      "details": {
+        "queueSize": 10
+      }
+    },
+    {
+      "name": "Counter call-next works",
+      "ok": true,
+      "details": {
+        "token": "T-068"
+      }
+    },
+    {
+      "name": "Counter verify farmer works",
+      "ok": true,
+      "details": {
+        "bookingId": "BK-480723"
+      }
+    },
+    {
+      "name": "Counter produce entry works",
+      "ok": true,
+      "details": {}
+    },
+    {
+      "name": "Counter procurement start works",
+      "ok": true,
+      "details": {
+        "status": "in-progress"
+      }
+    },
+    {
+      "name": "Counter confirm amount works",
+      "ok": true,
+      "details": {
+        "amount": 5400
+      }
+    },
+    {
+      "name": "Counter completes procurement",
+      "ok": true,
+      "details": {
+        "paymentStatus": "processing"
+      }
+    },
+    {
+      "name": "Counter completes payment",
+      "ok": true,
+      "details": {
+        "referenceId": "REF-KCEX8J"
+      }
+    },
+    {
+      "name": "Farmer sees completed booking state",
+      "ok": true,
+      "details": {
+        "queueStatus": "completed",
+        "procurementStatus": "completed",
+        "paymentStatus": "completed"
+      }
+    },
+    {
+      "name": "Farmer history includes completed booking",
+      "ok": true,
+      "details": {
+        "historyCount": 1
+      }
+    },
+    {
+      "name": "Farmer notifications generated",
+      "ok": true,
+      "details": {
+        "notifications": 8
+      }
+    },
+    {
+      "name": "Admin KPI service loads",
+      "ok": true,
+      "details": {
+        "totalFarmers": 23,
+        "todaysBookings": 5,
+        "activeQueue": 2,
+        "completedProcurements": 10,
+        "pendingPayments": 6,
+        "totalProcurementAmount": 293598.5
+      }
+    },
+    {
+      "name": "Admin centres include temp centre",
+      "ok": true,
+      "details": {
+        "centresCount": 8
+      }
+    },
+    {
+      "name": "Admin queue service loads",
+      "ok": true,
+      "details": {
+        "queueCentres": 8
+      }
+    },
+    {
+      "name": "Admin farmers include temp farmer",
+      "ok": true,
+      "details": {
+        "farmersCount": 23
+      }
+    },
+    {
+      "name": "Admin farmer booking history loads",
+      "ok": true,
+      "details": {
+        "bookingRows": 1
+      }
+    },
+    {
+      "name": "Admin procurement list includes temp procurement",
+      "ok": true,
+      "details": {
+        "procurementsCount": 18
+      }
+    },
+    {
+      "name": "Admin payments list includes temp payment",
+      "ok": true,
+      "details": {
+        "paymentsCount": 10
+      }
+    },
+    {
+      "name": "Admin notifications load",
+      "ok": true,
+      "details": {
+        "notifications": 20
+      }
+    },
+    {
+      "name": "Admin analytics load",
+      "ok": true,
+      "details": {
+        "crops": 7
+      }
+    },
+    {
+      "name": "Admin ML diagnostics available",
+      "ok": true,
+      "details": {
+        "model": "cluster_ml",
+        "clusterSamples": 9,
+        "regressionSamples": 1,
+        "queueEventCount": 8,
+        "recordedLifecycleSamples": 1
+      }
+    },
+    {
+      "name": "Admin reports load",
+      "ok": true,
+      "details": {
+        "centres": 8
+      }
+    },
+    {
+      "name": "Temporary test data cleanup",
+      "ok": true,
+      "details": {
+        "tempCentreCode": "CTR-TKCEX8J",
+        "tempCentreUuid": "92cbffd1-c867-46cb-b48d-94772bd1f0ec",
+        "tempSlotId": "a918c6cc-9722-4cd0-a204-34695ef44225",
+        "tempCounterOfficerId": "OFF-TKCEX8J",
+        "tempCounterEmail": "officer.kcex8j@queuekisan.test",
+        "tempCounterId": "CNT-TKCEX8J",
+        "tempFarmerId": "FRM-123456789013",
+        "tempPublicUserId": "usr-f83498",
+        "tempBookingId": "BK-480723",
+        "tempProcurementId": "PRC-BK480723",
+        "tempPaymentId": "PAY-PRCBK480723"
+      }
+    }
+  ],
+  "finishedAt": "2026-09-02T17:02:23.824Z",
+  "passed": true
+}
